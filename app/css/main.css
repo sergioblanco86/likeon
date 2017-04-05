@@ -1,0 +1,383 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  height: 100%; }
+
+body {
+  background-color: #0A161D;
+  font-family: 'Open Sans Condensed', sans-serif;
+  height: 100%; }
+
+.clear, div.wrapper:after {
+  content: "";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
+
+.particles-background {
+  position: fixed;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3; }
+
+div.wrapper {
+  width: 1280px;
+  margin: 0 auto; }
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 5; }
+  header nav {
+    padding-top: 70px;
+    position: relative; }
+    header nav img.head-logo {
+      width: 212px;
+      float: right;
+      display: none; }
+    header nav ul.menu li {
+      float: left;
+      padding-right: 35px;
+      position: relative; }
+      header nav ul.menu li:first-child:after {
+        display: none; }
+      header nav ul.menu li:last-child {
+        padding-right: 0px; }
+        header nav ul.menu li:last-child:after {
+          display: none; }
+      header nav ul.menu li:after {
+        content: '-';
+        position: absolute;
+        right: 0;
+        color: #92f6fe;
+        margin-right: 16px;
+        margin-top: 2px;
+        opacity: .56; }
+      header nav ul.menu li.menu-el {
+        display: none; }
+      header nav ul.menu li a {
+        color: #92f6fe;
+        font-size: 20px;
+        font-weight: 300;
+        transition: all 0.2s linear;
+        opacity: .56; }
+        header nav ul.menu li a:hover {
+          cursor: pointer;
+          opacity: 0.8; }
+      header nav ul.menu li.hamburger {
+        position: relative;
+        width: 50px;
+        height: 21px;
+        padding-right: 20px;
+        transition: all 0.2s linear; }
+        header nav ul.menu li.hamburger:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0px;
+          width: 30px;
+          height: 2px;
+          background: #92f6fe;
+          box-shadow: 0 9px 0px 0 #92f6fe, 0 18px 0 0 #92f6fe; }
+        header nav ul.menu li.hamburger:hover {
+          cursor: pointer;
+          opacity: 0.7; }
+    header nav ul.menu.displayed li.hamburger:before {
+      background: white;
+      box-shadow: 0 9px 0px 0 white, 0 18px 0 0 white; }
+
+div.indicator {
+  position: absolute;
+  top: 50%;
+  width: 1px;
+  height: 100%;
+  background-color: #FFFFFF;
+  margin-left: 15px;
+  z-index: 2; }
+  div.indicator span.selected {
+    position: absolute;
+    top: -34px;
+    left: -32px;
+    width: 85px;
+    height: 85px;
+    background-image: url(../images/circle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: all 0.2s linear; }
+  div.indicator .step {
+    width: 36px;
+    height: 36px;
+    background-color: transparent;
+    margin-bottom: 98px;
+    margin-left: -18px;
+    position: relative;
+    margin-top: -18px; }
+    div.indicator .step:before {
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: #FFF;
+      position: absolute;
+      top: 50%;
+      margin-top: -0.5px; }
+    div.indicator .step:hover {
+      cursor: pointer; }
+
+section {
+  position: relative;
+  height: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  overflow: hidden; }
+  section .discover {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 140px;
+    margin-left: -70px;
+    text-align: center;
+    color: rgba(143, 246, 252, 0.56);
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 110px;
+    background-image: url(../images/discover.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.2s linear; }
+    section .discover:hover {
+      cursor: pointer;
+      opacity: 0.7; }
+  section .wrapper {
+    position: relative;
+    transition: all 0.2s linear;
+    display: none; }
+  section .likeon-intro {
+    width: 100%;
+    text-align: center; }
+    section .likeon-intro h1 {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 54px;
+      color: #92f6fe;
+      font-weight: 300;
+      opacity: .56;
+      margin-bottom: 20px;
+      padding: 0px 245px; }
+    section .likeon-intro p {
+      color: #FFFFFF;
+      font-size: 16px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      padding: 0px 400px;
+      line-height: 24px; }
+    section .likeon-intro img.logo {
+      width: 300px;
+      margin-bottom: 100px; }
+  section .likeon-section01 {
+    width: 100%; }
+    section .likeon-section01 .left {
+      width: 30%;
+      display: inline-block;
+      text-align: left;
+      vertical-align: top;
+      padding-left: 100px; }
+      section .likeon-section01 .left h2 {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 43px;
+        color: #92f6fe;
+        font-weight: 300;
+        opacity: .56;
+        margin-bottom: 20px; }
+      section .likeon-section01 .left p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        color: #FFFFFF;
+        line-height: 21px;
+        font-weight: 300; }
+        section .likeon-section01 .left p font {
+          color: #92f6fe; }
+        section .likeon-section01 .left p b {
+          font-weight: 500; }
+    section .likeon-section01 .right {
+      width: 50%;
+      display: inline-block;
+      padding-top: 44px;
+      float: right; }
+      section .likeon-section01 .right p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        color: #FFFFFF;
+        line-height: 21px;
+        font-weight: 300; }
+      section .likeon-section01 .right .platform {
+        position: absolute;
+        width: 100%;
+        height: 160px;
+        background-color: #263442;
+        border-radius: 2px;
+        border: 1px solid rgba(143, 246, 252, 0.56);
+        box-shadow: 0px 0px 68px -20px #92f6fe;
+        margin-top: 200px; }
+      section .likeon-section01 .right img {
+        position: relative;
+        z-index: 2;
+        right: 52px; }
+  section .likeon-section02 {
+    width: 100%; }
+    section .likeon-section02 .left {
+      width: 52%;
+      display: inline-block;
+      text-align: left;
+      vertical-align: middle;
+      padding-left: 100px; }
+      section .likeon-section02 .left h2 {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 60px;
+        color: #92f6fe;
+        font-weight: 300;
+        opacity: .56;
+        margin-bottom: 20px; }
+      section .likeon-section02 .left p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        color: #FFFFFF;
+        line-height: 21px;
+        font-weight: 300;
+        padding-right: 120px; }
+        section .likeon-section02 .left p font {
+          color: #92f6fe; }
+        section .likeon-section02 .left p b {
+          font-weight: 500; }
+    section .likeon-section02 .right {
+      width: 40%;
+      display: inline-block;
+      padding-top: 44px;
+      /*float: right;*/
+      vertical-align: middle; }
+      section .likeon-section02 .right p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        color: #FFFFFF;
+        line-height: 21px;
+        font-weight: 300; }
+      section .likeon-section02 .right .platform {
+        position: absolute;
+        width: 100%;
+        height: 160px;
+        background-color: #263442;
+        border-radius: 2px;
+        border: 1px solid rgba(143, 246, 252, 0.56);
+        box-shadow: 0px 0px 68px -20px #92f6fe;
+        margin-top: 200px;
+        z-index: 2; }
+      section .likeon-section02 .right img {
+        position: relative;
+        margin-left: 42px;
+        top: -36px; }
+      section .likeon-section02 .right p {
+        position: relative;
+        z-index: 2;
+        top: -116px;
+        padding-left: 40px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold; }
+  section .likeon-section03 {
+    width: 100%; }
+    section .likeon-section03 .left {
+      width: 48%;
+      display: inline-block;
+      text-align: left;
+      vertical-align: middle;
+      padding-left: 100px;
+      text-align: center; }
+    section .likeon-section03 .right {
+      width: 50%;
+      display: inline-block;
+      padding-top: 44px;
+      /*float: right;*/
+      vertical-align: middle;
+      padding-right: 110px; }
+      section .likeon-section03 .right h2 {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 53px;
+        color: #92f6fe;
+        font-weight: 300;
+        opacity: .56;
+        margin-bottom: 20px; }
+      section .likeon-section03 .right h3 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        color: #92f6fe;
+        font-weight: 300;
+        opacity: .56;
+        margin-bottom: 20px; }
+      section .likeon-section03 .right p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        color: #FFFFFF;
+        line-height: 21px;
+        font-weight: 300;
+        padding-right: 120px; }
+        section .likeon-section03 .right p font {
+          color: #92f6fe; }
+        section .likeon-section03 .right p b {
+          font-weight: 500; }
+  section .likeon-section04 {
+    width: 100%; }
+    section .likeon-section04 h2 {
+      padding-left: 100px;
+      width: 45%;
+      display: block;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 53px;
+      color: #92f6fe;
+      font-weight: 300;
+      opacity: .56;
+      margin-bottom: 20px;
+      clear: both; }
+    section .likeon-section04 .left {
+      width: 45%;
+      display: inline-block;
+      text-align: left;
+      vertical-align: top;
+      padding-left: 100px;
+      /*text-align: center;*/ }
+      section .likeon-section04 .left img {
+        position: relative;
+        margin-left: 50px; }
+    section .likeon-section04 .right {
+      width: 50%;
+      display: inline-block;
+      padding-top: 44px;
+      /*float: right;*/
+      vertical-align: top;
+      padding-right: 110px; }
+      section .likeon-section04 .right h4 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        color: #92f6fe;
+        font-weight: 400;
+        opacity: .56;
+        margin-bottom: 20px; }
+      section .likeon-section04 .right h3 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        color: #92f6fe;
+        font-weight: 300;
+        opacity: .56;
+        margin-bottom: 20px; }
+      section .likeon-section04 .right p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        color: #FFFFFF;
+        line-height: 21px;
+        font-weight: 300;
+        padding-right: 120px;
+        margin-bottom: 35px; }
+        section .likeon-section04 .right p font {
+          color: #92f6fe; }
+        section .likeon-section04 .right p b {
+          font-weight: 500; }
