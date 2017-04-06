@@ -478,7 +478,7 @@ section {
     margin-top: 0 !important; }
   .wrapper {
     width: 320px;
-    padding: 0px 20px; }
+    padding: 0px 10px; }
   header nav ul.menu li.menu-el {
     display: none !important; }
   header nav.mobile {
@@ -493,6 +493,9 @@ section {
   section {
     height: auto;
     padding: 40px 0px; }
+  section .discover {
+    padding-top: 18px;
+    background-position: center -50px; }
   section.first {
     height: 100%; }
   section .likeon-intro p, section .likeon-intro h1 {
@@ -538,7 +541,7 @@ section {
     height: 178px; }
   section .likeon-section02 .right p {
     padding: 0px 20px;
-    top: -72px; }
+    top: -88px; }
   section .likeon-section03 .left {
     width: 100%;
     padding: 0; }

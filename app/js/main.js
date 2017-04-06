@@ -34,7 +34,7 @@ $( document ).ready(function() {
                 });
     })
 
-    $("body").on("click",".discover", function(){
+    $("body").on("click click touchstart",".discover", function(){
     	var a = $("#section-01").offset().top -74;
     	$("body, html").animate({ scrollTop: a+"px" },{
                     duration: 'slow',
@@ -69,12 +69,12 @@ $( document ).ready(function() {
 
 		});
 
-    $('body').on('click','nav.mobile ul.menu li.hamburger', function(){
+    $('body').on('click click touchstart','nav.mobile ul.menu li.hamburger', function(){
         var menu = $('div.mobile-menu');
         menu.css({'left':'0'});
     })
 
-    $('body').on('click','div.mobile-menu a.close', function(){
+    $('body').on('click click touchstart','div.mobile-menu a.close', function(){
         var menu = $('div.mobile-menu');
         menu.css({'left':'-85%'});
     })
