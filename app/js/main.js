@@ -26,23 +26,20 @@ $( document ).ready(function() {
     $("body").on("click",".indicator div.step", function(){
     	var section = $(this).data('section');
     	var number = $(this).data('number');
-    	var ball_top = (116*number) - 34;
-    	var a = $("#"+section).offset().top;
+    	var a = $("#"+section).offset().top - 74;
+        console.log("he offset", a);
     	$("body, html").animate({ scrollTop: a+"px" },{
                     duration: 'slow',
                     easing: 'swing'
                 });
-    	// $(".indicator .selected").css({'top':ball_top+'px'})
     })
 
     $("body").on("click",".discover", function(){
-    	var ball_top = 82;
-    	var a = $("#section-01").offset().top;
+    	var a = $("#section-01").offset().top -74;
     	$("body, html").animate({ scrollTop: a+"px" },{
                     duration: 'slow',
                     easing: 'swing'
                 });
-    	// $(".indicator .selected").css({'top':ball_top+'px'})
     })
 
     $(this).scroll(function(e) {
@@ -63,14 +60,24 @@ $( document ).ready(function() {
 				}
 			}
 
-			if (scrollTop >= 210) {
+			/*if (scrollTop >= 210) {
 				$(".indicator").css({'position':'fixed','top':'150px'})
 			}else{
 				$(".indicator").css({'position':'absolute','top':'50%'})
-			}
+			}*/
 
 
 		});
+
+    $('body').on('click','nav.mobile ul.menu li.hamburger', function(){
+        var menu = $('div.mobile-menu');
+        menu.css({'left':'0'});
+    })
+
+    $('body').on('click','div.mobile-menu a.close', function(){
+        var menu = $('div.mobile-menu');
+        menu.css({'left':'-85%'});
+    })
 
 		
 });
@@ -78,7 +85,7 @@ $( document ).ready(function() {
 		$(window).bind("scroll", function(event) {
         $("section:in-viewport").each(function() {
           var number = $(this).data('number');
-    			var ball_top = (116*number) - 34;
+    			var ball_top = (78*number) - 34;
     			$(".indicator .selected").css({'top':ball_top+'px'})
         });      
     });

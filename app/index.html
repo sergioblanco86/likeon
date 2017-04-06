@@ -8,6 +8,9 @@
 <!--build:css css/fonts.css-->
 <link rel="stylesheet" type="text/css" href="css/fonts.css">
 <!--endbuild-->
+<!--build:css css/font-awesome.css-->
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<!--endbuild-->
 <!--build:css css/styles.min.css-->
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <link rel="stylesheet" type="text/css" href="css/particles.css">
@@ -28,7 +31,7 @@
 <header>
 	
 	<div class="wrapper">
-		<nav>
+		<nav class="desktop">
 			<ul class="menu">
 				<li class="hamburger"></li>
 				<li class="menu-el"><a>Like-on Love</a></li>
@@ -38,9 +41,29 @@
 			</ul>
 			<img class="head-logo" src="images/likeon-logo.png">
 		</nav>
+		<nav class="mobile">
+			<ul class="menu">
+				<li class="hamburger"></li>
+			</ul>
+			<img class="head-logo" src="images/likeon-logo.png">
+		</nav>
 	</div>
 		
 </header>
+
+<div class="mobile-menu">
+	<ul>
+		<li class="menu-el"><a>Like-on Love</a></li>
+		<li class="menu-el"><a>Wi-on</a></li>
+		<li class="menu-el"><a>Blue-on</a></li>
+		<li class="menu-el"><a>Contacto</a></li>
+		<li class="menu-el social">
+			<a class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+		</li>
+	</ul>
+	<a class="close"></a>
+</div>
 
 <div class="wrapper">
 	<div class="indicator">
@@ -53,8 +76,8 @@
 	</div>
 </div>
 
-<section id="section-00" data-number="0">
-	<div class="wrapper">
+<section id="section-00" class="first" data-number="0">
+	<div class="wrapper first-w">
 		<div class="likeon-intro">
 			<img class="logo" src="images/likeon-logo.png">
 			<h1>Haz «clic» con tus clientes, en el <b>lugar correcto</b>, en el momento adecuado y con un <b>mensaje valioso</b>.</h1>
@@ -75,7 +98,7 @@
 			</div>
 			<div class="right">
 				<div class="platform"></div>
-				<img src="images/img-04.png">
+				<img class="fold-image" src="images/img-04.png" style="perspective: 800px;">
 				<p>¿Sabías que una persona puede llegar a ser impactada por 3.000 mensajes publicitarios al día? Un exceso, sin duda. En Like-On entendimos esto y es la razón por la que decidimos enfocarnos en nuevas alternativas para acercarnos a los consumidores.</p>
 			</div>
 		</div>
@@ -91,7 +114,7 @@
 			</div>
 			<div class="right">
 				<div class="platform"></div>
-				<img src="images/img-01.png">
+				<img src="images/img-01.png" class="fold-image" style="perspective: 800px;">
 
 				<p>Nos enfrentamos a una etapa del marketing en donde la conectividad lo es todo. Ya no solo buscamos lograr transacciones, sino crear y sostener un diálogo entre las marcas y los usuarios.</p>
 			</div>
@@ -103,7 +126,7 @@
 	<div class="wrapper">
 		<div class="likeon-section03">
 			<div class="left">
-				<img src="images/img-03.png">
+				<img src="images/img-03.png" class="fold-image" style="perspective: 800px;">
 			</div>
 			<div class="right">
 				<h2>¿En qué nos enfocamos?</h2>
@@ -119,7 +142,7 @@
 		<div class="likeon-section04">
 			<h2>Productos innovadores y únicos en el mercado</h2>
 			<div class="left">
-				<img src="images/img-5.png">
+				<img src="images/img-5.png" class="fold-image" style="perspective: 800px;">
 			</div>
 			<div class="right">
 				<p>En el 2002 Europa integra el Wi-Fi con el marketing.<br /><br />
@@ -147,6 +170,33 @@
 <!--build:js js/jquery.viewport.mini.js -->
 <script src="js/jquery.viewport.mini.js"></script>
 <!-- endbuild -->
+
+<script src="js/scrollreveal.min.js"></script>
+<script>
+  (function(){
+
+    var config = {
+      viewFactor : 0.15,
+      duration   : 800,
+      distance   : "0px",
+      scale      : 0.8,
+    }
+
+    window.sr = new ScrollReveal(config);
+
+    var block = {
+    	reset: true,
+        viewOffset: { top: 64 }
+      }
+
+    var image = { rotate: {x: 65}, reset : true }
+
+
+    sr.reveal('section',block);
+    sr.reveal('.fold-image', image);
+  })()
+
+</script>
 
 <!--build:js js/main.min.js -->
 <script type="text/javascript" src="js/main.js"></script>
