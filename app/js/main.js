@@ -122,7 +122,7 @@ $( document ).ready(function() {
 
     $('body').on('click click touchstart','div.mobile-menu a.close', function(){
         var menu = $('div.mobile-menu');
-        menu.css({'left':'-85%'});
+        menu.css({'left':'-200%'});
     })
 
 		

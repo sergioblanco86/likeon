@@ -156,7 +156,7 @@ div.mobile-menu{
 	position: fixed;
 	padding-top: 170px;
 	box-shadow: 1px 1px 60px #000;
-	left: -85%;
+	left: -200%;
 	transition: all 0.2s linear;
 	ul{
 		li{
@@ -721,6 +721,10 @@ section{
 		padding: 40px 0px;
 	}
 
+	section .mobile-section-hack{
+		padding-top: 80px;
+	}
+
 	section .discover{
 		padding-top: 18px;
     background-position: center -50px;
@@ -802,7 +806,8 @@ section{
 
 	section .likeon-section02 .right p{
 		padding: 0px 20px;
-		top: -88px;
+		top: -94px;
+		text-align: center;
 	}
 
 	section .likeon-section03 .left{
@@ -853,5 +858,34 @@ section{
 		padding: 0;
 	}
 
+	section .likeon-section05 .wrapper{
+		padding: 0px;
+	}
+
+	section .likeon-section05 .left,
+	section .likeon-section05 .right{
+		position: relative;
+		float: left;
+		width: 100%;
+		height: auto;
+		left: 0;
+		top: 0;
+		clear: both;
+		padding: 50px 10px;
+	}
+
+	section .likeon-section05 .wrapper{
+		position: relative;
+	}
+
+	section .likeon-section05 .content{
+		float: left;
+		width: 100%;
+		position: relative;
+		top: 0;
+		transform: initial;
+		margin: 0px;
+		left: 0px;
+	}
 
 }
