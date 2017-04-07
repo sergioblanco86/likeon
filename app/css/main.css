@@ -149,14 +149,15 @@ div.indicator {
   background-color: rgba(255, 255, 255, 0.3);
   margin-left: 15px;
   z-index: 2;
-  margin-top: -130px; }
-  div.indicator:before {
-    content: '';
-    width: 1px;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.3);
-    position: absolute;
-    bottom: 100%; }
+  margin-top: -130px;
+  /*&:before{
+		content: '';
+		width: 1px;
+		height: 100%;
+		background-color: rgba(255,255,255,.3);
+		position: absolute;
+		bottom: 100%;
+	}*/ }
   div.indicator span.selected {
     position: absolute;
     top: -34px;
@@ -268,7 +269,7 @@ section {
         font-family: 'Roboto', sans-serif;
         font-size: 18px;
         color: #FFFFFF;
-        line-height: 21px;
+        line-height: 22px;
         font-weight: 300; }
         section .likeon-section01 .left p font {
           color: #92f6fe; }
@@ -283,7 +284,7 @@ section {
         font-family: 'Roboto', sans-serif;
         font-size: 18px;
         color: #FFFFFF;
-        line-height: 21px;
+        line-height: 22px;
         font-weight: 300; }
       section .likeon-section01 .right .platform {
         position: absolute;
@@ -317,7 +318,7 @@ section {
         font-family: 'Roboto', sans-serif;
         font-size: 18px;
         color: #FFFFFF;
-        line-height: 21px;
+        line-height: 22px;
         font-weight: 300;
         padding-right: 120px; }
         section .likeon-section02 .left p font {
@@ -334,7 +335,7 @@ section {
         font-family: 'Roboto', sans-serif;
         font-size: 18px;
         color: #FFFFFF;
-        line-height: 21px;
+        line-height: 22px;
         font-weight: 300; }
       section .likeon-section02 .right .platform {
         position: absolute;
@@ -356,7 +357,8 @@ section {
         top: -116px;
         padding-left: 40px;
         font-family: 'Roboto', sans-serif;
-        font-weight: bold; }
+        font-weight: bold;
+        line-height: 22px; }
   section .likeon-section03 {
     width: 100%; }
     section .likeon-section03 .left {
@@ -391,7 +393,7 @@ section {
         font-family: 'Roboto', sans-serif;
         font-size: 18px;
         color: #FFFFFF;
-        line-height: 21px;
+        line-height: 22px;
         font-weight: 300;
         padding-right: 120px; }
         section .likeon-section03 .right p font {
@@ -446,7 +448,7 @@ section {
         font-family: 'Roboto', sans-serif;
         font-size: 18px;
         color: #FFFFFF;
-        line-height: 21px;
+        line-height: 22px;
         font-weight: 300;
         padding-right: 120px;
         margin-bottom: 35px; }
@@ -454,6 +456,72 @@ section {
           color: #92f6fe; }
         section .likeon-section04 .right p b {
           font-weight: 500; }
+  section#section-05 {
+    padding: 0; }
+  section .likeon-section05 {
+    width: 100%; }
+    section .likeon-section05 .wrapper {
+      position: inherit;
+      width: 100%; }
+    section .likeon-section05 .left {
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      text-align: center; }
+    section .likeon-section05 .right {
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      text-align: center; }
+      section .likeon-section05 .right .bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #FFFFFF;
+        opacity: .3;
+        z-index: 0; }
+      section .likeon-section05 .right .content img {
+        width: 170px; }
+      section .likeon-section05 .right .content p {
+        margin-bottom: 61px; }
+      section .likeon-section05 .right .content h2 {
+        color: #161c22; }
+      section .likeon-section05 .right .content a.bto {
+        background-color: #161c22; }
+    section .likeon-section05 .content {
+      width: 390px;
+      margin: 0 auto;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 50%;
+      margin-left: -195px; }
+      section .likeon-section05 .content img {
+        width: 140px;
+        margin-bottom: 30px; }
+      section .likeon-section05 .content h2 {
+        font-size: 60px;
+        color: rgba(143, 246, 252, 0.56);
+        font-family: 'Roboto Condensed';
+        font-weight: 300;
+        margin-bottom: 20px; }
+      section .likeon-section05 .content p {
+        font-family: 'Roboto';
+        font-size: 18px;
+        color: #FFFFFF;
+        font-weight: 300;
+        line-height: 22px;
+        margin-bottom: 42px; }
+      section .likeon-section05 .content a.bto {
+        font-family: 'Open Sans';
+        font-size: 18px;
+        color: #FFF;
+        padding: 7px 34px;
+        background-color: #68b0b6;
+        border-radius: 3px; }
 
 /*==========  Media Queries  ==========*/
 @media screen and (min-width: 1280px) {
@@ -473,6 +541,8 @@ section {
     width: 669px; } }
 
 @media screen and (min-width: 320px) and (max-width: 668px) {
+  .particles-background {
+    opacity: 0; }
   .wrapper:not(.first-w) {
     top: 0 !important;
     margin-top: 0 !important; }

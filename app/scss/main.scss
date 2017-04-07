@@ -201,14 +201,14 @@ div.indicator{
 	margin-left: 15px;
 	z-index: 2;
 	margin-top: -130px;
-	&:before{
+	/*&:before{
 		content: '';
 		width: 1px;
 		height: 100%;
 		background-color: rgba(255,255,255,.3);
 		position: absolute;
 		bottom: 100%;
-	}
+	}*/
 	span.selected{
 		position: absolute;
 		top: -34px;
@@ -337,7 +337,7 @@ section{
 				font-family: 'Roboto', sans-serif;
 				font-size: 18px;
 				color: #FFFFFF;
-				line-height: 21px;
+				line-height: 22px;
 				font-weight: 300;
 				font{
 					color: $primary-color;
@@ -356,7 +356,7 @@ section{
 				font-family: 'Roboto', sans-serif;
 				font-size: 18px;
 				color: #FFFFFF;
-				line-height: 21px;
+				line-height: 22px;
 				font-weight: 300;
 			}
 			.platform{
@@ -396,7 +396,7 @@ section{
 				font-family: 'Roboto', sans-serif;
 				font-size: 18px;
 				color: #FFFFFF;
-				line-height: 21px;
+				line-height: 22px;
 				font-weight: 300;
 				padding-right: 120px;
 				font{
@@ -417,7 +417,7 @@ section{
 				font-family: 'Roboto', sans-serif;
 				font-size: 18px;
 				color: #FFFFFF;
-				line-height: 21px;
+				line-height: 22px;
 				font-weight: 300;
 			}
 			.platform{
@@ -443,6 +443,7 @@ section{
 				padding-left: 40px;
 				font-family: 'Roboto', sans-serif;
 				font-weight: bold;
+				line-height: 22px;
 			}
 		}
 	}
@@ -484,7 +485,7 @@ section{
 				font-family: 'Roboto', sans-serif;
 				font-size: 18px;
 				color: #FFFFFF;
-				line-height: 21px;
+				line-height: 22px;
 				font-weight: 300;
 				padding-right: 120px;
 				font{
@@ -550,7 +551,7 @@ section{
 				font-family: 'Roboto', sans-serif;
 				font-size: 18px;
 				color: #FFFFFF;
-				line-height: 21px;
+				line-height: 22px;
 				font-weight: 300;
 				padding-right: 120px;
 				margin-bottom: 35px;
@@ -560,6 +561,90 @@ section{
 				b{
 					font-weight: 500;
 				}
+			}
+		}
+	}
+	&#section-05{
+		padding: 0;
+	}
+	.likeon-section05{
+		width: 100%;
+		.wrapper{
+			position: inherit;
+			width: 100%;
+		}
+		.left{
+			width: 50%;
+			height: 100%;
+			position: absolute;
+			text-align: center;
+		}
+		.right{
+			width: 50%;
+			height: 100%;
+			position: absolute;
+			left: 50%;
+			text-align: center;
+			.bg{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background-color: #FFFFFF;
+				opacity: .3;
+				z-index: 0;
+			}
+			.content{
+				img{
+					width: 170px;
+				}
+				p{
+					margin-bottom: 61px;
+				}
+				h2{
+					color: #161c22;
+				}
+				a.bto{
+					background-color: #161c22;
+				}
+			}
+
+		}
+		.content{
+			width: 390px;
+			margin: 0 auto;
+			position: absolute;
+  		top: 50%;
+  		transform: translateY(-50%);
+  		left: 50%;
+  		margin-left: -195px;
+			img{
+				width: 140px;
+				margin-bottom: 30px;
+			}
+			h2{
+				font-size: 60px;
+				color: $primary-color-rgba;
+				font-family: 'Roboto Condensed';
+				font-weight: 300;
+				margin-bottom: 20px;
+			}
+			p{
+				font-family: 'Roboto';
+				font-size: 18px;
+				color: #FFFFFF;
+				font-weight: 300;
+				line-height: 22px;
+				margin-bottom: 42px;
+			}
+			a.bto{
+				font-family: 'Open Sans';
+				font-size: 18px;
+				color: #FFF;
+				padding: 7px 34px;
+				background-color: #68b0b6;
+				border-radius: 3px;
 			}
 		}
 	}
@@ -590,7 +675,12 @@ section{
 	}
 }
 
-@media screen and (min-width: 320px) and (max-width: 668px) { 
+@media screen and (min-width: 320px) and (max-width: 668px) {
+
+	.particles-background{
+		opacity: 0;
+	}
+
 	.wrapper:not(.first-w){
 		top: 0 !important;
 		margin-top: 0 !important;
