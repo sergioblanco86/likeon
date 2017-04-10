@@ -26,11 +26,11 @@ $( document ).ready(function() {
     	wrapper.css({'top':'50%','margin-top' : '-'+center+'px'}).fadeIn('fast');
     });
 
-    $("body").on("click",".indicator div.step", function(){
+    $("body").on("click",".indicator div.step, .next-fold", function(){
     	var section = $(this).data('section');
     	var number = $(this).data('number');
         pos = number;
-    	var a = $("#"+section).offset().top - 74;
+    	var a = $("#"+section).offset().top;
         console.log("he offset", a);
 
         if (number == 5) {
@@ -43,7 +43,7 @@ $( document ).ready(function() {
     })
 
     $("body").on("click click touchstart",".discover", function(){
-    	var a = $("#section-01").offset().top -74;
+    	var a = $("#section-01").offset().top;
     	$("body, html").animate({ scrollTop: a+"px" },{
                     duration: 'slow',
                     easing: 'swing'
@@ -107,7 +107,7 @@ $( document ).ready(function() {
             return;
         }
 
-        var a = $("#section-0"+pos).offset().top - 74;
+        var a = $("#section-0"+pos).offset().top;
         $("body, html").animate({ scrollTop: a+"px" },{
                 duration: 'slow',
                 easing: 'swing'
@@ -123,17 +123,32 @@ $( document ).ready(function() {
     $('body').on('click click touchstart','div.mobile-menu a.close', function(){
         var menu = $('div.mobile-menu');
         menu.css({'left':'-200%'});
+    });
+
+
+    $("body").on("click",".view-more-info", function(evet){
+      var info = $(".more-info");
+      var mask = $(".mask");
+      mask.fadeIn('200');
+      info.addClass('show');
+    })
+
+    $("body").on("click",".more-info .close", function(evet){
+      var info = $(".more-info");
+      var mask = $(".mask");
+      info.removeClass('show');
+      mask.fadeOut('200');
     })
 
 		
 });
 
-		$(window).bind("scroll", function(event) {
-        $("section:in-viewport").each(function() {
-          var number = $(this).data('number');
-    			var ball_top = (78*number) - 34;
-    			$(".indicator .selected").css({'top':ball_top+'px'})
+  $(window).bind("scroll", function(event) {
+    $("section:in-viewport").each(function() {
+      var number = $(this).data('number');
+  		var ball_top = (78*number) - 23;
+  		$(".indicator .selected").css({'top':ball_top+'px'})
 
-        });      
-    });
+    });      
+  });
 

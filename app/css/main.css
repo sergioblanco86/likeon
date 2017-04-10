@@ -32,6 +32,26 @@ body {
   .particles-background #particles-js {
     height: 100%; }
 
+a:hover {
+  cursor: pointer; }
+
+a.cta {
+  color: #92f6fe;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+  padding: 6px 20px;
+  text-align: center;
+  font-weight: 400;
+  border: 1px solid #92f6fe;
+  border-radius: 3px;
+  box-shadow: 0px 0px 20px -4px #92f6fe;
+  transition: all 0.2s linear;
+  display: inline-block; }
+  a.cta:hover {
+    background-color: #92f6fe;
+    color: #0A161D;
+    cursor: pointer; }
+
 div.wrapper {
   /*width: 1280px;*/
   margin: 0 auto; }
@@ -78,6 +98,9 @@ header {
         header nav ul.menu li a:hover {
           cursor: pointer;
           opacity: 0.8; }
+        header nav ul.menu li a.active {
+          opacity: 1;
+          text-decoration: line-through; }
       header nav ul.menu li.hamburger {
         position: relative;
         width: 50px;
@@ -149,43 +172,37 @@ div.indicator {
   background-color: rgba(255, 255, 255, 0.3);
   margin-left: 15px;
   z-index: 2;
-  margin-top: -130px;
-  /*&:before{
-		content: '';
-		width: 1px;
-		height: 100%;
-		background-color: rgba(255,255,255,.3);
-		position: absolute;
-		bottom: 100%;
-	}*/ }
+  margin-top: -130px; }
   div.indicator span.selected {
     position: absolute;
-    top: -34px;
-    left: -32px;
-    width: 85px;
-    height: 85px;
+    top: -23px;
+    left: -21px;
+    width: 56px;
+    height: 56px;
     background-image: url(../images/circle.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: cover;
     background-size: contain;
     transition: all 0.2s linear;
     z-index: 2; }
     div.indicator span.selected:after {
       content: '';
       position: absolute;
-      height: 70px;
+      height: 80px;
       width: 3px;
       left: 50%;
-      margin-left: -12px;
+      margin-left: -8px;
       background-color: rgba(143, 246, 252, 0.56);
       z-index: 0;
-      opacity: .5; }
+      opacity: .5;
+      top: 50%;
+      margin-top: -45px; }
   div.indicator .step {
-    width: 36px;
+    width: 15px;
     height: 36px;
     background-color: transparent;
     margin-bottom: 60px;
-    margin-left: -18px;
+    margin-left: -7px;
     position: relative;
     margin-top: -18px; }
     div.indicator .step:first-child {
@@ -225,6 +242,17 @@ section {
     section .discover:hover {
       cursor: pointer;
       opacity: 0.7; }
+  section a.next-fold {
+    position: absolute;
+    bottom: 20px;
+    width: 80px;
+    height: 48px;
+    background-image: url(../images/flecha.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 50%;
+    margin-left: -40px; }
   section .wrapper {
     position: relative;
     transition: all 0.2s linear;
@@ -237,16 +265,8 @@ section {
       font-size: 54px;
       color: #92f6fe;
       font-weight: 300;
-      opacity: .56;
-      margin-bottom: 20px;
+      margin-bottom: 42px;
       padding: 0px 245px; }
-    section .likeon-intro p {
-      color: #FFFFFF;
-      font-size: 16px;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 400;
-      padding: 0px 400px;
-      line-height: 24px; }
     section .likeon-intro img.logo {
       width: 300px;
       margin-bottom: 100px; }
@@ -257,28 +277,36 @@ section {
       display: inline-block;
       text-align: left;
       vertical-align: top;
-      padding-left: 100px; }
+      padding-left: 100px;
+      padding-top: 50px; }
       section .likeon-section01 .left h2 {
         font-family: 'Roboto Condensed', sans-serif;
         font-size: 43px;
         color: #92f6fe;
         font-weight: 300;
-        opacity: .56;
-        margin-bottom: 20px; }
+        margin-bottom: 40px; }
       section .likeon-section01 .left p {
         font-family: 'Roboto', sans-serif;
         font-size: 18px;
         color: #FFFFFF;
         line-height: 22px;
-        font-weight: 300; }
+        font-weight: 300;
+        margin-bottom: 40px; }
         section .likeon-section01 .left p font {
           color: #92f6fe; }
         section .likeon-section01 .left p b {
           font-weight: 500; }
+      section .likeon-section01 .left a.cta {
+        text-align: left;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        width: 90%;
+        line-height: 22px;
+        padding: 10px 22px; }
     section .likeon-section01 .right {
       width: 50%;
       display: inline-block;
-      padding-top: 44px;
       float: right; }
       section .likeon-section01 .right p {
         font-family: 'Roboto', sans-serif;
@@ -320,17 +348,26 @@ section {
         color: #FFFFFF;
         line-height: 22px;
         font-weight: 300;
-        padding-right: 120px; }
+        padding-right: 120px;
+        margin-bottom: 20px; }
         section .likeon-section02 .left p font {
           color: #92f6fe; }
         section .likeon-section02 .left p b {
           font-weight: 500; }
+      section .likeon-section02 .left a.cta {
+        text-align: left;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        line-height: 22px;
+        padding: 10px 22px; }
     section .likeon-section02 .right {
       width: 40%;
       display: inline-block;
       padding-top: 44px;
       /*float: right;*/
-      vertical-align: middle; }
+      vertical-align: middle;
+      text-align: center; }
       section .likeon-section02 .right p {
         font-family: 'Roboto', sans-serif;
         font-size: 18px;
@@ -354,11 +391,10 @@ section {
       section .likeon-section02 .right p {
         position: relative;
         z-index: 2;
-        top: -116px;
         padding-left: 40px;
         font-family: 'Roboto', sans-serif;
-        font-weight: bold;
-        line-height: 22px; }
+        line-height: 22px;
+        text-align: justify; }
   section .likeon-section03 {
     width: 100%; }
     section .likeon-section03 .left {
@@ -380,14 +416,12 @@ section {
         font-size: 53px;
         color: #92f6fe;
         font-weight: 300;
-        opacity: .56;
         margin-bottom: 20px; }
       section .likeon-section03 .right h3 {
         font-family: 'Roboto', sans-serif;
         font-size: 30px;
         color: #92f6fe;
         font-weight: 300;
-        opacity: .56;
         margin-bottom: 20px; }
       section .likeon-section03 .right p {
         font-family: 'Roboto', sans-serif;
@@ -400,33 +434,75 @@ section {
           color: #92f6fe; }
         section .likeon-section03 .right p b {
           font-weight: 500; }
+      section .likeon-section03 .right a.cta {
+        text-align: left;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        line-height: 22px;
+        padding: 10px 22px;
+        margin-left: 30px; }
+      section .likeon-section03 .right ul li {
+        color: #FFFFFF;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 30px;
+        padding-left: 30px;
+        position: relative; }
+        section .likeon-section03 .right ul li:before {
+          font-family: 'FontAwesome';
+          content: '\f061';
+          position: absolute;
+          left: 10px;
+          top: 2px;
+          background-repeat: no-repeat;
+          color: #92f6fe;
+          font-size: 11px; }
   section .likeon-section04 {
     width: 100%; }
     section .likeon-section04 h2 {
-      padding-left: 100px;
-      width: 45%;
+      width: 100%;
       display: block;
       font-family: 'Roboto Condensed', sans-serif;
       font-size: 53px;
       color: #92f6fe;
       font-weight: 300;
-      opacity: .56;
       margin-bottom: 20px;
-      clear: both; }
+      clear: both;
+      text-align: center; }
     section .likeon-section04 .left {
-      width: 45%;
+      width: 40%;
       display: inline-block;
       text-align: left;
       vertical-align: top;
       padding-left: 100px;
-      /*text-align: center;*/ }
+      /*text-align: center;*/
+      padding-top: 35px; }
       section .likeon-section04 .left img {
         position: relative;
         margin-left: 50px; }
+      section .likeon-section04 .left ul li {
+        color: #FFFFFF;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 30px;
+        padding-left: 30px;
+        position: relative;
+        line-height: 22px; }
+        section .likeon-section04 .left ul li:before {
+          font-family: 'FontAwesome';
+          content: '\f061';
+          position: absolute;
+          left: 10px;
+          top: 2px;
+          background-repeat: no-repeat;
+          color: #92f6fe;
+          font-size: 11px; }
+        section .likeon-section04 .left ul li.q {
+          color: #92f6fe; }
     section .likeon-section04 .right {
-      width: 50%;
+      width: 55%;
       display: inline-block;
-      padding-top: 44px;
       /*float: right;*/
       vertical-align: top;
       padding-right: 110px; }
@@ -435,14 +511,16 @@ section {
         font-size: 30px;
         color: #92f6fe;
         font-weight: 400;
-        opacity: .56;
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        position: relative;
+        top: -106px;
+        display: inline-block;
+        left: 288px; }
       section .likeon-section04 .right h3 {
         font-family: 'Roboto', sans-serif;
         font-size: 30px;
         color: #92f6fe;
         font-weight: 300;
-        opacity: .56;
         margin-bottom: 20px; }
       section .likeon-section04 .right p {
         font-family: 'Roboto', sans-serif;
@@ -456,6 +534,19 @@ section {
           color: #92f6fe; }
         section .likeon-section04 .right p b {
           font-weight: 500; }
+      section .likeon-section04 .right img {
+        display: inline-block; }
+      section .likeon-section04 .right .platform {
+        position: absolute;
+        width: 100%;
+        height: 110px;
+        background-color: #263442;
+        border-radius: 2px;
+        border: 1px solid rgba(143, 246, 252, 0.56);
+        box-shadow: 0px 0px 68px -20px #92f6fe;
+        margin-top: 200px;
+        z-index: 0;
+        margin-left: 98px; }
   section#section-05 {
     padding: 0; }
   section .likeon-section05 {
@@ -490,7 +581,10 @@ section {
       section .likeon-section05 .right .content h2 {
         color: #161c22; }
       section .likeon-section05 .right .content a.bto {
-        background-color: #161c22; }
+        /*background-color: #161c22;*/
+        border: 1px solid #0A161D;
+        color: #0A161D;
+        box-shadow: none; }
     section .likeon-section05 .content {
       width: 390px;
       margin: 0 auto;
@@ -520,8 +614,85 @@ section {
         font-size: 18px;
         color: #FFF;
         padding: 7px 34px;
-        background-color: #68b0b6;
-        border-radius: 3px; }
+        /*background-color: #68b0b6;*/
+        border-radius: 3px;
+        border: 1px solid #92f6fe;
+        color: #92f6fe;
+        box-shadow: 0px 0px 20px -4px #92f6fe; }
+
+div.mask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.7;
+  z-index: 8;
+  display: none; }
+
+div.more-info {
+  position: fixed;
+  width: 536px;
+  height: 100%;
+  background-color: #3e4852;
+  z-index: 9;
+  padding: 80px 30px 30px 30px;
+  right: -536px;
+  transition: all 0.2s ease-in; }
+  div.more-info.show {
+    right: 0; }
+  div.more-info a.close {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/close.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 30px;
+    top: 30px; }
+  div.more-info h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 54px;
+    color: #92f6fe;
+    font-weight: 300;
+    margin-bottom: 40px; }
+  div.more-info p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 300;
+    margin-bottom: 30px;
+    line-height: 22px; }
+  div.more-info ul {
+    position: relative;
+    width: 100%; }
+    div.more-info ul li {
+      width: 50%;
+      float: left;
+      color: #FFF;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 22px;
+      padding-left: 30px;
+      position: relative; }
+      div.more-info ul li span {
+        display: block; }
+        div.more-info ul li span.name {
+          font-size: 16px; }
+      div.more-info ul li a {
+        color: #92f6fe;
+        display: block; }
+        div.more-info ul li a:hover {
+          opacity: 0.7; }
+      div.more-info ul li:before {
+        font-family: 'FontAwesome';
+        content: '\f061';
+        position: absolute;
+        left: 10px;
+        top: 0px;
+        background-repeat: no-repeat;
+        color: #92f6fe;
+        font-size: 11px; }
 
 /*==========  Media Queries  ==========*/
 @media screen and (min-width: 1280px) {

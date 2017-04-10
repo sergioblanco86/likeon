@@ -1,5 +1,6 @@
 $primary-color: #92f6fe;
 $primary-color-rgba: rgba(143,246,252,.56);
+$second-color: #0A161D;
 
 *{
 	box-sizing: border-box;
@@ -39,6 +40,29 @@ body{
 	opacity: 0.2;
 	#particles-js{
 		height: 100%;
+	}
+}
+
+a:hover{
+	cursor: pointer;
+}
+
+a.cta{
+	color: $primary-color;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 20px;
+	padding: 6px 20px;
+	text-align: center;
+	font-weight: 400;
+	border: 1px solid $primary-color;
+	border-radius: 3px;
+	box-shadow: 0px 0px 20px -4px $primary-color;
+	transition: all 0.2s linear;
+	display: inline-block;
+	&:hover{
+		background-color: $primary-color;
+		color: $second-color;
+		cursor: pointer;
 	}
 }
 
@@ -102,6 +126,10 @@ header{
 					&:hover{
 						cursor: pointer;
 						opacity: 0.8;
+					}
+					&.active{
+						opacity: 1;
+						text-decoration: line-through;
 					}
 				}
 				&.hamburger{
@@ -201,44 +229,38 @@ div.indicator{
 	margin-left: 15px;
 	z-index: 2;
 	margin-top: -130px;
-	/*&:before{
-		content: '';
-		width: 1px;
-		height: 100%;
-		background-color: rgba(255,255,255,.3);
-		position: absolute;
-		bottom: 100%;
-	}*/
 	span.selected{
 		position: absolute;
-		top: -34px;
-        left: -32px;
-		width: 85px;
-		height: 85px;
+		top: -23px;
+        left: -21px;
+		width: 56px;
+		height: 56px;
 		background-image: url(../images/circle.png);
 		background-repeat: no-repeat;
-		background-position: center;
+		background-position: cover;
 		background-size: contain;
 		transition: all 0.2s linear;
 		z-index: 2;
 		&:after{
 			content: '';
 			position: absolute;
-			height: 70px;
+			height: 80px;
 			width: 3px;
 			left: 50%;
-			margin-left: -12px;
+			margin-left: -8px;
 			background-color: $primary-color-rgba;
 			z-index: 0;
 			opacity: .5;
+			top: 50%;
+			margin-top: -45px;
 		}
 	}
 	.step{
-		width: 36px;
+		width: 15px;
 		height: 36px;
 		background-color: transparent;
 		margin-bottom: 60px;
-		margin-left: -18px;
+		margin-left: -7px;
 		position: relative;
 		margin-top: -18px;
 		&:first-child{
@@ -286,6 +308,18 @@ section{
 			opacity: 0.7;
 		}
 	}
+	a.next-fold{
+		position: absolute;
+		bottom: 20px;
+		width: 80px;
+		height: 48px;
+		background-image: url(../images/flecha.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		left: 50%;
+		margin-left: -40px;
+	}
 	.wrapper{
 		position: relative;
 		transition: all 0.2s linear;
@@ -299,17 +333,11 @@ section{
 			font-size: 54px;
 			color: $primary-color;
 			font-weight: 300;
-			opacity: .56;
-			margin-bottom: 20px;
+			margin-bottom: 42px;
 			padding: 0px 245px;
 		}
-		p{
-			color: #FFFFFF;
-			font-size: 16px;
-			font-family: 'Open Sans', sans-serif;
-			font-weight: 400;
-			padding: 0px 400px;
-			line-height: 24px;
+		a{
+			
 		}
 		img.logo{
 			width: 300px;
@@ -325,13 +353,13 @@ section{
 			text-align: left;
 			vertical-align: top;
 			padding-left: 100px;
+			padding-top: 50px;
 			h2{
 				font-family: 'Roboto Condensed', sans-serif;
 				font-size: 43px;
 				color: $primary-color;
-				font-weight: 300;
-				opacity: .56;		
-				margin-bottom: 20px;
+				font-weight: 300;	
+				margin-bottom: 40px;
 			}
 			p{
 				font-family: 'Roboto', sans-serif;
@@ -339,6 +367,7 @@ section{
 				color: #FFFFFF;
 				line-height: 22px;
 				font-weight: 300;
+				margin-bottom: 40px;
 				font{
 					color: $primary-color;
 				}
@@ -346,11 +375,19 @@ section{
 					font-weight: 500;
 				}
 			}
+			a.cta{
+				text-align: left;
+				font-size: 18px;
+				font-family: 'Roboto', sans-serif;
+				font-weight: 300;
+				width: 90%;
+				line-height: 22px;
+				padding: 10px 22px;
+			}
 		}
 		.right{
 			width: 50%;
 			display: inline-block;
-			padding-top: 44px;
 			float: right;
 			p{
 				font-family: 'Roboto', sans-serif;
@@ -399,12 +436,21 @@ section{
 				line-height: 22px;
 				font-weight: 300;
 				padding-right: 120px;
+				margin-bottom: 20px;
 				font{
 					color: $primary-color;
 				}
 				b{
 					font-weight: 500;
 				}
+			}
+			a.cta{
+				text-align: left;
+				font-size: 18px;
+				font-family: 'Roboto', sans-serif;
+				font-weight: 300;
+				line-height: 22px;
+				padding: 10px 22px;
 			}
 		}
 		.right{
@@ -413,6 +459,7 @@ section{
 			padding-top: 44px;
 			/*float: right;*/
 			vertical-align: middle;
+			text-align: center;
 			p{
 				font-family: 'Roboto', sans-serif;
 				font-size: 18px;
@@ -439,11 +486,10 @@ section{
 			p{
 				position: relative;
 				z-index: 2;
-				top: -116px;
 				padding-left: 40px;
 				font-family: 'Roboto', sans-serif;
-				font-weight: bold;
 				line-height: 22px;
+				text-align: justify;
 			}
 		}
 	}
@@ -469,16 +515,14 @@ section{
 				font-family: 'Roboto Condensed', sans-serif;
 				font-size: 53px;
 				color: $primary-color;
-				font-weight: 300;
-				opacity: .56;		
+				font-weight: 300;	
 				margin-bottom: 20px;
 			}
 			h3{
 				font-family: 'Roboto', sans-serif;
 				font-size: 30px;
 				color: $primary-color;
-				font-weight: 300;
-				opacity: .56;		
+				font-weight: 300;	
 				margin-bottom: 20px;
 			}
 			p{
@@ -495,39 +539,90 @@ section{
 					font-weight: 500;
 				}
 			}
+			a.cta{
+				text-align: left;
+				font-size: 18px;
+				font-family: 'Roboto', sans-serif;
+				font-weight: 300;
+				line-height: 22px;
+				padding: 10px 22px;
+				margin-left: 30px;
+			}
+			ul{
+				li{
+					color: #FFFFFF;
+					font-size: 18px;
+					font-family: 'Roboto', sans-serif;
+					margin-bottom: 30px;
+					padding-left: 30px;
+					position: relative;
+					&:before{
+						font-family: 'FontAwesome';
+						content: '\f061';
+						position: absolute;
+						left: 10px;
+						top: 2px;
+						background-repeat: no-repeat;
+						color: $primary-color;
+						font-size: 11px;
+					}
+				}
+			}
 		}
 	}
 	.likeon-section04{
 		width: 100%;
 		h2{
-			padding-left: 100px;
-			width: 45%;
+			width: 100%;
 			display: block;
 			font-family: 'Roboto Condensed', sans-serif;
 			font-size: 53px;
 			color: $primary-color;
-			font-weight: 300;
-			opacity: .56;		
+			font-weight: 300;		
 			margin-bottom: 20px;
 			clear: both;
+			text-align: center;
 		}
 		.left{
-			width: 45%;
+			width: 40%;
 			display: inline-block;
 			text-align: left;
 			vertical-align: top;
 			padding-left: 100px;
 			/*text-align: center;*/
+			padding-top: 35px;
 			img{
 				position: relative;
 				margin-left: 50px;
 			}
-			
+			ul{
+				li{
+					color: #FFFFFF;
+					font-size: 18px;
+					font-family: 'Roboto', sans-serif;
+					margin-bottom: 30px;
+					padding-left: 30px;
+					position: relative;
+					line-height: 22px;
+					&:before{
+						font-family: 'FontAwesome';
+						content: '\f061';
+						position: absolute;
+						left: 10px;
+						top: 2px;
+						background-repeat: no-repeat;
+						color: $primary-color;
+						font-size: 11px;
+					}
+					&.q{
+						color: $primary-color;
+					}
+				}
+			}
 		}
 		.right{
-			width: 50%;
+			width: 55%;
 			display: inline-block;
-			padding-top: 44px;
 			/*float: right;*/
 			vertical-align: top;
 			padding-right: 110px;
@@ -536,15 +631,17 @@ section{
 				font-size: 30px;
 				color: $primary-color;
 				font-weight: 400;
-				opacity: .56;		
 				margin-bottom: 20px;
+				position: relative;
+				top: -106px;
+				display: inline-block;
+				left: 288px;
 			}
 			h3{
 				font-family: 'Roboto', sans-serif;
 				font-size: 30px;
 				color: $primary-color;
-				font-weight: 300;
-				opacity: .56;		
+				font-weight: 300;	
 				margin-bottom: 20px;
 			}
 			p{
@@ -561,6 +658,21 @@ section{
 				b{
 					font-weight: 500;
 				}
+			}
+			img{
+				display: inline-block;
+			}
+			.platform{
+				position: absolute;
+				width: 100%;
+				height: 110px;
+				background-color: #263442;
+				border-radius: 2px;
+				border: 1px solid $primary-color-rgba;
+				box-shadow: 0px 0px 68px -20px $primary-color;
+				margin-top: 200px;
+				z-index: 0;
+				margin-left: 98px;
 			}
 		}
 	}
@@ -606,7 +718,10 @@ section{
 					color: #161c22;
 				}
 				a.bto{
-					background-color: #161c22;
+					/*background-color: #161c22;*/
+					border: 1px solid $second-color;
+					color: $second-color;
+					box-shadow: none;
 				}
 			}
 
@@ -615,10 +730,10 @@ section{
 			width: 390px;
 			margin: 0 auto;
 			position: absolute;
-  		top: 50%;
-  		transform: translateY(-50%);
-  		left: 50%;
-  		margin-left: -195px;
+	  		top: 50%;
+	  		transform: translateY(-50%);
+	  		left: 50%;
+	  		margin-left: -195px;
 			img{
 				width: 140px;
 				margin-bottom: 30px;
@@ -643,8 +758,98 @@ section{
 				font-size: 18px;
 				color: #FFF;
 				padding: 7px 34px;
-				background-color: #68b0b6;
+				/*background-color: #68b0b6;*/
 				border-radius: 3px;
+				border: 1px solid $primary-color;
+				color: $primary-color;
+				box-shadow: 0px 0px 20px -4px $primary-color;
+			}
+		}
+	}
+}
+
+div.mask{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.7;
+	z-index: 8;
+	display: none;
+}
+
+div.more-info{
+	position: fixed;
+	width: 536px;
+	height: 100%;
+	background-color: #3e4852;
+	z-index: 9;
+	padding: 80px 30px 30px 30px;
+	right: -536px;
+	transition: all 0.2s ease-in;
+	&.show{
+		right: 0;
+	}
+	a.close{
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		background-image: url(../images/close.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		left: 30px;
+		top: 30px;
+	}
+	h1{
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 54px;
+		color: $primary-color;
+		font-weight: 300;
+		margin-bottom: 40px;
+	}
+	p{
+		font-family: 'Roboto', sans-serif;
+		font-size: 16px;
+		color: #FFFFFF;
+		font-weight: 300;
+		margin-bottom: 30px;
+		line-height: 22px;
+	}
+	ul{
+		position: relative;
+		width: 100%;
+		li{
+			width: 50%;
+			float: left;
+			color: #FFF;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 300;
+			font-size: 14px;
+			line-height: 22px;
+			padding-left: 30px;
+			position: relative;
+			span{
+				display: block;
+				&.name{
+					font-size: 16px;
+				}
+			}
+			a{
+				color: $primary-color;
+				display: block;
+				&:hover{
+					opacity: 0.7;
+				}
+			}
+			&:before{
+				font-family: 'FontAwesome';
+				content: '\f061';
+				position: absolute;
+				left: 10px;
+				top: 0px;
+				background-repeat: no-repeat;
+				color: $primary-color;
+				font-size: 11px;
 			}
 		}
 	}
