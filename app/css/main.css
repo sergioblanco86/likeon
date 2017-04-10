@@ -585,6 +585,9 @@ section {
         border: 1px solid #0A161D;
         color: #0A161D;
         box-shadow: none; }
+        section .likeon-section05 .right .content a.bto:hover {
+          background-color: #0A161D;
+          color: #FFFFFF; }
     section .likeon-section05 .content {
       width: 390px;
       margin: 0 auto;
@@ -618,7 +621,11 @@ section {
         border-radius: 3px;
         border: 1px solid #92f6fe;
         color: #92f6fe;
-        box-shadow: 0px 0px 20px -4px #92f6fe; }
+        box-shadow: 0px 0px 20px -4px #92f6fe;
+        transition: all 0.2s linear; }
+        section .likeon-section05 .content a.bto:hover {
+          background-color: #92f6fe;
+          color: #0A161D; }
 
 div.mask {
   position: fixed;
