@@ -223,10 +223,10 @@ section {
   padding-bottom: 100px;
   overflow: hidden;
   opacity: 1;
-  transition: all 0.5s ease-in; }
+  transition: all 1s ease-in; }
   section.hidden {
     opacity: 0;
-    padding-left: 600px; }
+    padding-left: 200px; }
   section .discover {
     position: absolute;
     bottom: 20px;
