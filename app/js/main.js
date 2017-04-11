@@ -1,6 +1,8 @@
 var pos = 0;
 $( document ).ready(function() {
     $(this).scrollTop(0);
+
+
     
     $("ul.menu li.menu-el").fadeIn('fast', function(){
     	$(this).parents("ul.menu").addClass('displayed');
@@ -31,15 +33,16 @@ $( document ).ready(function() {
     	var number = $(this).data('number');
         pos = number;
     	var a = $("#"+section).offset().top;
-        console.log("he offset", a);
-
-        if (number == 5) {
-            a = $(document).height();
-        }
+      console.log("he offset", a);
+      if (number == 5) {
+          a = $(document).height();
+      }
     	$("body, html").animate({ scrollTop: a+"px" },{
-                    duration: 'slow',
-                    easing: 'swing'
-                });
+          duration: 'slow',
+          easing: 'swing'
+      });
+      $("section").addClass('hidden');
+        $("#section-0"+number).removeClass('hidden');
     })
 
     $("body").on("click click touchstart",".discover", function(){
@@ -49,6 +52,8 @@ $( document ).ready(function() {
                     easing: 'swing'
                 });
         pos = 1;
+        $("section").addClass('hidden');
+        $("#section-0"+pos).removeClass('hidden');
     })
 
     $(this).scroll(function(e) {
@@ -110,11 +115,15 @@ $( document ).ready(function() {
             return;
         }
 
+        
+
         var a = $("#section-0"+pos).offset().top;
         $("body, html").animate({ scrollTop: a+"px" },{
                 duration: 'slow',
                 easing: 'swing'
             }, 200);
+        $("section").addClass('hidden');
+        $("#section-0"+pos).removeClass('hidden');
         setTimeout(function(){delay = false},1500)
     });
 
@@ -155,6 +164,8 @@ $( document ).ready(function() {
     pos = 5;
     var a = $("#section-05").offset().top;
     $( document ).scrollTop( a );
+    $("section").addClass('hidden');
+    $("#section-0"+pos).removeClass('hidden');
   }
 
   $(window).bind("scroll", function(event) {
