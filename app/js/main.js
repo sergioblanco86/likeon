@@ -87,7 +87,7 @@ $( document ).ready(function() {
 
     var delay = false;
 
-    $('.more-info').on('mousewheel DOMMouseScroll', function(event) {
+    $('.more-info, .contact-form').on('mousewheel DOMMouseScroll', function(event) {
       event.stopPropagation();
     });
     
@@ -151,6 +151,24 @@ $( document ).ready(function() {
       var info = $(".more-info");
       var mask = $(".mask");
       info.removeClass('show');
+      mask.fadeOut('200');
+      $('body').css({'overflow':'auto'});
+    });
+
+
+    $("body").on("click",".view-contact-form", function(evet){
+      var form = $(".contact-form");
+      var mask = $(".mask");
+      mask.fadeIn('200');
+      form.addClass('show');
+
+      $('body').css({'overflow':'hidden'});
+    })
+
+    $("body").on("click",".contact-form .close", function(evet){
+      var form = $(".contact-form");
+      var mask = $(".mask");
+      form.removeClass('show');
       mask.fadeOut('200');
       $('body').css({'overflow':'auto'});
     });

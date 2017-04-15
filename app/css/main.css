@@ -92,13 +92,14 @@ header {
         color: #92f6fe;
         font-size: 20px;
         font-weight: 300;
-        transition: all 0.2s linear; }
+        transition: all 0.2s linear;
+        opacity: 0.5; }
         header nav ul.menu li a:hover {
           cursor: pointer;
-          opacity: 0.8; }
+          opacity: 1; }
         header nav ul.menu li a.active {
           opacity: 1;
-          text-decoration: line-through; }
+          text-decoration: underline; }
       header nav ul.menu li.hamburger {
         position: relative;
         width: 50px;
@@ -282,6 +283,10 @@ section {
       vertical-align: top;
       padding-left: 100px;
       padding-top: 50px; }
+      section .likeon-section01 .left img {
+        display: none; }
+      section .likeon-section01 .left .text-slide {
+        display: none; }
       section .likeon-section01 .left h2 {
         font-family: 'Roboto Condensed', sans-serif;
         font-size: 43px;
@@ -338,6 +343,10 @@ section {
       text-align: left;
       vertical-align: middle;
       padding-left: 100px; }
+      section .likeon-section02 .left img {
+        display: none; }
+      section .likeon-section02 .left .text-slide {
+        display: none; }
       section .likeon-section02 .left h2 {
         font-family: 'Roboto Condensed', sans-serif;
         font-size: 60px;
@@ -838,6 +847,137 @@ div.more-info {
         color: #92f6fe;
         font-size: 11px; }
 
+div.contact-form {
+  position: fixed;
+  width: 536px;
+  height: 100%;
+  background-color: #3e4852;
+  z-index: 9;
+  padding: 80px 30px 30px 30px;
+  right: -536px;
+  /*right: 0;*/
+  transition: all 0.2s ease-in;
+  overflow: auto; }
+  div.contact-form.show {
+    right: 0; }
+  div.contact-form a.close {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/close.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 30px;
+    top: 30px; }
+  div.contact-form h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 54px;
+    color: #92f6fe;
+    font-weight: 300;
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center; }
+  div.contact-form form {
+    position: relative;
+    width: 100%; }
+    div.contact-form form fieldset {
+      display: block;
+      margin-bottom: 25px; }
+      div.contact-form form fieldset label {
+        display: block;
+        color: #FFFFFF;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        margin-bottom: 12px; }
+      div.contact-form form fieldset input[type="text"], div.contact-form form fieldset textarea {
+        display: block;
+        position: relative;
+        width: 100%;
+        border: 1px solid #92f6fe;
+        border-radius: 3px;
+        background-color: #263442;
+        padding: 16px 10px;
+        color: #FFFFFF;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300; }
+      div.contact-form form fieldset.submit {
+        text-align: center;
+        margin: 30px 0; }
+      div.contact-form form fieldset input[type="submit"] {
+        position: relative;
+        width: 250px;
+        height: 42px;
+        color: #92f6fe;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        padding: 6px 20px;
+        text-align: center;
+        font-weight: 300;
+        border: 1px solid #92f6fe;
+        border-radius: 3px;
+        box-shadow: 0px 0px 20px -4px #92f6fe;
+        transition: all 0.2s linear;
+        display: inline-block;
+        background-color: transparent; }
+        div.contact-form form fieldset input[type="submit"]:hover {
+          background-color: #92f6fe;
+          color: #0A161D;
+          cursor: pointer; }
+  div.contact-form p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 300;
+    margin-bottom: 30px;
+    line-height: 22px; }
+    div.contact-form p.last {
+      margin-bottom: 15px; }
+  div.contact-form ul {
+    position: relative;
+    width: 100%; }
+    div.contact-form ul li {
+      width: 50%;
+      float: left;
+      color: #FFF;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 22px;
+      padding-left: 30px;
+      position: relative; }
+      div.contact-form ul li div.contact {
+        display: block;
+        width: 102px;
+        height: 102px;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        margin-bottom: 6px; }
+        div.contact-form ul li div.contact.contact1 {
+          background-image: url(../images/contact1.jpg);
+          background-position: -14px 0px; }
+        div.contact-form ul li div.contact.contact2 {
+          background-image: url(../images/contact2.jpg); }
+      div.contact-form ul li span {
+        display: block; }
+        div.contact-form ul li span.name {
+          font-size: 16px; }
+      div.contact-form ul li a {
+        color: #92f6fe;
+        display: block; }
+        div.contact-form ul li a:hover {
+          opacity: 0.7; }
+      div.contact-form ul li:before {
+        font-family: 'FontAwesome';
+        content: '\f061';
+        position: absolute;
+        left: 10px;
+        top: 0px;
+        background-repeat: no-repeat;
+        color: #92f6fe;
+        font-size: 11px; }
+
 /*==========  Media Queries  ==========*/
 @media screen and (min-width: 1280px) {
   .wrapper {
@@ -874,10 +1014,15 @@ div.more-info {
   header nav img.head-logo {
     width: 145px; }
   .indicator {
-    display: none; }
+    display: none !important; }
   section {
-    height: auto;
+    height: 100%;
     padding: 40px 0px; }
+  section a.next-fold {
+    display: none; }
+  section.hidden {
+    opacity: 1 !important;
+    padding-left: 0px !important; }
   section .mobile-section-hack {
     padding-top: 80px; }
   section .discover {
@@ -892,15 +1037,39 @@ div.more-info {
   section .likeon-intro img.logo {
     width: 220px;
     margin-bottom: 42px; }
+  section:not(.first) .wrapper {
+    position: inherit;
+    height: 100%; }
   section .likeon-section01 .left {
     width: 100%;
     padding-left: 0px;
     text-align: center; }
-  section .likeon-section01 .right {
-    width: 100%; }
-  section .likeon-section01 .right img {
+  section .likeon-section01 .left .text-slide,
+  section .likeon-section02 .left .text-slide {
+    display: block; }
+  section .likeon-section01 .left p,
+  section .likeon-section02 .left p {
+    display: none; }
+  section .likeon-section01 .left h2,
+  section .likeon-section02 .left h2 {
+    font-size: 26px; }
+  section .likeon-section01 .left img,
+  section .likeon-section02 .left img {
+    display: block;
+    width: 80%;
+    margin: 0 auto; }
+  section .likeon-section02 .left img {
+    width: 60%; }
+  section .likeon-section01 .left a.cta,
+  section .likeon-section02 .left a.cta {
+    position: absolute;
+    left: 0;
+    bottom: 0;
     width: 100%;
-    right: 0; }
+    text-align: center; }
+  section .likeon-section01 .right,
+  section .likeon-section02 .right {
+    display: none; }
   section .likeon-section01 .right .platform {
     margin-top: 100px;
     height: 98px;
@@ -911,9 +1080,8 @@ div.more-info {
   section .likeon-section02 .left {
     width: 100%;
     padding: 0;
-    text-align: center; }
-  section .likeon-section02 .left h2 {
-    font-size: 43px; }
+    text-align: center;
+    padding-top: 50px; }
   section .likeon-section02 .left p {
     padding: 0px; }
   section .likeon-section02 .right {
@@ -981,4 +1149,20 @@ div.more-info {
     top: 0;
     transform: initial;
     margin: 0px;
-    left: 0px; } }
+    left: 0px; }
+  div.contact-form {
+    width: 100%;
+    padding: 20px;
+    padding-top: 50px; }
+  div.contact-form a.close {
+    left: 15px;
+    top: 15px; }
+  div.contact-form h1 {
+    font-size: 26px;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 30px; }
+  div.contact-form form fieldset label {
+    font-size: 15px; }
+  div.contact-form form fieldset input[type="text"], div.contact-form form fieldset textarea {
+    padding: 12px 10px; } }
