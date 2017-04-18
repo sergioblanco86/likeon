@@ -742,7 +742,7 @@ section{
 				padding: 10px 22px;
 				margin-left: 30px;
 			}
-			ul{
+			ul.desktop-text{
 				li{
 					color: #FFFFFF;
 					font-size: 18px;
@@ -761,6 +761,9 @@ section{
 						font-size: 11px;
 					}
 				}
+			}
+			ul.text-slide{
+				display: none;
 			}
 		}
 	}
@@ -1268,7 +1271,7 @@ div.contact-form{
 	}
 
 	.wrapper{
-		width: 320px;	
+		width: 300px;	
 		padding: 0px 10px;
 	}
 
@@ -1299,7 +1302,7 @@ div.contact-form{
 
 	section{
 		height: 100%;
-		padding: 40px 0px;
+		padding: 20px 0px;
 	}
 
 	section a.next-fold{
@@ -1349,7 +1352,8 @@ div.contact-form{
 	}
 
 	section .likeon-section01 .left .text-slide,
-	section .likeon-section02 .left .text-slide{
+	section .likeon-section02 .left .text-slide,
+	section .likeon-section03 .right ul.text-slide{
 		display: block;
 	}
 
@@ -1359,7 +1363,8 @@ div.contact-form{
 	}
 
 	section .likeon-section01 .left h2,
-	section .likeon-section02 .left h2{
+	section .likeon-section02 .left h2,
+	section .likeon-section03 .right h2{
 		font-size: 26px;
 	}
 
@@ -1375,12 +1380,18 @@ div.contact-form{
 	}
 
 	section .likeon-section01 .left a.cta,
-	section .likeon-section02 .left a.cta{
+	section .likeon-section02 .left a.cta,
+	section .likeon-section03 .right a.cta{
 		position: absolute;
 		left: 0;
 		bottom: 0;
 		width: 100%;
 		text-align: center;
+		margin: 0;
+	}
+
+	section .likeon-section03 .right ul.desktop-text{
+		display: none;
 	}
 
 	section .likeon-section01 .right,
@@ -1400,7 +1411,8 @@ div.contact-form{
 		text-align: center;
 	}
 
-	section .likeon-section02 .left{
+	section .likeon-section02 .left,
+	section .likeon-section03 .left{
 		width: 100%;
 		padding: 0;
 		text-align: center;
@@ -1434,20 +1446,16 @@ div.contact-form{
 		text-align: center;
 	}
 
-	section .likeon-section03 .left{
-		width: 100%;
-		padding: 0;
-	}
 
 	section .likeon-section03 .left img{
-		width: 100%;
+		width: 60%;
 	}
 
 	section .likeon-section03 .right{
 		width: 100%;
 		padding: 0;
 		text-align: center;
-		padding-top: 40px;
+		padding-top: 20px;
 	}
 
 	section .likeon-section03 .right p{
@@ -1512,22 +1520,30 @@ div.contact-form{
 		left: 0px;
 	}
 
-	div.contact-form{
+	div.contact-form,
+	div.more-info{
 		width: 100%;
 		padding: 20px;
 		padding-top: 50px;
 	}
 
-	div.contact-form a.close{
+	div.contact-form a.close,
+	div.more-info a.close{
 		left: 15px;
 		top: 15px;
 	}
 
-	div.contact-form h1{
+	div.contact-form h1,
+	div.more-info h1{
 		font-size: 26px;
 		width: 70%;
 		margin: 0 auto;
 		margin-bottom: 30px;
+	}
+
+	div.more-info h1{
+		margin: 0;
+		margin-bottom: 10px;
 	}
 
 	div.contact-form form fieldset label{
@@ -1536,6 +1552,38 @@ div.contact-form{
 
 	div.contact-form form fieldset input[type="text"], div.contact-form form fieldset textarea{
 		padding: 12px 10px;
+	}
+
+	div.more-info ul li{
+		display: block;
+		width: 100%;
+		padding: 0;
+		
+	}
+
+	div.more-info ul li:first-child{
+		margin-bottom: 40px;
+	}
+
+	div.more-info ul li div.contact{
+		float: left;
+		width: 75px;
+		height: 75px;
+		margin-right: 10px;
+	}
+
+	div.more-info ul li div.contact-info{
+
+	}
+
+	div.more-info ul li:before{
+		display: none;
+	}
+
+	div.more-info ul li div.contact.contact1,
+	div.more-info ul li div.contact.contact2{
+		background-position: 0px 0px;
+    	background-size: cover;
 	}
 
 }
