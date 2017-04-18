@@ -1,9 +1,58 @@
 var pos = 0;
 $( document ).ready(function() {
     $(this).scrollTop(0);
+    var delay = false;
+    var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    var perks = $('section .likeon-section02.copy-section04 .right');
+    console.log("device width", width, perks.offset().left);
 
+    if (width <= 668 && width >= 320) {
+      var left = width - 328;
+      perks.css({'width':width+'px','margin-left' : '-'+left+'px'});
+    }else{
 
-    
+      $(document).on('mousewheel DOMMouseScroll', function(event) {
+        event.preventDefault();
+        if (delay) { return};
+
+        delay = true;
+        var wd = event.originalEvent.wheelDelta || -event.originalEvent.detail;        
+        if(wd > 0) {
+            pos--;
+        }else{
+            pos++;
+        }
+
+        if (pos < 0) {
+            pos = 0;
+            delay = false
+            return;
+        }
+
+        if (pos > 5) {
+            pos = 5;
+            delay = false
+            return;
+        }
+
+        
+
+        var a = $("#section-0"+pos).offset().top;
+        $("body, html").animate({ scrollTop: a+"px" },{
+                duration: 'slow',
+                easing: 'swing'
+            }, 200);
+        $("section").addClass('hidden');
+        $("#section-0"+pos).removeClass('hidden');
+        setTimeout(function(){delay = false},1500)
+    });
+
+      $('.more-info, .contact-form').on('mousewheel DOMMouseScroll', function(event) {
+      event.stopPropagation();
+    });
+
+    }
+  
     $("ul.menu li.menu-el").fadeIn('fast', function(){
     	$(this).parents("ul.menu").addClass('displayed');
     });
@@ -56,7 +105,7 @@ $( document ).ready(function() {
         $("#section-0"+pos).removeClass('hidden');
     })
 
-    $(this).scroll(function(e) {
+  $(this).scroll(function(e) {
         e.preventDefault();
 		var scrollTop = $(this).scrollTop();
 		if (scrollTop > 300) {
@@ -67,13 +116,13 @@ $( document ).ready(function() {
 				
 			}
 
-            if (scrollTop >= $("section#section-05").offset().top - 50 ) {
-                $("img.head-logo").fadeOut('fast');
-                $("div.indicator").fadeOut('fast');
-            }else{
-                $("img.head-logo").fadeIn('fast');
-                $("div.indicator").fadeIn('fast');
-            }
+      if (scrollTop >= $("section#section-05").offset().top - 50 ) {
+          $("img.head-logo").fadeOut('fast');
+          $("div.indicator").fadeOut('fast');
+      }else{
+          $("img.head-logo").fadeIn('fast');
+          $("div.indicator").fadeIn('fast');
+      }
 
 		}else{
 			if (!$("ul.menu").hasClass('displayed')) {
@@ -85,47 +134,7 @@ $( document ).ready(function() {
 		}
 	});
 
-    var delay = false;
-
-    $('.more-info, .contact-form').on('mousewheel DOMMouseScroll', function(event) {
-      event.stopPropagation();
-    });
     
-    $(document).on('mousewheel DOMMouseScroll', function(event) {
-        event.preventDefault();
-        if (delay) { return};
-
-        delay = true;
-        var wd = event.originalEvent.wheelDelta || -event.originalEvent.detail;        
-        if(wd > 0) {
-            pos--;
-        }else{
-            pos++;
-        }
-
-        if (pos < 0) {
-            pos = 0;
-            delay = false
-            return;
-        }
-
-        if (pos > 5) {
-            pos = 5;
-            delay = false
-            return;
-        }
-
-        
-
-        var a = $("#section-0"+pos).offset().top;
-        $("body, html").animate({ scrollTop: a+"px" },{
-                duration: 'slow',
-                easing: 'swing'
-            }, 200);
-        $("section").addClass('hidden');
-        $("#section-0"+pos).removeClass('hidden');
-        setTimeout(function(){delay = false},1500)
-    });
 
     $('body').on('click click touchstart','nav.mobile ul.menu li.hamburger', function(){
         var menu = $('div.mobile-menu');
@@ -173,8 +182,9 @@ $( document ).ready(function() {
       $('body').css({'overflow':'auto'});
     });
 
-    
-
+    $('.flexslider').flexslider({
+      animation: "slide"
+    });
 		
 });
   

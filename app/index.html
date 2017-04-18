@@ -15,6 +15,9 @@
 <!--build:css css/font-awesome.css-->
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 <!--endbuild-->
+<!--build:css css/flexslider.css-->
+<link rel="stylesheet" type="text/css" href="css/flexslider.css">
+<!--endbuild-->
 <!--build:css css/styles.min.css-->
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <link rel="stylesheet" type="text/css" href="css/particles.css">
@@ -173,12 +176,13 @@
 				<h2>“Los mensajes publicitarios están siendo ignorados”</h2>
 				<img class="fold-image" src="images/img-04.png">
 				<p>El <font>78,2%</font> de los usuarios admiten no fijarse en la publicidad en Internet.</p>
+				<div class="flexslider">
+					<ul class="text-slide slides">
+						<li>El <font>78,2%</font> de los usuarios admiten no fijarse en la publicidad en Internet.</li>
+						<li>¿Sabías que una persona puede llegar a ser impactada por 3.000 mensajes publicitarios al día? Un exceso, sin duda. En Like-On entendimos esto y es la razón por la que decidimos enfocarnos en nuevas alternativas para acercarnos a los consumidores.</li>
+					</ul>
+				</div>
 				<a class="cta view-contact-form">Conéctate de una manera distinta con tus clientes</a>
-
-				<ul class="text-slide">
-					<li>El <font>78,2%</font> de los usuarios admiten no fijarse en la publicidad en Internet.</li>
-					<li>¿Sabías que una persona puede llegar a ser impactada por 3.000 mensajes publicitarios al día? Un exceso, sin duda. En Like-On entendimos esto y es la razón por la que decidimos enfocarnos en nuevas alternativas para acercarnos a los consumidores.</li>
-				</ul>
 			</div>
 			<div class="right">
 				<!-- <div class="platform"></div> -->
@@ -197,12 +201,13 @@
 				<h2>Marcas que evolucionan con su consumidor</h2>
 				<img src="images/img-012.png" width="384" class="fold-image">
 				<p>La transformación de la comunicación evolucionó más allá de la exclusividad y hoy busca concentrarse en la inclusividad, en crear entornos, productos y servicios accesibles para todos, mediante el uso de la tecnología.</p>
+				<div class="flexslider">
+					<ul class="text-slide slides">
+						<li>La transformación de la comunicación evolucionó más allá de la exclusividad y hoy busca concentrarse en la inclusividad, en crear entornos, productos y servicios accesibles para todos, mediante el uso de la tecnología.</li>
+						<li>Nos enfrentamos a una etapa del marketing en donde la conectividad lo es todo. Ya no solo buscamos lograr transacciones, sino crear y sostener un diálogo entre las marcas y los usuarios.</li>
+					</ul>
+				</div>
 				<a class="cta view-contact-form">¡Genera emociones, refuerza tus valores de marca!</a>
-
-				<ul class="text-slide">
-					<li>La transformación de la comunicación evolucionó más allá de la exclusividad y hoy busca concentrarse en la inclusividad, en crear entornos, productos y servicios accesibles para todos, mediante el uso de la tecnología.</li>
-					<li>Nos enfrentamos a una etapa del marketing en donde la conectividad lo es todo. Ya no solo buscamos lograr transacciones, sino crear y sostener un diálogo entre las marcas y los usuarios.</li>
-				</ul>
 			</div>
 			<div class="right">
 				<!-- <div class="platform"></div> -->
@@ -227,10 +232,13 @@
 					<li>Velamos por el contenido que se le ofrece al usuario final para generar una experiencia única.</li>
 					<li>Ofrecemos alternativas digitales por medio del marketing de proximidad.</li>
 				</ul>
-				<ul class="text-slide">
-					<li>La transformación de la comunicación evolucionó más allá de la exclusividad y hoy busca concentrarse en la inclusividad, en crear entornos, productos y servicios accesibles para todos, mediante el uso de la tecnología.</li>
-					<li>Nos enfrentamos a una etapa del marketing en donde la conectividad lo es todo. Ya no solo buscamos lograr transacciones, sino crear y sostener un diálogo entre las marcas y los usuarios.</li>
-				</ul>
+				<div class="flexslider">
+					<ul class="text-slide slides">
+						<li>Optimizamos la tecnología existente para el beneficio de anunciantes y consumidores.</li>
+						<li>Velamos por el contenido que se le ofrece al usuario final para generar una experiencia única.</li>
+						<li>Ofrecemos alternativas digitales por medio del marketing de proximidad.</li>
+					</ul>
+				</div>
 				<a class="cta view-more-info">Conoce más de nosotros</a>
 			</div>
 		</div>
@@ -318,7 +326,7 @@
 </section>
 
 <section id="section-05" class="hidden" data-number="5">
-	<div class="likeon-section05 mobile-section-hack">
+	<div class="likeon-section05">
 		<div class="wrapper">
 			<div class="left">
 				<div class="content">
@@ -354,37 +362,13 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
+<!--build:js js/jquery.flexslider-min.js -->
+<script src="js/jquery.flexslider-min.js"></script>
+<!-- endbuild -->
+
 <!--build:js js/jquery.viewport.mini.js -->
 <script src="js/jquery.viewport.mini.js"></script>
 <!-- endbuild -->
-<!--build:js js/scrollreveal.min.js -->
-<script src="js/scrollreveal.min.js"></script>
-<!-- endbuild -->
-<script>
-  // (function(){
-
-  //   var config = {
-  //     viewFactor : 0.15,
-  //     duration   : 200,
-  //     distance   : "0px",
-  //     scale      : 0.8,
-  //   }
-
-  //   window.sr = new ScrollReveal(config);
-
-  //   var block = {
-  //   	reset: true,
-  //       viewOffset: { top: 64 }
-  //     }
-
-  //   var image = { rotate: {x: 65}, reset : true }
-
-
-  //   sr.reveal('section',block);
-  //   sr.reveal('.fold-image', image);
-  // })()
-
-</script>
 
 <!--build:js js/main.min.js -->
 <script type="text/javascript" src="js/main.js"></script>
