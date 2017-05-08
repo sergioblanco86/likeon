@@ -4,11 +4,17 @@ $( document ).ready(function() {
     var delay = false;
     var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     var perks = $('section .likeon-section02.copy-section04 .right');
-    console.log("device width", width, perks.offset().left);
 
     if (width <= 668 && width >= 320) {
-      var left = width - 328;
-      perks.css({'width':width+'px','margin-left' : '-'+left+'px'});
+      var left = width - 392;
+
+     setTimeout( function(){
+        console.log("device width", width, $('section .likeon-section02.copy-section04 .right').offset());
+        perks.css({'width':width+'px','margin-left' : '-'+ $('section .likeon-section02.copy-section04 .right').offset().left +'px'});  
+
+      },1000);
+      
+
     }else{
 
       $(document).on('mousewheel DOMMouseScroll', function(event) {
@@ -185,8 +191,80 @@ $( document ).ready(function() {
     $('.flexslider').flexslider({
       animation: "slide"
     });
+
+    
 		
 });
+  
+  $('#contact-form').submit(function(event){
+    event.preventDefault();
+    $('#contact-message').hide();
+    $('#contact-message').html('');
+    $('#contact-message').removeClass('error');
+
+    var name = $("#name");
+    var email = $("#email");
+    var message = $("#message");
+
+    if (validateFields()) {
+      event.preventDefault();
+      var boton = event.target.name;
+      var url = $(this).attr('action');
+      var datos = $(this).serialize();
+      $.post(url, datos, function(resultado){
+
+        if (resultado == '200') {
+          $('#contact-message').addClass('success');
+          $('#contact-message').html('Gracias por contactarnos!, en breve nos estaremos comunicando con usted.');
+          $('#contact-message').fadeIn("slow");
+          var form = $(".contact-form");
+          var mask = $(".mask");
+
+          setTimeout( function(){
+            form.removeClass('show');
+            mask.fadeOut('200');
+            $('body').css({'overflow':'auto'});
+            name.val('');
+            email.val('');
+            message.val('');
+            $('#contact-message').hide();
+            $('#contact-message').html('');
+            $('#contact-message').removeClass('success');
+          },1500)
+          
+        }else{
+          $('#contact-message').addClass('error');
+          $('#contact-message').html('Algo salió mal, contacta al administrador');
+          $('#contact-message').fadeIn("slow");
+        }
+        
+
+      });
+    }else{
+      $('#contact-message').addClass('error');
+      $('#contact-message').html('Por favor, verifica tus datos.');
+      $('#contact-message').fadeIn("slow");
+    }
+  });
+  
+  function validateFields(){
+    var name = $("#name");
+    var email = $("#email");
+    var message = $("#message");
+
+    name.removeClass('error');
+    email.removeClass('error');
+    message.removeClass('error');
+
+    if (name.val().trim() == '' || email.val().trim() == '' || message.val().trim() == '') {
+      if (name.val().trim() == '') name.addClass('error');
+      if (email.val().trim() == '') email.addClass('error');
+      if (message.val().trim() == '') message.addClass('error');
+      return false;
+    }else{
+      return true;
+    }
+  }
   
   function gotoProducts(){
     pos = 5;

@@ -350,7 +350,7 @@ section{
 		}
 
 	}
-	.likeon-section01{
+	.likeon-section01,.wion-section01{
 		width: 100%;
 		.left{
 			width: 30%;
@@ -359,8 +359,18 @@ section{
 			vertical-align: top;
 			padding-left: 100px;
 			padding-top: 50px;
+			&.left-wion{
+				width: 40%;
+				h2{
+					margin-bottom: 10px;
+				}
+			}
 			img{
 				display: none;
+				&.logo{
+					display: block;
+					margin-bottom: 65px;
+				}
 			}
 			.text-slide{
 				display: none;
@@ -400,6 +410,60 @@ section{
 			width: 50%;
 			display: inline-block;
 			float: right;
+			&.right-wion{
+				width: 60%;
+				padding-left: 90px;
+				.map-wrap{
+					float: left;
+					width: 470px;
+					height: 360px;
+					background-color: #263442;
+					border-radius: 2px;
+					border: 1px solid $primary-color-rgba;
+					box-shadow: 0px 0px 68px -20px $primary-color;
+					position: relative;
+					margin-top: 180px;
+					.map{
+						width: 100%;
+						height: 376px;
+						background-image: url(../images/americaMap.png);
+						background-repeat: no-repeat;
+						background-position: center center;
+						position: absolute;
+						margin-top: -165px;
+					}
+					.fact{
+						position: absolute;
+						bottom: 35px;
+						height: 120px;
+						display: table;
+						.percentage{
+							width: 195px;
+							height: 100%;
+							position: absolute;
+							background-color: #cc0044;
+							text-align: center;
+							vertical-align: middle;
+							font-family: 'Open Sans', sans-serif;
+							font-size: 62px;
+							font-weight: bold;
+							color: #FFF;
+							line-height: 120px;
+							border:1px solid #842847;
+							border-radius: 2px;
+							margin-left: -58px;
+						}
+						p.text{
+							width: 100%;
+							height: 100%;
+							padding: 0 20px;
+							padding-left: 158px;
+							display: table-cell;
+							vertical-align: middle;
+						}
+					}
+				}
+			}
 			p{
 				font-family: 'Roboto', sans-serif;
 				font-size: 18px;
@@ -1127,7 +1191,7 @@ div.contact-form{
 				font-weight: 400;
 				margin-bottom: 12px;
 			}
-			input[type="text"],textarea{
+			input[type="text"],input[type="email"],textarea{
 				display: block;
 				position: relative;
 				width: 100%;
@@ -1140,6 +1204,9 @@ div.contact-form{
 				font-family: 'Roboto', sans-serif;
 				font-weight: 300;
 				outline: none;
+				&.error{
+					border: 1px solid #fe9292;
+				}
 			}
 			&.submit{
 				text-align: center;
@@ -1167,6 +1234,17 @@ div.contact-form{
 					cursor: pointer;
 				}
 			}
+		}
+		.contact-message{
+			display: none;
+			color: #FFFFFF;
+			font-size: 14px;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 300;
+			margin-bottom: 12px;
+			text-align: center;
+			&.success{ color: $primary-color; }
+			&.error{ color: #fe9292; }
 		}
 	}
 	p{
@@ -1309,6 +1387,10 @@ div.contact-form{
 	}
 
 	header{ 
+		.wrapper{
+			width: 100%;
+			padding: 0px 20px;
+		}
 		nav{
 			ul.menu{
 				li.menu-el{

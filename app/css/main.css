@@ -274,37 +274,44 @@ section {
     section .likeon-intro img.logo {
       width: 300px;
       margin-bottom: 100px; }
-  section .likeon-section01 {
+  section .likeon-section01, section .wion-section01 {
     width: 100%; }
-    section .likeon-section01 .left {
+    section .likeon-section01 .left, section .wion-section01 .left {
       width: 30%;
       display: inline-block;
       text-align: left;
       vertical-align: top;
       padding-left: 100px;
       padding-top: 50px; }
-      section .likeon-section01 .left img {
+      section .likeon-section01 .left.left-wion, section .wion-section01 .left.left-wion {
+        width: 40%; }
+        section .likeon-section01 .left.left-wion h2, section .wion-section01 .left.left-wion h2 {
+          margin-bottom: 10px; }
+      section .likeon-section01 .left img, section .wion-section01 .left img {
         display: none; }
-      section .likeon-section01 .left .text-slide {
+        section .likeon-section01 .left img.logo, section .wion-section01 .left img.logo {
+          display: block;
+          margin-bottom: 65px; }
+      section .likeon-section01 .left .text-slide, section .wion-section01 .left .text-slide {
         display: none; }
-      section .likeon-section01 .left h2 {
+      section .likeon-section01 .left h2, section .wion-section01 .left h2 {
         font-family: 'Roboto Condensed', sans-serif;
         font-size: 43px;
         color: #92f6fe;
         font-weight: 300;
         margin-bottom: 40px; }
-      section .likeon-section01 .left p {
+      section .likeon-section01 .left p, section .wion-section01 .left p {
         font-family: 'Roboto', sans-serif;
         font-size: 18px;
         color: #FFFFFF;
         line-height: 22px;
         font-weight: 300;
         margin-bottom: 40px; }
-        section .likeon-section01 .left p font {
+        section .likeon-section01 .left p font, section .wion-section01 .left p font {
           color: #92f6fe; }
-        section .likeon-section01 .left p b {
+        section .likeon-section01 .left p b, section .wion-section01 .left p b {
           font-weight: 500; }
-      section .likeon-section01 .left a.cta {
+      section .likeon-section01 .left a.cta, section .wion-section01 .left a.cta {
         text-align: left;
         font-size: 18px;
         font-family: 'Roboto', sans-serif;
@@ -312,17 +319,65 @@ section {
         width: 90%;
         line-height: 22px;
         padding: 10px 22px; }
-    section .likeon-section01 .right {
+    section .likeon-section01 .right, section .wion-section01 .right {
       width: 50%;
       display: inline-block;
       float: right; }
-      section .likeon-section01 .right p {
+      section .likeon-section01 .right.right-wion, section .wion-section01 .right.right-wion {
+        width: 60%;
+        padding-left: 90px; }
+        section .likeon-section01 .right.right-wion .map-wrap, section .wion-section01 .right.right-wion .map-wrap {
+          float: left;
+          width: 470px;
+          height: 360px;
+          background-color: #263442;
+          border-radius: 2px;
+          border: 1px solid rgba(143, 246, 252, 0.56);
+          box-shadow: 0px 0px 68px -20px #92f6fe;
+          position: relative;
+          margin-top: 180px; }
+          section .likeon-section01 .right.right-wion .map-wrap .map, section .wion-section01 .right.right-wion .map-wrap .map {
+            width: 100%;
+            height: 376px;
+            background-image: url(../images/americaMap.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: absolute;
+            margin-top: -165px; }
+          section .likeon-section01 .right.right-wion .map-wrap .fact, section .wion-section01 .right.right-wion .map-wrap .fact {
+            position: absolute;
+            bottom: 35px;
+            height: 120px;
+            display: table; }
+            section .likeon-section01 .right.right-wion .map-wrap .fact .percentage, section .wion-section01 .right.right-wion .map-wrap .fact .percentage {
+              width: 195px;
+              height: 100%;
+              position: absolute;
+              background-color: #cc0044;
+              text-align: center;
+              vertical-align: middle;
+              font-family: 'Open Sans', sans-serif;
+              font-size: 62px;
+              font-weight: bold;
+              color: #FFF;
+              line-height: 120px;
+              border: 1px solid #842847;
+              border-radius: 2px;
+              margin-left: -58px; }
+            section .likeon-section01 .right.right-wion .map-wrap .fact p.text, section .wion-section01 .right.right-wion .map-wrap .fact p.text {
+              width: 100%;
+              height: 100%;
+              padding: 0 20px;
+              padding-left: 158px;
+              display: table-cell;
+              vertical-align: middle; }
+      section .likeon-section01 .right p, section .wion-section01 .right p {
         font-family: 'Roboto', sans-serif;
         font-size: 18px;
         color: #FFFFFF;
         line-height: 22px;
         font-weight: 300; }
-      section .likeon-section01 .right .platform {
+      section .likeon-section01 .right .platform, section .wion-section01 .right .platform {
         position: absolute;
         width: 100%;
         height: 160px;
@@ -331,7 +386,7 @@ section {
         border: 1px solid rgba(143, 246, 252, 0.56);
         box-shadow: 0px 0px 68px -20px #92f6fe;
         margin-top: 200px; }
-      section .likeon-section01 .right img {
+      section .likeon-section01 .right img, section .wion-section01 .right img {
         position: relative;
         z-index: 2;
         right: 52px; }
@@ -892,7 +947,7 @@ div.contact-form {
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
         margin-bottom: 12px; }
-      div.contact-form form fieldset input[type="text"], div.contact-form form fieldset textarea {
+      div.contact-form form fieldset input[type="text"], div.contact-form form fieldset input[type="email"], div.contact-form form fieldset textarea {
         display: block;
         position: relative;
         width: 100%;
@@ -905,6 +960,8 @@ div.contact-form {
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
         outline: none; }
+        div.contact-form form fieldset input[type="text"].error, div.contact-form form fieldset input[type="email"].error, div.contact-form form fieldset textarea.error {
+          border: 1px solid #fe9292; }
       div.contact-form form fieldset.submit {
         text-align: center;
         margin: 30px 0; }
@@ -928,6 +985,18 @@ div.contact-form {
           background-color: #92f6fe;
           color: #0A161D;
           cursor: pointer; }
+    div.contact-form form .contact-message {
+      display: none;
+      color: #FFFFFF;
+      font-size: 14px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      margin-bottom: 12px;
+      text-align: center; }
+      div.contact-form form .contact-message.success {
+        color: #92f6fe; }
+      div.contact-form form .contact-message.error {
+        color: #fe9292; }
   div.contact-form p {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -1031,6 +1100,9 @@ div.contact-form {
   .wrapper {
     width: 300px;
     padding: 0px 10px; }
+  header .wrapper {
+    width: 100%;
+    padding: 0px 20px; }
   header nav ul.menu li.menu-el {
     display: none !important; }
   header nav.mobile {
