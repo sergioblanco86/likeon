@@ -58,7 +58,47 @@ $( document ).ready(function() {
     });
 
     }
-  
+    $(".mexico").on("click", function (){
+      $("div[id^=map-]").addClass('hide')
+      $("#map-mexico").removeClass('hide')
+    })
+    $(".colombia").on("click", function (){
+      $("div[id^=map-]").addClass('hide')
+      $("#map-colombia").removeClass('hide')
+    })
+    $(".ecuador").on("click", function (){
+      $("div[id^=map-]").addClass('hide')
+      $("#map-ecuador").removeClass('hide')
+    })
+    $(".argentina").on("click", function (){
+      $("div[id^=map-]").addClass('hide')
+      $("#map-argentina").removeClass('hide')
+    })
+
+    $("#people01").on("click", function (){
+      $(".rectangle-people").addClass('off')
+      $(".rectangle-people").removeClass('wifi-small')
+      $("#people01").removeClass('off')
+      $("#people01").addClass('on wifi-small')
+      $("div[id^=info-]").addClass('hide')
+      $("#info-01").removeClass('hide')
+    })
+    $("#people02").on("click", function (){
+      $(".rectangle-people").addClass('off')
+      $(".rectangle-people").removeClass('wifi-small')
+      $("#people02").removeClass('off')
+      $("#people02").addClass('on wifi-small')
+      $("div[id^=info-]").addClass('hide')
+      $("#info-02").removeClass('hide')
+    })
+    $("#people03").on("click", function (){
+      $(".rectangle-people").addClass('off')
+      $(".rectangle-people").removeClass('wifi-small')
+      $("#people03").removeClass('off')
+      $("#people03").addClass('on wifi-small')
+      $("div[id^=info-]").addClass('hide')
+      $("#info-03").removeClass('hide')
+    })
     $("ul.menu li.menu-el").fadeIn('fast', function(){
     	$(this).parents("ul.menu").addClass('displayed');
     });
