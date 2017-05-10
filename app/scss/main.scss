@@ -352,7 +352,7 @@ section{
 		}
 
 	}
-	.likeon-section01,.wion-section01,.wion-section02{
+	.likeon-section01,.wion-section01,.wion-section02,.wion-section03{
 		width: 100%;
 		.left{
 			width: 30%;
@@ -533,7 +533,6 @@ section{
 					position: absolute;
 					top: 340px;
 					right: -15px;
-
 				}
 				.section02-wrap{
 					float: left;
@@ -552,69 +551,267 @@ section{
 						margin-right: auto;
 						bottom: 110px;
 						display: table;
-					}
-					.rectangle-people{
-						height: 300px;
-						width: 123px;
-						display: inline-block;
-						&:after{
-							content: '';
-							position: absolute;
-							display: block;
-							width: 120px;
-							height: 13px;
-							bottom: 10px;
-							background-image: url(../images/cruz_under_p.png);
-							background-repeat: no-repeat;
-							background-position: center center;
+						.rectangle-people{
+							height: 300px;
+							width: 123px;
+							display: inline-block;
+							&:after{
+								content: '';
+								position: absolute;
+								display: block;
+								width: 120px;
+								height: 13px;
+								bottom: 10px;
+								background-image: url(../images/cruz_under_p.png);
+								background-repeat: no-repeat;
+								background-position: center center;
+							}
 						}
-					}
-					.wifi-small{
-						&:before{
-							content: '';
-							position: absolute;
-							display: block;
-							width: 120px;
-							height: 37px;
-							top: -15px;
-							background-image: url(../images/wifi-small.png);
-							background-repeat: no-repeat;
-							background-position: center center;
+						.wifi-small{
+							&:before{
+								content: '';
+								position: absolute;
+								display: block;
+								width: 120px;
+								height: 37px;
+								top: -15px;
+								background-image: url(../images/wifi-small.png);
+								background-repeat: no-repeat;
+								background-position: center center;
+							}
 						}
-					}
-					#people01{
-						&.on{
-							background-image: url(../images/p-01-on.png);
-							background-repeat: no-repeat;
-							background-position: center center;
-						}
-						&.off{
-							background-image: url(../images/p-01-off.png);
-							background-repeat: no-repeat;
-							background-position: center center;
+						#people01{
+							&.on{
+								background-image: url(../images/p-01-on.png);
+								background-repeat: no-repeat;
+								background-position: center center;
+							}
+							&.off{
+								background-image: url(../images/p-01-off.png);
+								background-repeat: no-repeat;
+								background-position: center center;
 
+							}
+						}
+						#people02{
+							&.on{
+								background-image: url(../images/p-02-on.png);
+								background-repeat: no-repeat;
+								background-position: center center;
+							}
+							&.off{
+								background-image: url(../images/p-02-off.png);
+								background-repeat: no-repeat;
+								background-position: center center;
+							}
+						}
+						#people03{
+							&.on{
+								background-image: url(../images/p-03-on.png);
+								background-repeat: no-repeat;
+								background-position: center center;
+							}
+							&.off{
+								background-image: url(../images/p-03-off.png);
+								background-repeat: no-repeat;
+								background-position: center center;
+							}
 						}
 					}
-					#people02{
-						&.on{
-							background-image: url(../images/p-02-on.png);
-							background-repeat: no-repeat;
-							background-position: center center;
-						}
-						&.off{
-							background-image: url(../images/p-02-off.png);
-							background-repeat: no-repeat;
-							background-position: center center;
+					.info{
+						position: absolute;
+						bottom: 20px;
+						height: 100px;
+						display: table;
+						p.text{
+							width: 100%;
+							height: 100%;
+							padding: 0 20px;
+							display: table-cell;
+							vertical-align: middle;
+							text-align: center
 						}
 					}
-					#people03{
-						&.on{
-							background-image: url(../images/p-03-on.png);
+				}
+			}
+			&.right-wion-03{
+				width: 60%;
+				padding-left: 40px;
+				.wifi-img-sec03{
+						background-image: url(../images/wifi-big.png);
+						background-repeat: no-repeat;
+						background-position: center center;
+						width: 301px;
+						height: 232px;
+						position: absolute;
+						top: 240px;
+						right: 550px;
+
+					}
+				.section03-wrap{
+					float: left;
+					width: 700px;
+					height: 340px;
+					background-color: #263442;
+					border-radius: 2px;
+					border: 1px solid $primary-color-rgba;
+					box-shadow: 0px 0px 68px -20px $primary-color;
+					position: relative;
+					margin-top: 180px;
+					padding-left: -15px;
+					.images_people_phone{
+						position: relative;
+						width: 700px;
+						margin-left: 15px;
+						margin-right: auto;
+						bottom: 110px;
+						display: table;
+						.rectangle-phone{
+							height: 340px;
+							width: 175px;
+							display: inline-block;
+							&:before{
+								content: '';
+								position: absolute;
+								display: block;
+								width: 125px;
+								height: 13px;
+								bottom: 10px;
+								margin-left: 10px;
+								background-image: url(../images/cruz_under_p.png);
+								background-repeat: no-repeat;
+								background-position: center center;
+							}
+						}
+						.wifi-red{
+							&:after{
+								content: '';
+								position: absolute;
+								display: block;
+								width: 74px;
+								height: 74px;
+								bottom: 30px;
+								margin-left: 40px;
+								background-image: url(../images/wi-on-section-02/wi-fi-circle-red.png);
+								background-repeat: no-repeat;
+								background-position: center center;
+							}
+						}
+						.wifi-gray{
+							&:after{
+								content: '';
+								position: absolute;
+								display: block;
+								width: 74px;
+								height: 74px;
+								bottom: 30px;
+								margin-left: 40px;
+								background-image: url(../images/wi-on-section-02/wi-fi-circle-gray.png);
+								background-repeat: no-repeat;
+								background-position: center center;
+							}
+						}
+						#people03-01{
+							background-image: url(../images/wi-on-section-02/p01.png);
+							background-repeat: no-repeat;
+							background-position: center center;
+							background-size: contain;
+							position: relative;
+							left: -16px;
+							bottom: -67px;
+							&.on{
+								height: 240px;
+								bottom: -20px;	
+							}
+							&.off{
+								height: 190px;
+								bottom: -67px;
+							}
+						}
+						#people03-02{
+							background-image: url(../images/wi-on-section-02/p02.png);
+							background-repeat: no-repeat;
+							background-position: center center;
+							background-size: contain;
+							position: relative;
+							left: -14px;
+							bottom: -76px;
+							&.on{
+								height: 240px;
+								bottom: -17px;
+							}
+							&.off{
+								height: 180px;
+								bottom: -76px;
+							}
+						}
+						#people03-03{
+							background-image: url(../images/wi-on-section-02/p03.png);
+							background-repeat: no-repeat;
+							background-position: center center;
+							background-size: contain;
+							position: relative;
+							left: -15px;
+							bottom: -89px;
+							&.on{
+								height: 200px;
+								bottom: -58px;
+							}
+							&.off{
+								height: 168px;
+								bottom: -89px;
+							}
+						}
+						#people03-04{
+							background-image: url(../images/wi-on-section-02/p04.png);
+							background-repeat: no-repeat;
+							background-position: center center;
+							background-size: contain;
+							position: relative;
+							bottom: -67px;
+							left: -16px;
+							&.on{
+								height: 200px;
+								bottom: -50px;
+								left: -26px;
+								&:after{
+									content: '';
+									position: absolute;
+									display: block;
+									width: 43px;
+									height: 43px;
+									bottom: 80px;
+									right: 0px;
+									background-image: url(../images/wi-on-section-02/x-p04.png);
+									background-repeat: no-repeat;
+									background-position: center center;
+									background-size: contain;
+
+								}
+							}
+							&.off{
+								height: 169px;
+								bottom: -67px;
+								left: -16px;
+							}
+						}
+						.phone01{
+							background-image: url(../images/wi-on-section-02/phone0102.png);
 							background-repeat: no-repeat;
 							background-position: center center;
 						}
-						&.off{
-							background-image: url(../images/p-03-off.png);
+						.phone02{
+							background-image: url(../images/wi-on-section-02/phone0102.png);
+							background-repeat: no-repeat;
+							background-position: center center;
+						}
+						.phone03{
+							background-image: url(../images/wi-on-section-02/phone-blue.png);
+							background-repeat: no-repeat;
+							background-position: center center;
+						}
+						.phone04{
+							background-image: url(../images/wi-on-section-02/phone-with-maps.png);
 							background-repeat: no-repeat;
 							background-position: center center;
 						}
