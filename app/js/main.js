@@ -75,7 +75,7 @@ $( document ).ready(function() {
       $("#map-argentina").removeClass('hide')
     })
 
-    $("#people01").on("click", function (){
+    $("#people01").on("mouseover", function (){
       $(".rectangle-people").addClass('off')
       $(".rectangle-people").removeClass('wifi-small')
       $("#people01").removeClass('off')
@@ -83,7 +83,7 @@ $( document ).ready(function() {
       $("div[id^=info-]").addClass('hide')
       $("#info-01").removeClass('hide')
     })
-    $("#people02").on("click", function (){
+    $("#people02").on("mouseover", function (){
       $(".rectangle-people").addClass('off')
       $(".rectangle-people").removeClass('wifi-small')
       $("#people02").removeClass('off')
@@ -91,7 +91,7 @@ $( document ).ready(function() {
       $("div[id^=info-]").addClass('hide')
       $("#info-02").removeClass('hide')
     })
-    $("#people03").on("click", function (){
+    $("#people03").on("mouseover", function (){
       $(".rectangle-people").addClass('off')
       $(".rectangle-people").removeClass('wifi-small')
       $("#people03").removeClass('off')

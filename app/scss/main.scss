@@ -442,6 +442,7 @@ section{
 						border-radius:50%;
 						box-shadow:1px 1px 10px #000;
 						opacity: 0.75;
+						transition: all 0.2s linear;
 						&:before{
 							  content: '';
 							  position: absolute;
@@ -460,8 +461,12 @@ section{
 							  height: 10px;
 							  border-radius: 50%;
 							  background-color: #BFDEE7;
-							  top:12px;
+							  top:11px;
 							  left:10px;
+						}
+						&:hover{
+							cursor: pointer;
+							opacity: 9;
 						}
 					}
 					.mexico{

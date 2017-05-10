@@ -354,7 +354,8 @@ section {
             background-color: #66a0a5;
             border-radius: 50%;
             box-shadow: 1px 1px 10px #000;
-            opacity: 0.75; }
+            opacity: 0.75;
+            transition: all 0.2s linear; }
             section .likeon-section01 .right.right-wion .map-wrap .circle:before, section .wion-section01 .right.right-wion .map-wrap .circle:before, section .wion-section02 .right.right-wion .map-wrap .circle:before {
               content: '';
               position: absolute;
@@ -372,8 +373,11 @@ section {
               height: 10px;
               border-radius: 50%;
               background-color: #BFDEE7;
-              top: 12px;
+              top: 11px;
               left: 10px; }
+            section .likeon-section01 .right.right-wion .map-wrap .circle:hover, section .wion-section01 .right.right-wion .map-wrap .circle:hover, section .wion-section02 .right.right-wion .map-wrap .circle:hover {
+              cursor: pointer;
+              opacity: 9; }
           section .likeon-section01 .right.right-wion .map-wrap .mexico, section .wion-section01 .right.right-wion .map-wrap .mexico, section .wion-section02 .right.right-wion .map-wrap .mexico {
             position: relative;
             top: 165px;
