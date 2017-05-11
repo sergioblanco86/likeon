@@ -637,21 +637,32 @@ section{
 			&.right-wion-03{
 				width: 60%;
 				padding-left: 40px;
+				.city-img-sec03{
+					background-image: url(../images/wi-on-section-02/city_background.png);
+					background-repeat: no-repeat;
+					background-position: center center;
+					background-size: contain;
+					width: 680px;
+					height: 211px;
+					position: absolute;
+					top: 10px;
+					right: 40px;
+				}
 				.wifi-img-sec03{
-						background-image: url(../images/wifi-big.png);
-						background-repeat: no-repeat;
-						background-position: center center;
-						width: 301px;
-						height: 232px;
-						position: absolute;
-						top: 240px;
-						right: 550px;
+					background-image: url(../images/wifi-big.png);
+					background-repeat: no-repeat;
+					background-position: center center;
+					width: 301px;
+					height: 232px;
+					position: absolute;
+					top: 310px;
+					right: 550px;
 
-					}
+				}
 				.section03-wrap{
 					float: left;
 					width: 700px;
-					height: 340px;
+					height: 380px;
 					background-color: #263442;
 					border-radius: 2px;
 					border: 1px solid $primary-color-rgba;
@@ -664,7 +675,7 @@ section{
 						width: 700px;
 						margin-left: 15px;
 						margin-right: auto;
-						bottom: 110px;
+						bottom: 70px;
 						display: table;
 						.rectangle-phone{
 							height: 340px;
