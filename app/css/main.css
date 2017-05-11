@@ -290,6 +290,9 @@ section {
         width: 40%; }
         section .likeon-section01 .left.left-wion h2, section .wion-section01 .left.left-wion h2, section .wion-section02 .left.left-wion h2, section .wion-section03 .left.left-wion h2 {
           margin-bottom: 10px; }
+        section .likeon-section01 .left.left-wion.left-blueon h2, section .wion-section01 .left.left-wion.left-blueon h2, section .wion-section02 .left.left-wion.left-blueon h2, section .wion-section03 .left.left-wion.left-blueon h2 {
+          font-size: 33px;
+          line-height: 35px; }
       section .likeon-section01 .left img, section .wion-section01 .left img, section .wion-section02 .left img, section .wion-section03 .left img {
         display: none; }
         section .likeon-section01 .left img.logo, section .wion-section01 .left img.logo, section .wion-section02 .left img.logo, section .wion-section03 .left img.logo {
