@@ -100,54 +100,62 @@ $( document ).ready(function() {
       $("#info-01-03").removeClass('hide')
     })
 
-    $("#people03-01",".phone01").on("mouseover", function (){
+    $("#people02-01",".phone01").on("mouseover", function (){
       $(".rectangle-phone").removeClass('wifi-red')
       $(".rectangle-phone").addClass('wifi-gray')
       $(".phone01").removeClass('wifi-gray')
       $(".phone01").addClass('wifi-red')
-      $("div[id^=people03]").removeClass('on')
-      $("div[id^=people03]").addClass('off')
-      $("#people03-01").removeClass('off')
-      $("#people03-01").addClass('on')
+      $("div[id^=people02]").removeClass('on')
+      $("div[id^=people02]").addClass('off')
+      $("#people02-01").removeClass('off')
+      $("#people02-01").addClass('on')
       $("div[id^=info-02-]").addClass('hide')
       $("#info-02-01").removeClass('hide')
     })
-    $("#people03-02",".phone02").on("mouseover", function (){
+    $("#people02-02",".phone02").on("mouseover", function (){
       $(".rectangle-phone").removeClass('wifi-red')
       $(".rectangle-phone").addClass('wifi-gray')
       $(".phone02").removeClass('wifi-gray')
       $(".phone02").addClass('wifi-red')
-      $("div[id^=people03]").removeClass('on')
-      $("div[id^=people03]").addClass('off')
-      $("#people03-02").removeClass('off')
-      $("#people03-02").addClass('on')
+      $("div[id^=people02]").removeClass('on')
+      $("div[id^=people02]").addClass('off')
+      $("#people02-02").removeClass('off')
+      $("#people02-02").addClass('on')
       $("div[id^=info-02-]").addClass('hide')
       $("#info-02-02").removeClass('hide')
     })
-    $("#people03-03",".phone03").on("mouseover", function (){
+    $("#people02-03",".phone03").on("mouseover", function (){
       $(".rectangle-phone").removeClass('wifi-red')
       $(".rectangle-phone").addClass('wifi-gray')
       $(".phone03").removeClass('wifi-gray')
       $(".phone03").addClass('wifi-red')
-      $("div[id^=people03]").removeClass('on')
-      $("div[id^=people03]").addClass('off')
-      $("#people03-03").removeClass('off')
-      $("#people03-03").addClass('on')
+      $("div[id^=people02]").removeClass('on')
+      $("div[id^=people02]").addClass('off')
+      $("#people02-03").removeClass('off')
+      $("#people02-03").addClass('on')
       $("div[id^=info-02-]").addClass('hide')
       $("#info-02-03").removeClass('hide')
     })
-    $("#people03-04",".phone04").on("mouseover", function (){
+    $("#people02-04",".phone04").on("mouseover", function (){
       $(".rectangle-phone").removeClass('wifi-red')
       $(".rectangle-phone").addClass('wifi-gray')
       $(".phone04").removeClass('wifi-gray')
       $(".phone04").addClass('wifi-red')
-      $("div[id^=people03]").removeClass('on')
-      $("div[id^=people03]").addClass('off')
-      $("#people03-04").removeClass('off')
-      $("#people03-04").addClass('on')
+      $("div[id^=people02]").removeClass('on')
+      $("div[id^=people02]").addClass('off')
+      $("#people02-04").removeClass('off')
+      $("#people02-04").addClass('on')
       $("div[id^=info-02-]").addClass('hide')
       $("#info-02-04").removeClass('hide')
     })
+
+    $(".info-slide-b-02").on("click",function () {
+      $("div[class^=info-slide-b-]").addClass("hide")
+    })
+    $(".info-slide-b-03").on("click",function () {
+      $("div[class^=info-slide-b-]").addClass("hide")
+    })
+
     $("ul.menu li.menu-el").fadeIn('fast', function(){
     	$(this).parents("ul.menu").addClass('displayed');
     });
@@ -203,14 +211,25 @@ $( document ).ready(function() {
   $(this).scroll(function(e) {
         e.preventDefault();
 		var scrollTop = $(this).scrollTop();
-		if (scrollTop > 300) {
+    if (scrollTop > 300) {
 			if ($("ul.menu").hasClass('displayed')) {
 				$("li.menu-el").fadeOut('fast', function(){
 					$("ul.menu").removeClass('displayed');
 				});
 				
 			}
-
+      if (scrollTop >= $("section#section-03").offset().top - 50 ) {
+          if ($("#section-03").find(".wion-section03").length > 0){
+            document.body.onkeyup = function(e){
+              if(e.keyCode == 32){
+                  $("#phone-section-03").removeClass("phone-wifi")
+                  $("#phone-section-03").addClass("phone-data")
+                  $(".info-slide-a").addClass('hide')
+                  $("div[class^=info-slide-b-]").removeClass('hide')
+              }
+            }
+          }
+      }
       if (scrollTop >= $("section#section-05").offset().top - 50 ) {
           $("img.head-logo").fadeOut('fast');
           $("div.indicator").fadeOut('fast');
