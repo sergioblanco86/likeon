@@ -151,19 +151,55 @@ $( document ).ready(function() {
 
     $(".info-slide-b-02").on("click",function () {
       $("div[class^=info-slide-b-]").addClass("hide")
+      $(".scroll-content").removeClass("hide")
+      $(".back-info-slide-b").removeClass("hide")
+      $("#content01-section03").removeClass("hide")
+      $("#home-section03").addClass("hide")
+      $("#slide-phone-01").addClass("content0101")
+      $("#slide-phone-02").addClass("content0102")
+      $("#slide-phone-03").addClass("content0103")
     })
     $(".info-slide-b-03").on("click",function () {
       $("div[class^=info-slide-b-]").addClass("hide")
+      $(".scroll-content").removeClass("hide")
+      $(".back-info-slide-b").removeClass("hide")
+      $("#content02-section03").removeClass("hide")
+      $("#home-section03").addClass("hide")
+      $("#slide-phone-01").addClass("content0201")
+      $("#slide-phone-02").addClass("content0202")
+      $("#slide-phone-03").addClass("content0203")
     })
+    $(".back-info-slide-b").on("click",function () {
+      $("div[class^=slide-phone-]").removeClass()
+      $("#content01-section03").removeClass()
+      $("#content02-section03").removeClass()
 
-    $("div[id^=data-s04-]").on("click",function (e) {
-      var div = e.currentTarget;
-      var obJq = $(div)
-      if (obJq.hasClass("image"+div.id.slice(-2))) 
-        obJq.removeClass("image"+div.id.slice(-2))
-      else
-        obJq.addClass("image"+div.id.slice(-2))
+      $(".scroll-content").addClass("hide")
+      $("#home-section03").removeClass("hide")
+      $(".back-info-slide-b").addClass("hide")
+      $("div[class^=info-slide-b-]").removeClass("hide")
+      $("#content01-section03").addClass("hide")
+      $("#content02-section03").addClass("hide")
     })
+    window.addEventListener('keydown', function(e) {
+      if(e.keyCode == 32 && e.target == document.body) {
+        e.preventDefault();
+      }
+    });
+    document.body.onkeydown = function(e){
+      if(e.keyCode == 32){
+        var scrollTop = $(this).scrollTop();
+        if ($("section.wion-section-03").length > 0 && scrollTop >= $("section.wion-section-03").offset().top - 50 ) {
+          if ($("#section-03").find(".wion-section03").length > 0){
+            
+                  $("#phone-section-03").removeClass("phone-wifi")
+                  $("#phone-section-03").addClass("phone-data")
+                  $(".info-slide-a").addClass('hide')
+                  $("div[class^=info-slide-b-]").removeClass('hide')
+          }
+        }
+      }
+    }
     $("ul.menu li.menu-el").fadeIn('fast', function(){
     	$(this).parents("ul.menu").addClass('displayed');
     });
@@ -226,18 +262,6 @@ $( document ).ready(function() {
 				});
 				
 			}
-      if ($("section.wion-section-03").length > 0 && scrollTop >= $("section.wion-section-03").offset().top - 50 ) {
-          if ($("#section-03").find(".wion-section03").length > 0){
-            document.body.onkeyup = function(e){
-              if(e.keyCode == 32){
-                  $("#phone-section-03").removeClass("phone-wifi")
-                  $("#phone-section-03").addClass("phone-data")
-                  $(".info-slide-a").addClass('hide')
-                  $("div[class^=info-slide-b-]").removeClass('hide')
-              }
-            }
-          }
-      }
       if ($("section#section-05").length > 0 && scrollTop >= $("section#section-05").offset().top - 50 ) {
           $("img.head-logo").fadeOut('fast');
           $("div.indicator").fadeOut('fast');

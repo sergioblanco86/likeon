@@ -366,6 +366,31 @@ section{
 			padding-top: 50px;
 			&.left-wion{
 				width: 40%;
+				.back-info-slide-b{
+					width: 150px;
+					height: 42px;
+					margin-top: -30px;
+					cursor: pointer;
+					span.arrow{
+						display: inline-block;
+						width: 42px;
+						height: 42px;
+						background-image: url(../images/wi-on-section-03/arrow.png);
+						background-repeat: no-repeat;
+						background-position: center center;
+					}
+					span.text{
+						display: inline-block;
+						float: right;
+						font-family: 'Roboto', sans-serif;
+						font-size: 18px;
+						color: #FFFFFF;
+						line-height: 42px;
+						font-weight: 300;
+						height: 42px;
+						width: 108px;
+					}
+				}
 				h2{
 					margin-bottom: 10px;
 				}
@@ -1062,7 +1087,7 @@ section{
 						right: 319px;
 						overflow-x: auto;
     					overflow-y: hidden;
-						.content0101{
+    					.content0101{
 							float: left;
 							
 							background-image: url(../images/wi-on-section-03/info0101.png);
@@ -1070,7 +1095,7 @@ section{
 							background-position: center center;
 							background-size: contain;
 							width: 191px;
-							height: 321px;
+							height: 318px;
 						
 						}
 						.content0102{
@@ -1081,7 +1106,7 @@ section{
 							background-position: center center;
 							background-size: contain;
 							width: 191px;
-							height: 321px;
+							height: 318px;
 						
 						}
 						.content0103{
@@ -1092,7 +1117,7 @@ section{
 							background-position: center center;
 							background-size: contain;
 							width: 191px;
-							height: 321px;
+							height: 318px;
 						
 						}
 						.content0201{
@@ -1103,7 +1128,7 @@ section{
 							background-position: center center;
 							background-size: contain;
 							width: 191px;
-							height: 321px;
+							height: 318px;
 						
 						}
 						.content0202{
@@ -1114,7 +1139,7 @@ section{
 							background-position: center center;
 							background-size: contain;
 							width: 191px;
-							height: 321px;
+							height: 318px;
 						
 						}
 						.content0203{
@@ -1125,7 +1150,7 @@ section{
 							background-position: center center;
 							background-size: contain;
 							width: 191px;
-							height: 321px;
+							height: 318px;
 
 						}
 					}
@@ -1165,6 +1190,7 @@ section{
 						left: 140px;
 					}
 					.info-slide-b-02{
+						cursor: pointer;
 						background-image: url(../images/wi-on-section-03/rombo-s02.png);
 						background-repeat: no-repeat;
 						background-position: center center;
@@ -1187,6 +1213,7 @@ section{
 						}
 					}
 					.info-slide-b-03{
+						cursor: pointer;
 						background-image: url(../images/wi-on-section-03/rombo-s02.png);
 						background-repeat: no-repeat;
 						background-position: center center;
@@ -1267,154 +1294,153 @@ section{
 			}
 			&.center-wion-body{
 				padding-left: 80px;
-				div{
+				.block{
 					width: 180px;
 					height: 160px;
 					float: left;
-					border-radius: 2px;
-					border: 1px solid $primary-color-rgba;
-					box-shadow: 0px 0px 68px -20px $primary-color;
-					display: table;
-					padding: 0 10px;
-					p{
-						font-size: 15px;
-						color: $primary-color;
-						text-align: center;
-						vertical-align: middle;
-						display: table-cell;
-					}
-					&:before{
-						content: '';
+					border: 0.5px solid #586069;
+					display: table-cell;
+					text-align: center;
+					&:hover .flipper, &.hover .flipper {
+							transform: rotateY(180deg);
+						}
+					.flipper {
+							transition: 0.6s;
+							transform-style: preserve-3d;
+
+							position: relative;
+						}
+					.front, .back {
+						backface-visibility: hidden;
 						position: absolute;
-						display: block;
-						width: 160px;
-						height: 14px;
-						margin-top: 135px;
-						background-image: url(../images/cruz_under_p.png);
-						background-repeat: no-repeat;
-						background-position: center center;
+						top: 0;
+						left: 0;
 					}
-					&.image00{
+
+					.front {
+						width: 180px;
+						height: 160px;
+						display: table;
+						padding: 0 10px;
+						p{
+							font-size: 15px;
+							color: $primary-color;
+							text-align: center;
+							vertical-align: middle;
+							display: table-cell;
+						}
+						z-index: 2;
+						/* for firefox 31 */
+						transform: rotateY(0deg);
+						&:before{
+							content: '';
+							position: absolute;
+							display: block;
+							width: 160px;
+							height: 14px;
+							margin-top: 135px;
+							background-image: url(../images/cruz_under_p.png);
+							background-repeat: no-repeat;
+							background-position: center center;
+						}
+					}
+
+					.back {
+						transform: rotateY(180deg);
+					}
+					span.image00{
+						display: block;
+						width: 180px;
+						height: 160px;
 						background-image: url(../images/wi-on-section-04/image00.png);
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: content;
-						p{
-							display: none;
-						}
-						&:before{
-							display: none;
-						}
 					}
-					&.image01{
+					span.image01{
+						display: block;
+						width: 180px;
+						height: 160px;
 						background-image: url(../images/wi-on-section-04/image01.png);
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: content;
-						p{
-							display: none;
-						}
-						&:before{
-							display: none;
-						}
 					}
-					&.image02{
+					span.image02{
+						display: block;
+						width: 180px;
+						height: 160px;
 						background-image: url(../images/wi-on-section-04/image02.png);
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: content;
-						p{
-							display: none;
-						}
-						&:before{
-							display: none;
-						}
 					}
-					&.image03{
+					span.image03{
+						display: block;
+						width: 180px;
+						height: 160px;
 						background-image: url(../images/wi-on-section-04/image03.png);
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: content;
-						p{
-							display: none;
-						}
-						&:before{
-							display: none;
-						}
 					}
-					&.image04{
+					span.image04{
+						display: block;
+						width: 180px;
+						height: 160px;
 						background-image: url(../images/wi-on-section-04/image04.png);
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: content;
-						p{
-							display: none;
-						}
-						&:before{
-							display: none;
-						}
 					}
-					&.image10{
+					span.image10{
+						display: block;
+						width: 180px;
+						height: 160px;
 						background-image: url(../images/wi-on-section-04/image10.png);
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: content;
-						p{
-							display: none;
-						}
-						&:before{
-							display: none;
-						}
 					}
-					&.image11{
+					span.image11{
+						display: block;
+						width: 180px;
+						height: 160px;
 						background-image: url(../images/wi-on-section-04/image11.png);
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: content;
-						p{
-							display: none;
-						}
-						&:before{
-							display: none;
-						}
 					}
-					&.image12{
+					span.image12{
+						display: block;
+						width: 180px;
+						height: 160px;
 						background-image: url(../images/wi-on-section-04/image12.png);
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: content;
-						p{
-							display: none;
-						}
-						&:before{
-							display: none;
-						}
 					}
-					&.image13{
+					span.image13{
+						display: block;
+						width: 180px;
+						height: 160px;
 						background-image: url(../images/wi-on-section-04/image13.png);
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: content;
-						p{
-							display: none;
-						}
-						&:before{
-							display: none;
-						}
 					}
-					&.image14{
+					span.image14{
+						display: block;
+						width: 180px;
+						height: 160px;
 						background-image: url(../images/wi-on-section-04/image14.png);
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: content;
-						p{
-							display: none;
-						}
-						&:before{
-							display: none;
-						}
 					}
-					
+					&:hover{
+						border: 1px double $primary-color;
+					}
 				}
 			}
 		}
