@@ -371,6 +371,12 @@ section{
 						font-size: 33px;
 						line-height: 35px;
 					}
+					&.section-01{
+						width: 50%;
+						h2{
+							font-size: 43px;
+						}
+					}
 				}
 			}
 			&.left-wion-without-text{
@@ -428,6 +434,171 @@ section{
 			&.right-wion{
 				width: 60%;
 				padding-left: 90px;
+				&.right-blueon{
+					text-align: center;
+					padding-left: 0px;
+					.person{
+						position: relative;
+						width: 150px;
+						height: 498px;
+						margin: 0 auto;
+						background-image: url(../images/blueon/slide1-person.png);
+						.bubble{
+							position: absolute;
+					    width: 270px;
+					    height: 100px;
+					    border-radius: 50px;
+					    background-color: #990099;
+					    padding: 24px 15px;
+					    line-height: 18px;
+					    color: #FFFFFF;
+					    font-size: 14.5px;
+					    font-family: 'Roboto', sans-serif;
+					    font-weight: 100;
+					    top: 45px;
+    					left: 86px;
+    					display: none;
+							&:after{
+								content: '';
+								position: absolute;
+								bottom: -50px;
+						    left: 32px;
+						    width: 0;
+						    height: 0;
+						    border-style: solid;
+						    border-width: 55px 0px 0 36px;
+								border-color: #990099 transparent transparent transparent;
+								line-height: 0px;
+								_border-color: #990099 #000000 #000000 #000000;
+								_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+							}			
+						}
+						.pointer{
+							position: absolute;
+							width:70px;
+							height: 70px;
+							background-color: #66a0a5;
+							border-radius:50%;
+							box-shadow:1px 1px 10px #000;
+							opacity: 0.5;
+							transition: all 0.2s linear;
+							left: -12px;
+							top: 142px;
+							&:before{
+								  content: '';
+								  position: absolute;
+								  width: 40px;
+								  height: 40px;
+								  border-radius: 50%;
+								  background-color: #64B1B7;
+								  top: 15px;
+								  left: 15px;
+								  box-shadow:1px 1px 10px #000;
+							}
+							&:after{
+								  content: '';
+								  position: absolute;
+								  width: 20px;
+								  height: 20px;
+								  border-radius: 50%;
+								  background-color: #BFDEE7;
+								  top: 25px;
+								  left: 25px;
+							}
+							&:hover{
+								cursor: pointer;
+								opacity: .9;
+							}
+						}
+					}
+					&.section-01{
+						width: 50%;
+						text-align: left;
+						position: relative;
+						.person{
+							height: 475px;
+							margin: 0;
+							width: 100%;
+							background-image: url(../images/blueon/slide2-person.png);
+							background-repeat: no-repeat;
+							z-index: 2;
+							.pointer{
+								&.left-p{
+									top: 92px;
+									left: -14px;
+								}
+								&.right-p{
+									top: 60px;
+									left: 238px;
+								}
+								&.left-leg{
+									top: 272px;
+									left: 19px;
+								}
+								&.right-leg{
+									top: 202px;
+									left: 150px;
+								}
+								&.bottom-right{
+									top: 366px;
+									left: 164px;
+								}
+							}
+						}
+						.p1,.p2,.p3{
+							display: none;
+						}
+						.p1-bg{
+							position: absolute;
+							background-image: url(../images/blueon/slide2-person-p1.png);
+							background-repeat: no-repeat;
+							z-index: 0;
+							width: 436px;
+							height: 587px;
+							top: -92px;
+							left: -104px;
+							&.p2-bg{
+								background-image: url(../images/blueon/slide2-person-p2.png);
+								left: -4px;
+								top: -80px;
+							}
+							&.p3-bg{
+								background-image: url(../images/blueon/slide2-person-p3.png);
+								left: -50px;
+								top: 102px;
+								height: 373px;
+								width: 138px;
+							}
+						}
+						.p1-text{
+							position: absolute;
+							z-index: 3;
+							position: absolute;
+							width: 356px;
+							height: 143px;
+							background-color: #263442;
+							border-radius: 2px;
+							border: 1px solid $primary-color-rgba;
+							box-shadow: 0px 0px 68px -20px $primary-color;
+							left: 0;
+							bottom: 0;
+							color: #fff;
+							font-size: 18px;
+							font-family: 'Roboto', sans-serif;
+							font-weight: 300;
+							padding: 34px 15px;
+							line-height: 24px;
+							top: 240px;
+    					left: -36px;
+    					&.p2-text{
+    						padding: 24px 15px;
+    					}
+    					&.p3-text{
+    						padding: 10px 15px;
+    					}
+						}
+					}
+				}
 				.map-wrap{
 					float: left;
 					width: 470px;
@@ -479,7 +650,7 @@ section{
 						}
 						&:hover{
 							cursor: pointer;
-							opacity: 9;
+							opacity: .9;
 						}
 					}
 					.mexico{
@@ -1240,6 +1411,19 @@ section{
 					}
 					
 				}
+			}
+		}
+		.blueon{
+			&.legend{
+				position: absolute;
+				width: 100%;
+				left: 0;
+				bottom: -20px;
+				color: $primary-color;
+				font-family: 'Roboto Condensed', sans-serif;
+				font-size: 35px;
+				font-weight: 300;	
+				text-align: center;
 			}
 		}
 	}
