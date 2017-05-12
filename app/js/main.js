@@ -156,6 +156,14 @@ $( document ).ready(function() {
       $("div[class^=info-slide-b-]").addClass("hide")
     })
 
+    $("div[id^=data-s04-]").on("click",function (e) {
+      var div = e.currentTarget;
+      var obJq = $(div)
+      if (obJq.hasClass("image"+div.id.slice(-2))) 
+        obJq.removeClass("image"+div.id.slice(-2))
+      else
+        obJq.addClass("image"+div.id.slice(-2))
+    })
     $("ul.menu li.menu-el").fadeIn('fast', function(){
     	$(this).parents("ul.menu").addClass('displayed');
     });
