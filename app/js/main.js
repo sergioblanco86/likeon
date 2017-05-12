@@ -58,21 +58,21 @@ $( document ).ready(function() {
     });
 
     }
-    $(".mexico").on("click", function (){
-      $("div[id^=map-]").addClass('hide')
-      $("#map-mexico").removeClass('hide')
+    $(".mexico").on("mouseover", function (){
+      $("div[id^=map-]").addClass('hide-visual')
+      $("#map-mexico").removeClass('hide-visual')
     })
-    $(".colombia").on("click", function (){
-      $("div[id^=map-]").addClass('hide')
-      $("#map-colombia").removeClass('hide')
+    $(".colombia").on("mouseover", function (){
+      $("div[id^=map-]").addClass('hide-visual')
+      $("#map-colombia").removeClass('hide-visual')
     })
-    $(".ecuador").on("click", function (){
-      $("div[id^=map-]").addClass('hide')
-      $("#map-ecuador").removeClass('hide')
+    $(".ecuador").on("mouseover", function (){
+      $("div[id^=map-]").addClass('hide-visual')
+      $("#map-ecuador").removeClass('hide-visual')
     })
-    $(".argentina").on("click", function (){
-      $("div[id^=map-]").addClass('hide')
-      $("#map-argentina").removeClass('hide')
+    $(".argentina").on("mouseover", function (){
+      $("div[id^=map-]").addClass('hide-visual')
+      $("#map-argentina").removeClass('hide-visual')
     })
 
     $("#people01").on("mouseover", function (){
@@ -308,6 +308,7 @@ $( document ).ready(function() {
       animation: "slide"
     });
 
+    // blueon slide1
     $("body").on("mouseenter",".show-bubble", function(event){
       $(this).parents(".blueon-section00").find(".bubble").fadeToggle('fast');
     });
@@ -330,7 +331,7 @@ $( document ).ready(function() {
       $(this).parents(".blueon-section01").find(".p2").fadeToggle('fast');
     })
 
-    $("body").on("mouseenter",".pointer.left-leg", function(event){
+    $("body").on("mouseenter",".pointer.right-leg", function(event){
       $(this).parents(".blueon-section01").find(".p3").fadeToggle('fast');
     });
     $("body").on("mouseleave",".p3.p3-text", function(event){

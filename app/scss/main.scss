@@ -23,8 +23,11 @@ body{
 	font-family: 'Open Sans Condensed', sans-serif;
 	height: 100%;
 }
+.hide-visual {
+	opacity: 0 !important;
+}
 .hide {
-	display: none !important;
+	display: none!important;
 }
 .clear {
 	content: "";
@@ -682,6 +685,8 @@ section{
 						bottom: 35px;
 						height: 120px;
 						display: table;
+						transition: all 0.1s linear;
+						opacity: 1;
 						.percentage{
 							width: 195px;
 							height: 100%;

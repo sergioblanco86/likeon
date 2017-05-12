@@ -16,6 +16,9 @@ body {
   font-family: 'Open Sans Condensed', sans-serif;
   height: 100%; }
 
+.hide-visual {
+  opacity: 0 !important; }
+
 .hide {
   display: none !important; }
 
@@ -551,7 +554,9 @@ section {
             position: absolute;
             bottom: 35px;
             height: 120px;
-            display: table; }
+            display: table;
+            transition: all 0.1s linear;
+            opacity: 1; }
             section .likeon-section01 .right.right-wion .map-wrap .fact .percentage, section .wion-section00 .right.right-wion .map-wrap .fact .percentage, section .wion-section01 .right.right-wion .map-wrap .fact .percentage, section .wion-section02 .right.right-wion .map-wrap .fact .percentage, section .wion-section03 .right.right-wion .map-wrap .fact .percentage, section .wion-section04 .right.right-wion .map-wrap .fact .percentage {
               width: 195px;
               height: 100%;
