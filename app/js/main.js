@@ -218,7 +218,7 @@ $( document ).ready(function() {
 				});
 				
 			}
-      if (scrollTop >= $("section#section-03").offset().top - 50 ) {
+      if ($("section.wion-section-03").length > 0 && scrollTop >= $("section.wion-section-03").offset().top - 50 ) {
           if ($("#section-03").find(".wion-section03").length > 0){
             document.body.onkeyup = function(e){
               if(e.keyCode == 32){
@@ -230,7 +230,7 @@ $( document ).ready(function() {
             }
           }
       }
-      if (scrollTop >= $("section#section-05").offset().top - 50 ) {
+      if ($("section#section-05").length > 0 && scrollTop >= $("section#section-05").offset().top - 50 ) {
           $("img.head-logo").fadeOut('fast');
           $("div.indicator").fadeOut('fast');
       }else{
@@ -300,94 +300,121 @@ $( document ).ready(function() {
       animation: "slide"
     });
 
-    
+    $("body").on("mouseenter",".show-bubble", function(event){
+      $(this).parents(".blueon-section00").find(".bubble").fadeToggle('fast');
+    });
+    $("body").on("mouseleave",".show-bubble", function(event){
+      $(this).parents(".blueon-section00").find(".bubble").fadeToggle('fast');
+    })
+
+    // blueon slide2
+    $("body").on("mouseenter",".pointer.left-p", function(event){
+      $(this).parents(".blueon-section01").find(".p1").fadeToggle('fast');
+    });
+    $("body").on("mouseleave",".pointer.left-p", function(event){
+      $(this).parents(".blueon-section01").find(".p1").fadeToggle('fast');
+    })
+
+    $("body").on("mouseenter",".pointer.right-p", function(event){
+      $(this).parents(".blueon-section01").find(".p2").fadeToggle('fast');
+    });
+    $("body").on("mouseleave",".pointer.right-p", function(event){
+      $(this).parents(".blueon-section01").find(".p2").fadeToggle('fast');
+    })
+
+    $("body").on("mouseenter",".pointer.left-leg", function(event){
+      $(this).parents(".blueon-section01").find(".p3").fadeToggle('fast');
+    });
+    $("body").on("mouseleave",".p3.p3-text", function(event){
+      $(this).parents(".blueon-section01").find(".p3").fadeToggle('fast');
+    })
 		
 });
   
-  $('#contact-form').submit(function(event){
+$('#contact-form').submit(function(event){
+  event.preventDefault();
+  $('#contact-message').hide();
+  $('#contact-message').html('');
+  $('#contact-message').removeClass('error');
+
+  var name = $("#name");
+  var email = $("#email");
+  var message = $("#message");
+
+  if (validateFields()) {
     event.preventDefault();
-    $('#contact-message').hide();
-    $('#contact-message').html('');
-    $('#contact-message').removeClass('error');
+    var boton = event.target.name;
+    var url = $(this).attr('action');
+    var datos = $(this).serialize();
+    $.post(url, datos, function(resultado){
 
-    var name = $("#name");
-    var email = $("#email");
-    var message = $("#message");
+      if (resultado == '200') {
+        $('#contact-message').addClass('success');
+        $('#contact-message').html('Gracias por contactarnos!, en breve nos estaremos comunicando con usted.');
+        $('#contact-message').fadeIn("slow");
+        var form = $(".contact-form");
+        var mask = $(".mask");
 
-    if (validateFields()) {
-      event.preventDefault();
-      var boton = event.target.name;
-      var url = $(this).attr('action');
-      var datos = $(this).serialize();
-      $.post(url, datos, function(resultado){
-
-        if (resultado == '200') {
-          $('#contact-message').addClass('success');
-          $('#contact-message').html('Gracias por contactarnos!, en breve nos estaremos comunicando con usted.');
-          $('#contact-message').fadeIn("slow");
-          var form = $(".contact-form");
-          var mask = $(".mask");
-
-          setTimeout( function(){
-            form.removeClass('show');
-            mask.fadeOut('200');
-            $('body').css({'overflow':'auto'});
-            name.val('');
-            email.val('');
-            message.val('');
-            $('#contact-message').hide();
-            $('#contact-message').html('');
-            $('#contact-message').removeClass('success');
-          },1500)
-          
-        }else{
-          $('#contact-message').addClass('error');
-          $('#contact-message').html('Algo salió mal, contacta al administrador');
-          $('#contact-message').fadeIn("slow");
-        }
+        setTimeout( function(){
+          form.removeClass('show');
+          mask.fadeOut('200');
+          $('body').css({'overflow':'auto'});
+          name.val('');
+          email.val('');
+          message.val('');
+          $('#contact-message').hide();
+          $('#contact-message').html('');
+          $('#contact-message').removeClass('success');
+        },1500)
         
+      }else{
+        $('#contact-message').addClass('error');
+        $('#contact-message').html('Algo salió mal, contacta al administrador');
+        $('#contact-message').fadeIn("slow");
+      }
+      
 
-      });
-    }else{
-      $('#contact-message').addClass('error');
-      $('#contact-message').html('Por favor, verifica tus datos.');
-      $('#contact-message').fadeIn("slow");
-    }
-  });
-  
-  function validateFields(){
-    var name = $("#name");
-    var email = $("#email");
-    var message = $("#message");
-
-    name.removeClass('error');
-    email.removeClass('error');
-    message.removeClass('error');
-
-    if (name.val().trim() == '' || email.val().trim() == '' || message.val().trim() == '') {
-      if (name.val().trim() == '') name.addClass('error');
-      if (email.val().trim() == '') email.addClass('error');
-      if (message.val().trim() == '') message.addClass('error');
-      return false;
-    }else{
-      return true;
-    }
+    });
+  }else{
+    $('#contact-message').addClass('error');
+    $('#contact-message').html('Por favor, verifica tus datos.');
+    $('#contact-message').fadeIn("slow");
   }
-  
-  function gotoProducts(){
-    pos = 5;
-    var a = $("#section-05").offset().top;
-    $( document ).scrollTop( a );
-    $("section").addClass('hidden');
-    $("#section-0"+pos).removeClass('hidden');
+});
+
+function validateFields(){
+  var name = $("#name");
+  var email = $("#email");
+  var message = $("#message");
+
+  name.removeClass('error');
+  email.removeClass('error');
+  message.removeClass('error');
+
+  if (name.val().trim() == '' || email.val().trim() == '' || message.val().trim() == '') {
+    if (name.val().trim() == '') name.addClass('error');
+    if (email.val().trim() == '') email.addClass('error');
+    if (message.val().trim() == '') message.addClass('error');
+    return false;
+  }else{
+    return true;
   }
+}
 
-  $(window).bind("scroll", function(event) {
-    $("section:in-viewport").each(function() {
-      var number = $(this).data('number');
-  		var ball_top = (78*number) - 23;
-  		$(".indicator .selected").css({'top':ball_top+'px'})
+function gotoProducts(){
+  pos = 5;
+  var a = $("#section-05").offset().top;
+  $( document ).scrollTop( a );
+  $("section").addClass('hidden');
+  $("#section-0"+pos).removeClass('hidden');
+}
 
-    });      
-  });
+$(window).bind("scroll", function(event) {
+  $("section:in-viewport").each(function() {
+    var number = $(this).data('number');
+		var ball_top = (78*number) - 23;
+		$(".indicator .selected").css({'top':ball_top+'px'})
+
+  });      
+});
 

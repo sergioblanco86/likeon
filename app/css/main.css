@@ -293,6 +293,10 @@ section {
         section .likeon-section01 .left.left-wion.left-blueon h2, section .wion-section00 .left.left-wion.left-blueon h2, section .wion-section01 .left.left-wion.left-blueon h2, section .wion-section02 .left.left-wion.left-blueon h2, section .wion-section03 .left.left-wion.left-blueon h2 {
           font-size: 33px;
           line-height: 35px; }
+        section .likeon-section01 .left.left-wion.left-blueon.section-01, section .wion-section00 .left.left-wion.left-blueon.section-01, section .wion-section01 .left.left-wion.left-blueon.section-01, section .wion-section02 .left.left-wion.left-blueon.section-01, section .wion-section03 .left.left-wion.left-blueon.section-01 {
+          width: 50%; }
+          section .likeon-section01 .left.left-wion.left-blueon.section-01 h2, section .wion-section00 .left.left-wion.left-blueon.section-01 h2, section .wion-section01 .left.left-wion.left-blueon.section-01 h2, section .wion-section02 .left.left-wion.left-blueon.section-01 h2, section .wion-section03 .left.left-wion.left-blueon.section-01 h2 {
+            font-size: 43px; }
       section .likeon-section01 .left img, section .wion-section00 .left img, section .wion-section01 .left img, section .wion-section02 .left img, section .wion-section03 .left img {
         display: none; }
         section .likeon-section01 .left img.logo, section .wion-section00 .left img.logo, section .wion-section01 .left img.logo, section .wion-section02 .left img.logo, section .wion-section03 .left img.logo {
@@ -332,6 +336,147 @@ section {
       section .likeon-section01 .right.right-wion, section .wion-section00 .right.right-wion, section .wion-section01 .right.right-wion, section .wion-section02 .right.right-wion, section .wion-section03 .right.right-wion {
         width: 60%;
         padding-left: 90px; }
+        section .likeon-section01 .right.right-wion.right-blueon, section .wion-section00 .right.right-wion.right-blueon, section .wion-section01 .right.right-wion.right-blueon, section .wion-section02 .right.right-wion.right-blueon, section .wion-section03 .right.right-wion.right-blueon {
+          text-align: center;
+          padding-left: 0px; }
+          section .likeon-section01 .right.right-wion.right-blueon .person, section .wion-section00 .right.right-wion.right-blueon .person, section .wion-section01 .right.right-wion.right-blueon .person, section .wion-section02 .right.right-wion.right-blueon .person, section .wion-section03 .right.right-wion.right-blueon .person {
+            position: relative;
+            width: 150px;
+            height: 498px;
+            margin: 0 auto;
+            background-image: url(../images/blueon/slide1-person.png); }
+            section .likeon-section01 .right.right-wion.right-blueon .person .bubble, section .wion-section00 .right.right-wion.right-blueon .person .bubble, section .wion-section01 .right.right-wion.right-blueon .person .bubble, section .wion-section02 .right.right-wion.right-blueon .person .bubble, section .wion-section03 .right.right-wion.right-blueon .person .bubble {
+              position: absolute;
+              width: 270px;
+              height: 100px;
+              border-radius: 50px;
+              background-color: #990099;
+              padding: 24px 15px;
+              line-height: 18px;
+              color: #FFFFFF;
+              font-size: 14.5px;
+              font-family: 'Roboto', sans-serif;
+              font-weight: 100;
+              top: 45px;
+              left: 86px;
+              display: none; }
+              section .likeon-section01 .right.right-wion.right-blueon .person .bubble:after, section .wion-section00 .right.right-wion.right-blueon .person .bubble:after, section .wion-section01 .right.right-wion.right-blueon .person .bubble:after, section .wion-section02 .right.right-wion.right-blueon .person .bubble:after, section .wion-section03 .right.right-wion.right-blueon .person .bubble:after {
+                content: '';
+                position: absolute;
+                bottom: -50px;
+                left: 32px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 55px 0px 0 36px;
+                border-color: #990099 transparent transparent transparent;
+                line-height: 0px;
+                _border-color: #990099 #000000 #000000 #000000;
+                _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000'); }
+            section .likeon-section01 .right.right-wion.right-blueon .person .pointer, section .wion-section00 .right.right-wion.right-blueon .person .pointer, section .wion-section01 .right.right-wion.right-blueon .person .pointer, section .wion-section02 .right.right-wion.right-blueon .person .pointer, section .wion-section03 .right.right-wion.right-blueon .person .pointer {
+              position: absolute;
+              width: 70px;
+              height: 70px;
+              background-color: #66a0a5;
+              border-radius: 50%;
+              box-shadow: 1px 1px 10px #000;
+              opacity: 0.5;
+              transition: all 0.2s linear;
+              left: -12px;
+              top: 142px; }
+              section .likeon-section01 .right.right-wion.right-blueon .person .pointer:before, section .wion-section00 .right.right-wion.right-blueon .person .pointer:before, section .wion-section01 .right.right-wion.right-blueon .person .pointer:before, section .wion-section02 .right.right-wion.right-blueon .person .pointer:before, section .wion-section03 .right.right-wion.right-blueon .person .pointer:before {
+                content: '';
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: #64B1B7;
+                top: 15px;
+                left: 15px;
+                box-shadow: 1px 1px 10px #000; }
+              section .likeon-section01 .right.right-wion.right-blueon .person .pointer:after, section .wion-section00 .right.right-wion.right-blueon .person .pointer:after, section .wion-section01 .right.right-wion.right-blueon .person .pointer:after, section .wion-section02 .right.right-wion.right-blueon .person .pointer:after, section .wion-section03 .right.right-wion.right-blueon .person .pointer:after {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: #BFDEE7;
+                top: 25px;
+                left: 25px; }
+              section .likeon-section01 .right.right-wion.right-blueon .person .pointer:hover, section .wion-section00 .right.right-wion.right-blueon .person .pointer:hover, section .wion-section01 .right.right-wion.right-blueon .person .pointer:hover, section .wion-section02 .right.right-wion.right-blueon .person .pointer:hover, section .wion-section03 .right.right-wion.right-blueon .person .pointer:hover {
+                cursor: pointer;
+                opacity: .9; }
+          section .likeon-section01 .right.right-wion.right-blueon.section-01, section .wion-section00 .right.right-wion.right-blueon.section-01, section .wion-section01 .right.right-wion.right-blueon.section-01, section .wion-section02 .right.right-wion.right-blueon.section-01, section .wion-section03 .right.right-wion.right-blueon.section-01 {
+            width: 50%;
+            text-align: left;
+            position: relative; }
+            section .likeon-section01 .right.right-wion.right-blueon.section-01 .person, section .wion-section00 .right.right-wion.right-blueon.section-01 .person, section .wion-section01 .right.right-wion.right-blueon.section-01 .person, section .wion-section02 .right.right-wion.right-blueon.section-01 .person, section .wion-section03 .right.right-wion.right-blueon.section-01 .person {
+              height: 475px;
+              margin: 0;
+              width: 100%;
+              background-image: url(../images/blueon/slide2-person.png);
+              background-repeat: no-repeat;
+              z-index: 2; }
+              section .likeon-section01 .right.right-wion.right-blueon.section-01 .person .pointer.left-p, section .wion-section00 .right.right-wion.right-blueon.section-01 .person .pointer.left-p, section .wion-section01 .right.right-wion.right-blueon.section-01 .person .pointer.left-p, section .wion-section02 .right.right-wion.right-blueon.section-01 .person .pointer.left-p, section .wion-section03 .right.right-wion.right-blueon.section-01 .person .pointer.left-p {
+                top: 92px;
+                left: -14px; }
+              section .likeon-section01 .right.right-wion.right-blueon.section-01 .person .pointer.right-p, section .wion-section00 .right.right-wion.right-blueon.section-01 .person .pointer.right-p, section .wion-section01 .right.right-wion.right-blueon.section-01 .person .pointer.right-p, section .wion-section02 .right.right-wion.right-blueon.section-01 .person .pointer.right-p, section .wion-section03 .right.right-wion.right-blueon.section-01 .person .pointer.right-p {
+                top: 60px;
+                left: 238px; }
+              section .likeon-section01 .right.right-wion.right-blueon.section-01 .person .pointer.left-leg, section .wion-section00 .right.right-wion.right-blueon.section-01 .person .pointer.left-leg, section .wion-section01 .right.right-wion.right-blueon.section-01 .person .pointer.left-leg, section .wion-section02 .right.right-wion.right-blueon.section-01 .person .pointer.left-leg, section .wion-section03 .right.right-wion.right-blueon.section-01 .person .pointer.left-leg {
+                top: 272px;
+                left: 19px; }
+              section .likeon-section01 .right.right-wion.right-blueon.section-01 .person .pointer.right-leg, section .wion-section00 .right.right-wion.right-blueon.section-01 .person .pointer.right-leg, section .wion-section01 .right.right-wion.right-blueon.section-01 .person .pointer.right-leg, section .wion-section02 .right.right-wion.right-blueon.section-01 .person .pointer.right-leg, section .wion-section03 .right.right-wion.right-blueon.section-01 .person .pointer.right-leg {
+                top: 202px;
+                left: 150px; }
+              section .likeon-section01 .right.right-wion.right-blueon.section-01 .person .pointer.bottom-right, section .wion-section00 .right.right-wion.right-blueon.section-01 .person .pointer.bottom-right, section .wion-section01 .right.right-wion.right-blueon.section-01 .person .pointer.bottom-right, section .wion-section02 .right.right-wion.right-blueon.section-01 .person .pointer.bottom-right, section .wion-section03 .right.right-wion.right-blueon.section-01 .person .pointer.bottom-right {
+                top: 366px;
+                left: 164px; }
+            section .likeon-section01 .right.right-wion.right-blueon.section-01 .p1, section .likeon-section01 .right.right-wion.right-blueon.section-01 .p2, section .likeon-section01 .right.right-wion.right-blueon.section-01 .p3, section .wion-section00 .right.right-wion.right-blueon.section-01 .p1, section .wion-section00 .right.right-wion.right-blueon.section-01 .p2, section .wion-section00 .right.right-wion.right-blueon.section-01 .p3, section .wion-section01 .right.right-wion.right-blueon.section-01 .p1, section .wion-section01 .right.right-wion.right-blueon.section-01 .p2, section .wion-section01 .right.right-wion.right-blueon.section-01 .p3, section .wion-section02 .right.right-wion.right-blueon.section-01 .p1, section .wion-section02 .right.right-wion.right-blueon.section-01 .p2, section .wion-section02 .right.right-wion.right-blueon.section-01 .p3, section .wion-section03 .right.right-wion.right-blueon.section-01 .p1, section .wion-section03 .right.right-wion.right-blueon.section-01 .p2, section .wion-section03 .right.right-wion.right-blueon.section-01 .p3 {
+              display: none; }
+            section .likeon-section01 .right.right-wion.right-blueon.section-01 .p1-bg, section .wion-section00 .right.right-wion.right-blueon.section-01 .p1-bg, section .wion-section01 .right.right-wion.right-blueon.section-01 .p1-bg, section .wion-section02 .right.right-wion.right-blueon.section-01 .p1-bg, section .wion-section03 .right.right-wion.right-blueon.section-01 .p1-bg {
+              position: absolute;
+              background-image: url(../images/blueon/slide2-person-p1.png);
+              background-repeat: no-repeat;
+              z-index: 0;
+              width: 436px;
+              height: 587px;
+              top: -92px;
+              left: -104px; }
+              section .likeon-section01 .right.right-wion.right-blueon.section-01 .p1-bg.p2-bg, section .wion-section00 .right.right-wion.right-blueon.section-01 .p1-bg.p2-bg, section .wion-section01 .right.right-wion.right-blueon.section-01 .p1-bg.p2-bg, section .wion-section02 .right.right-wion.right-blueon.section-01 .p1-bg.p2-bg, section .wion-section03 .right.right-wion.right-blueon.section-01 .p1-bg.p2-bg {
+                background-image: url(../images/blueon/slide2-person-p2.png);
+                left: -4px;
+                top: -80px; }
+              section .likeon-section01 .right.right-wion.right-blueon.section-01 .p1-bg.p3-bg, section .wion-section00 .right.right-wion.right-blueon.section-01 .p1-bg.p3-bg, section .wion-section01 .right.right-wion.right-blueon.section-01 .p1-bg.p3-bg, section .wion-section02 .right.right-wion.right-blueon.section-01 .p1-bg.p3-bg, section .wion-section03 .right.right-wion.right-blueon.section-01 .p1-bg.p3-bg {
+                background-image: url(../images/blueon/slide2-person-p3.png);
+                left: -50px;
+                top: 102px;
+                height: 373px;
+                width: 138px; }
+            section .likeon-section01 .right.right-wion.right-blueon.section-01 .p1-text, section .wion-section00 .right.right-wion.right-blueon.section-01 .p1-text, section .wion-section01 .right.right-wion.right-blueon.section-01 .p1-text, section .wion-section02 .right.right-wion.right-blueon.section-01 .p1-text, section .wion-section03 .right.right-wion.right-blueon.section-01 .p1-text {
+              position: absolute;
+              z-index: 3;
+              position: absolute;
+              width: 356px;
+              height: 143px;
+              background-color: #263442;
+              border-radius: 2px;
+              border: 1px solid rgba(143, 246, 252, 0.56);
+              box-shadow: 0px 0px 68px -20px #92f6fe;
+              left: 0;
+              bottom: 0;
+              color: #fff;
+              font-size: 18px;
+              font-family: 'Roboto', sans-serif;
+              font-weight: 300;
+              padding: 34px 15px;
+              line-height: 24px;
+              top: 240px;
+              left: -36px; }
+              section .likeon-section01 .right.right-wion.right-blueon.section-01 .p1-text.p2-text, section .wion-section00 .right.right-wion.right-blueon.section-01 .p1-text.p2-text, section .wion-section01 .right.right-wion.right-blueon.section-01 .p1-text.p2-text, section .wion-section02 .right.right-wion.right-blueon.section-01 .p1-text.p2-text, section .wion-section03 .right.right-wion.right-blueon.section-01 .p1-text.p2-text {
+                padding: 24px 15px; }
+              section .likeon-section01 .right.right-wion.right-blueon.section-01 .p1-text.p3-text, section .wion-section00 .right.right-wion.right-blueon.section-01 .p1-text.p3-text, section .wion-section01 .right.right-wion.right-blueon.section-01 .p1-text.p3-text, section .wion-section02 .right.right-wion.right-blueon.section-01 .p1-text.p3-text, section .wion-section03 .right.right-wion.right-blueon.section-01 .p1-text.p3-text {
+                padding: 10px 15px; }
         section .likeon-section01 .right.right-wion .map-wrap, section .wion-section00 .right.right-wion .map-wrap, section .wion-section01 .right.right-wion .map-wrap, section .wion-section02 .right.right-wion .map-wrap, section .wion-section03 .right.right-wion .map-wrap {
           float: left;
           width: 470px;
@@ -380,7 +525,7 @@ section {
               left: 10px; }
             section .likeon-section01 .right.right-wion .map-wrap .circle:hover, section .wion-section00 .right.right-wion .map-wrap .circle:hover, section .wion-section01 .right.right-wion .map-wrap .circle:hover, section .wion-section02 .right.right-wion .map-wrap .circle:hover, section .wion-section03 .right.right-wion .map-wrap .circle:hover {
               cursor: pointer;
-              opacity: 9; }
+              opacity: .9; }
           section .likeon-section01 .right.right-wion .map-wrap .mexico, section .wion-section00 .right.right-wion .map-wrap .mexico, section .wion-section01 .right.right-wion .map-wrap .mexico, section .wion-section02 .right.right-wion .map-wrap .mexico, section .wion-section03 .right.right-wion .map-wrap .mexico {
             position: relative;
             top: 165px;
@@ -850,6 +995,16 @@ section {
         position: relative;
         z-index: 2;
         right: 52px; }
+    section .likeon-section01 .blueon.legend, section .wion-section00 .blueon.legend, section .wion-section01 .blueon.legend, section .wion-section02 .blueon.legend, section .wion-section03 .blueon.legend {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: -20px;
+      color: #92f6fe;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 35px;
+      font-weight: 300;
+      text-align: center; }
   section .likeon-section02 {
     width: 100%; }
     section .likeon-section02 .left {
