@@ -366,10 +366,19 @@ $( document ).ready(function() {
     $("body").on("mouseenter",".pointer.right-leg", function(event){
       $(this).parents(".blueon-section01").find(".p3").fadeToggle('fast');
     });
-    $("body").on("mouseleave",".p3.p3-text", function(event){
+    $("body").on("mouseleave",".pointer.right-leg", function(event){
       $(this).parents(".blueon-section01").find(".p3").fadeToggle('fast');
     })
-		
+
+    // blueon slide3
+		$("body").on("mouseenter",".pointer.fem", function(event){
+      $(this).parents(".blueon-section02").find(".p2").fadeToggle('fast');
+      $(this).parents(".blueon-section02").find(".p1").fadeToggle('fast');
+    });
+    $("body").on("mouseenter",".pointer.male", function(event){
+      $(this).parents(".blueon-section02").find(".p2").fadeToggle('fast');
+      $(this).parents(".blueon-section02").find(".p1").fadeToggle('fast');
+    });
 });
   
 $('#contact-form').submit(function(event){

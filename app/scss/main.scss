@@ -465,6 +465,7 @@ section{
 				&.right-blueon{
 					text-align: center;
 					padding-left: 0px;
+
 					.person{
 						position: relative;
 						width: 150px;
@@ -512,6 +513,7 @@ section{
 							transition: all 0.2s linear;
 							left: -12px;
 							top: 142px;
+							animation: blinker 1.5s linear infinite;
 							&:before{
 								  content: '';
 								  position: absolute;
@@ -536,6 +538,7 @@ section{
 							&:hover{
 								cursor: pointer;
 								opacity: .9;
+								animation: none;
 							}
 						}
 					}
@@ -601,14 +604,12 @@ section{
 						.p1-text{
 							position: absolute;
 							z-index: 3;
-							position: absolute;
 							width: 356px;
 							height: 143px;
 							background-color: #263442;
 							border-radius: 2px;
 							border: 1px solid $primary-color-rgba;
 							box-shadow: 0px 0px 68px -20px $primary-color;
-							left: 0;
 							bottom: 0;
 							color: #fff;
 							font-size: 18px;
@@ -625,6 +626,85 @@ section{
     						padding: 10px 15px;
     					}
 						}
+					}
+					&.blueon-section02{
+						width: 100%;
+						padding: 0px 100px;
+						.logo{
+							right: 0;
+						}
+						.slide02-wrap{
+							position: relative;
+							width: 560px;
+							height: 535px;
+							margin: 0 auto;
+							.person{
+								width: 560px;
+								height: 535px;
+								position: absolute;
+								margin: 0 auto;
+								background-position: center bottom;
+								top: -68px;
+								background-image: url(../images/blueon/slide3-person.png);
+								.pointer{
+									z-index: 3;
+									&.fem{
+										left: 110px;
+										top: 156px;
+									}
+									&.male{
+										left: 358px;
+										top: 120px;
+									}
+								}
+
+							}
+							.p1{
+								display: block;
+							}
+							.p1-bg{
+								position: absolute;
+								width: 560px;
+								height: 535px;
+								top: -68px;
+								left: 0;
+								margin: 0 auto;
+								background-image: url(../images/blueon/slide3-person-p1.png);
+								background-repeat: no-repeat;
+								background-position: center bottom;
+								animation: blinkertwo 1.5s linear infinite;
+								&.p2-bg{
+									background-image: url(../images/blueon/slide3-person-p2.png);
+									left: -14px;
+								}
+							}
+							.p1-text{
+								padding: 28px 15px;
+						    text-align: center;
+						    height: 178px;
+						    left: 50%;
+						    margin-left: -178px;
+						    &.p2-text{
+						    	margin-top: -44px;
+						    }
+							}
+							.p1-text-pink{
+								position: absolute;
+								width: 448px;
+								height: 98px;
+								left: 50%;
+								margin-left: -224px;
+								background-color: #990099;
+								color: #FFFFFF;
+								font-size: 24px;
+								font-family: 'Roboto', sans-serif;
+								bottom: 106px;
+								text-align: center;
+								padding: 24px 15px;
+								z-index: 3;
+							}
+						}
+						
 					}
 				}
 				.map-wrap{
@@ -1401,12 +1481,13 @@ section{
 			&.center-wion-title{
 				width: 60%;
 				text-align: center;
+				padding-left: 0;
 				h2{
 					margin-top: 5px;
 				}
 			}
 			&.center-wion-body{
-				padding-left: 80px;
+				padding-left: 60px;
 				.block{
 					width: 180px;
 					height: 160px;
@@ -2856,4 +2937,12 @@ div.contact-form{
 		height: 100%;
 	}
 
+}
+
+@keyframes blinker {  
+  50% { opacity: .3; }
+}
+
+@keyframes blinkertwo {  
+  50% { opacity: .8; }
 }
