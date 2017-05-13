@@ -22,7 +22,9 @@ $( document ).ready(function() {
         if (delay) { return};
 
         delay = true;
-        var wd = event.originalEvent.wheelDelta || -event.originalEvent.detail;        
+        var wd = event.originalEvent.wheelDelta || -event.originalEvent.detail;
+        var pos_bu = pos;
+
         if(wd > 0) {
             pos--;
         }else{
@@ -42,6 +44,11 @@ $( document ).ready(function() {
         }
 
         
+        if ( $("#section-0"+pos).length == 0) {
+            pos = pos_bu;
+            delay = false
+            return;
+        }
 
         var a = $("#section-0"+pos).offset().top;
         $("body, html").animate({ scrollTop: a+"px" },{
@@ -51,6 +58,7 @@ $( document ).ready(function() {
         $("section").addClass('hidden');
         $("#section-0"+pos).removeClass('hidden');
         setTimeout(function(){delay = false},1500)
+
     });
 
       $('.more-info, .contact-form').on('mousewheel DOMMouseScroll', function(event) {
