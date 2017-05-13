@@ -355,7 +355,7 @@ section{
 		}
 
 	}
-	.likeon-section01,.wion-section00,.wion-section01,.wion-section02,.wion-section03,.wion-section04{
+	.likeon-section01,.wion-section00,.wion-section01,.wion-section02,.wion-section03,.wion-section04,.wion-section05{
 		width: 100%;
 		.left{
 			width: 30%;
@@ -1234,6 +1234,119 @@ section{
 							background-repeat: no-repeat;
 							background-position: center center;
 						}
+					}
+				}
+			}
+			&.right-wion-05{
+				width: 60%;
+				padding-left: 90px;
+				.section05-wrap{
+					float: left;
+					width: 650px;
+					height: 300px;
+					background-color: #263442;
+					border-radius: 2px;
+					border: 1px solid $primary-color-rgba;
+					box-shadow: 0px 0px 68px -20px $primary-color;
+					position: relative;
+					margin-top: 125px;
+					.rectangle-phone{
+						height: 590px;
+						width: 610px;
+						margin-left: 40px;
+						display: inline-block;
+						position: relative;
+						top: -130px;
+						padding-top: 70px;
+					}
+					.phone01{
+							background-image: url(../images/wi-on-section-02/phone0102.png);
+							background-repeat: no-repeat;
+							background-position: center center;
+							background-size: contain;
+						}
+					.wifi-gray{
+						&:after{
+							content: '';
+							position: absolute;
+							display: block;
+							width: 94px;
+							height: 94px;
+							bottom: 68px;
+							left: 240px;
+							background-image: url(../images/wi-on-section-02/wi-fi-circle-gray.png);
+							background-repeat: no-repeat;
+							background-position: center center;
+							background-size: contain;
+						}
+					}
+					.box{
+						position: relative;
+						background-color: #B5003B;
+						height: 55px;
+						border-radius: 50px;
+						padding: 5px;
+						&.box-1{
+							width: 410px;
+							left: 0px;
+							top: 10px;
+						}
+						&.box-2{
+							width: 300px;
+							right: -170px;
+							margin: 25px 0 20px 0;
+						}
+						&.box-3, &.box-5{
+							width: 290px;
+							left: 80px;
+							margin-bottom: 20px;
+						}
+						&.box-4{
+							width: 380px;
+							left: 140px;
+							margin-bottom: 20px;
+						}
+						span.text{
+							position: relative;
+							z-index: 10;
+							width: 85%;
+							margin-left: 7.5%;
+							height: 55px;
+							display: inline-block;
+							color: white;
+							text-align: center;
+							font-size: 17px;
+							line-height: 20px;
+						}
+					}
+					.box-left{
+						&:before{
+							content: '';
+							position: absolute;
+						    top: 48%;
+						    left: 96%;
+						    margin-left: -25%;
+						    content: '';
+						    width: 0;
+						    height: 0;
+						    border-top: solid 50px #B5003B;
+						    border-left: solid 50px transparent;
+						}
+					}
+					.box-right{
+						&:before{
+							content: '';
+							position: absolute;
+						    top: 48%;
+						    right: 75%;
+						    margin-left: -25%;
+						    content: '';
+						    width: 0;
+						    height: 0;
+						    border-top: solid 50px #B5003B;
+						    border-right: solid 50px transparent;
+						}
+					
 					}
 				}
 			}
