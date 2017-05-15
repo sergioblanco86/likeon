@@ -511,7 +511,8 @@ section {
             width: 100%;
             padding: 0px 100px; }
             section .likeon-section01 .right.right-wion.right-blueon.blueon-section02 .logo, section .wion-section00 .right.right-wion.right-blueon.blueon-section02 .logo, section .wion-section01 .right.right-wion.right-blueon.blueon-section02 .logo, section .wion-section02 .right.right-wion.right-blueon.blueon-section02 .logo, section .wion-section03 .right.right-wion.right-blueon.blueon-section02 .logo, section .wion-section04 .right.right-wion.right-blueon.blueon-section02 .logo, section .wion-section05 .right.right-wion.right-blueon.blueon-section02 .logo {
-              right: 0; }
+              right: 0;
+              top: 80px; }
             section .likeon-section01 .right.right-wion.right-blueon.blueon-section02 .slide02-wrap, section .wion-section00 .right.right-wion.right-blueon.blueon-section02 .slide02-wrap, section .wion-section01 .right.right-wion.right-blueon.blueon-section02 .slide02-wrap, section .wion-section02 .right.right-wion.right-blueon.blueon-section02 .slide02-wrap, section .wion-section03 .right.right-wion.right-blueon.blueon-section02 .slide02-wrap, section .wion-section04 .right.right-wion.right-blueon.blueon-section02 .slide02-wrap, section .wion-section05 .right.right-wion.right-blueon.blueon-section02 .slide02-wrap {
               position: relative;
               width: 560px;
