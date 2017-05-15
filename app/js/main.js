@@ -372,12 +372,12 @@ $( document ).ready(function() {
 
     // blueon slide3
 		$("body").on("mouseenter",".pointer.fem", function(event){
-      $(this).parents(".blueon-section02").find(".p2").fadeToggle('fast');
-      $(this).parents(".blueon-section02").find(".p1").fadeToggle('fast');
+      $(this).parents(".blueon-section02").find(".p2").fadeOut('fast');
+      $(this).parents(".blueon-section02").find(".p1").fadeIn('fast');
     });
     $("body").on("mouseenter",".pointer.male", function(event){
-      $(this).parents(".blueon-section02").find(".p2").fadeToggle('fast');
-      $(this).parents(".blueon-section02").find(".p1").fadeToggle('fast');
+      $(this).parents(".blueon-section02").find(".p2").fadeIn('fast');
+      $(this).parents(".blueon-section02").find(".p1").fadeOut('fast');
     });
 });
   
