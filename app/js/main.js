@@ -83,6 +83,15 @@ $( document ).ready(function() {
       $("#map-argentina").removeClass('hide-visual')
     })
 
+    $(".bogota").hover( 
+      function (){
+        $(".box-bogota").removeClass('hide')
+      },
+      function () {
+        $(".box-bogota").addClass('hide')
+      }
+    )
+    
     $("#people01").on("mouseover", function (){
       $(".rectangle-people").addClass('off')
       $(".rectangle-people").removeClass('wifi-small')
@@ -277,6 +286,11 @@ $( document ).ready(function() {
   $(this).scroll(function(e) {
         e.preventDefault();
 		var scrollTop = $(this).scrollTop();
+
+    if (scrollTop >= $("section#section-08.wion-section08-div").offset().top - 50 && !$("section#section-08.wion-section08-div").hasClass('hidden')){
+      
+    }
+
     if (scrollTop > 300) {
 			if ($("ul.menu").hasClass('displayed')) {
 				$("li.menu-el").fadeOut('fast', function(){

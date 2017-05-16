@@ -355,7 +355,7 @@ section{
 		}
 
 	}
-	.likeon-section01,.wion-section00,.wion-section01,.wion-section02,.wion-section03,.wion-section04,.wion-section05,.wion-section06{
+	.likeon-section01,.wion-section00,.wion-section01,.wion-section02,.wion-section03,.wion-section04,.wion-section05,.wion-section06,.wion-section07,.wion-section08{
 		width: 100%;
 		.left{
 			width: 30%;
@@ -706,6 +706,99 @@ section{
 							}
 						}
 						
+					}
+				}
+				.map-colombia-wrap{
+					float: left;
+					width: 600px;
+					height: 650px;
+					position: relative;
+					.map{
+						width: 100%;
+						height: 650px;
+						background-image: url(../images/map_colombia.png);
+						background-repeat: no-repeat;
+						background-position: center center;
+						position: absolute;
+					}
+					.circle{
+						position: absolute;
+						width:30px;
+						height: 30px;
+						background-color: #66a0a5;
+						border-radius:50%;
+						box-shadow:1px 1px 10px #000;
+						opacity: 0.75;
+						transition: all 0.2s linear;
+						&:before{
+							  content: '';
+							  position: absolute;
+							  width: 20px;
+							  height: 20px;
+							  border-radius: 50%;
+							  background-color: #64B1B7;
+							  top:6px;
+							  left:5px;
+							  box-shadow:1px 1px 10px #000;
+						}
+						&:after{
+							  content: '';
+							  position: absolute;
+							  width: 10px;
+							  height: 10px;
+							  border-radius: 50%;
+							  background-color: #BFDEE7;
+							  top:11px;
+							  left:10px;
+						}
+						&:hover{
+							cursor: pointer;
+							opacity: .9;
+						}
+					}
+					.bogota{
+						position: relative;
+						top: 288px;
+						left: 232px;
+						
+					}
+					.box{
+						position: relative;
+						background-color: #263442;
+						height: 55px;
+						border-radius: 5px;
+						border: 1px solid $primary-color-rgba;
+						box-shadow: 0px 0px 68px -20px $primary-color;
+						padding: 5px;
+						&.box-bogota{
+							width: 280px;
+							left: 110px;
+							top: 220px;
+							&:before{
+								content: '';
+								position: absolute;
+							    top: 40%;
+							    left: 56%;
+							    margin-left: -25%;
+							    content: '';
+							    width: 0;
+							    height: 0;
+							    border-top: solid 50px #263442;
+							    border-left: solid 50px transparent;
+							    border-right: solid 50px transparent;
+							}
+						}
+						span.text{
+							position: relative;
+							width: 100%;
+							height: 43px;
+							display: inline-block;
+							color: white;
+							text-align: center;
+							font-size: 17px;
+							font-weight: bold;
+							line-height: 43px;
+						}
 					}
 				}
 				.map-wrap{
@@ -1533,6 +1626,86 @@ section{
 					}
 				}
 			}
+			&.right-wion-08{
+				width: 60%;
+				padding-left: 90px;
+				.section08-wrap{
+					float: left;
+					width: 650px;
+					height: 300px;
+					background-color: #263442;
+					border-radius: 2px;
+					border: 1px solid $primary-color-rgba;
+					box-shadow: 0px 0px 68px -20px $primary-color;
+					position: relative;
+					margin-top: 125px;
+					.img-left{
+						position: absolute;
+						width: 100%;
+						display: inline-block;
+						text-align: left;
+						vertical-align: top;
+						.img-01{
+							background-image: url(../images/wi-on-section-08/img01.png);
+							background-repeat: no-repeat;
+							background-position: center center;
+							background-size: contain;
+							height: 350px;
+							width: 750px;
+							position: absolute;
+							top: -50px;
+							left: -170px;
+						}
+						.img-02{
+							background-image: url(../images/wi-on-section-08/img02.png);
+							background-repeat: no-repeat;
+							background-position: center center;
+							background-size: contain;
+							height: 350px;
+							width: 750px;
+							position: absolute;
+							top: -40px;
+							left: -100px;
+						}
+						.img-03{
+							background-image: url(../images/wi-on-section-08/img03.png);
+							background-repeat: no-repeat;
+							background-position: center center;
+							background-size: contain;
+							height: 350px;
+							width: 750px;
+							position: absolute;
+							top: -45px;
+							left: -170px;
+						}
+					}
+					.description-right{
+						width: 60%;
+						display: inline-block;
+						float: right;
+						text-align: left;
+						vertical-align: top;
+						padding: 70px 15px 0 15px;
+						p{
+							&.text{
+								font-family: 'Roboto', sans-serif;
+								font-size: 18px;
+								color: #FFFFFF;
+								line-height: 25px;
+								font-weight: 300;
+							}
+							&.text-blue{
+								margin-top: 15px;
+								font-family: 'Roboto', sans-serif;
+								font-size: 13px;
+								color: $primary-color;
+								line-height: 27px;
+								font-weight: 300;
+							}
+						}
+					}
+				}
+			}
 			p{
 				font-family: 'Roboto', sans-serif;
 				font-size: 18px;
@@ -1738,6 +1911,20 @@ section{
 					&:hover{
 						border: 1px double $primary-color;
 					}
+				}
+				&.withoutp{
+					padding-left: 0px;
+				}
+				.bto{
+					background-color: #aa0039;
+					width: 250px;
+					height: 50px;
+					display: block;
+					margin: 0 auto;
+					color: white;
+					text-align: center;
+					font-size: 22px;
+					line-height: 50px;
 				}
 			}
 		}
