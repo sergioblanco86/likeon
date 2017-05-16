@@ -284,13 +284,20 @@ $( document ).ready(function() {
 				});
 				
 			}
-      if ($("section#section-05").length > 0 && scrollTop >= $("section#section-05").offset().top - 50 ) {
-          $("img.head-logo").fadeOut('fast');
-          $("div.indicator").fadeOut('fast');
+
+      if ($("img.head-logo").data('index')) {
+        if ($("section#section-05").length > 0 && scrollTop >= $("section#section-05").offset().top - 50) {
+            $("img.head-logo").fadeOut('fast');
+            $("div.indicator").fadeOut('fast');
+        }else{
+            $("img.head-logo").fadeIn('fast');
+            $("div.indicator").fadeIn('fast');
+        }
       }else{
-          $("img.head-logo").fadeIn('fast');
-          $("div.indicator").fadeIn('fast');
+            $("img.head-logo").fadeIn('fast');
+            $("div.indicator").fadeIn('fast');
       }
+      
 
 		}else{
 			if (!$("ul.menu").hasClass('displayed')) {
