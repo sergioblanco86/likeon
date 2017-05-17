@@ -1,5 +1,10 @@
 var pos = 0;
 $( document ).ready(function() {
+
+    // get visible div
+    console.log("visible->>", $("section:in-viewport") );
+    pos = $("section:in-viewport").data('number');
+
     $(this).scrollTop(0);
     var delay = false;
     var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
@@ -190,6 +195,12 @@ $( document ).ready(function() {
       $("#slide-phone-01").addClass("content0201")
       $("#slide-phone-02").addClass("content0202")
       $("#slide-phone-03").addClass("content0203")
+
+      $("#phone-section-03").addClass("changePhone");
+      $(".second-phone").addClass("show");
+      $(".overflow").addClass("show");
+      $(".leftB").addClass("show");
+      $(".rightB").addClass("show");
     })
     $(".back-info-slide-b").on("click",function () {
       $("div[class^=slide-phone-]").removeClass()
@@ -208,6 +219,14 @@ $( document ).ready(function() {
       $(".overflow").removeClass("show");
       $(".leftB").removeClass("show");
       $(".rightB").removeClass("show");
+
+      $("#slide-phone-01").removeClass("content0101")
+      $("#slide-phone-02").removeClass("content0102")
+      $("#slide-phone-03").removeClass("content0103")
+
+      $("#slide-phone-01").removeClass ("content0201")
+      $("#slide-phone-02").removeClass ("content0202")
+      $("#slide-phone-03").removeClass ("content0203")
     })
     window.addEventListener('keydown', function(e) {
       if(e.keyCode == 32 && e.target == document.body) {
@@ -219,11 +238,12 @@ $( document ).ready(function() {
         var scrollTop = $(this).scrollTop();
         if ($("section.wion-section-03").length > 0 && scrollTop >= $("section.wion-section-03").offset().top - 50 ) {
           if ($("#section-03").find(".wion-section03").length > 0){
-            
+              if ( !$("#phone-section-03").hasClass("phone-data") ) {
                   $("#phone-section-03").removeClass("phone-wifi")
                   $("#phone-section-03").addClass("phone-data")
                   $(".info-slide-a").addClass('hide')
                   $("div[class^=info-slide-b-]").removeClass('hide')
+              }
           }
         }
       }
@@ -425,6 +445,13 @@ $( document ).ready(function() {
       $(this).parents(".blueon-section02").find(".p2").fadeIn('fast');
       $(this).parents(".blueon-section02").find(".p1").fadeOut('fast');
     });
+
+    window.addEventListener("keydown", function(e) {
+        // space and arrow keys
+        if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+            e.preventDefault();
+        }
+    }, false);
 });
   
 $('#contact-form').submit(function(event){
