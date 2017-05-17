@@ -175,6 +175,11 @@ $( document ).ready(function() {
       $("#slide-phone-01").addClass("content0101")
       $("#slide-phone-02").addClass("content0102")
       $("#slide-phone-03").addClass("content0103")
+      $("#phone-section-03").addClass("changePhone");
+      $(".second-phone").addClass("show");
+      $(".overflow").addClass("show");
+      $(".leftB").addClass("show");
+      $(".rightB").addClass("show");
     })
     $(".info-slide-b-03").on("click",function () {
       $("div[class^=info-slide-b-]").addClass("hide")
@@ -197,6 +202,12 @@ $( document ).ready(function() {
       $("div[class^=info-slide-b-]").removeClass("hide")
       $("#content01-section03").addClass("hide")
       $("#content02-section03").addClass("hide")
+
+      $("#phone-section-03").removeClass("changePhone");
+      $(".second-phone").removeClass("show");
+      $(".overflow").removeClass("show");
+      $(".leftB").removeClass("show");
+      $(".rightB").removeClass("show");
     })
     window.addEventListener('keydown', function(e) {
       if(e.keyCode == 32 && e.target == document.body) {

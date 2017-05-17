@@ -1244,6 +1244,28 @@ section{
 						background-size: contain;
 						width: 297px;
 						height: 508px;
+
+					}
+					&.changePhone{
+						background-image: none !important;
+					}
+					.second-phone{
+						background-image: url(http://localhost:3000/css/../images/wi-on-section-03/phone-transparent.png);
+						background-repeat: no-repeat;
+						background-position: center center;
+						background-size: contain;
+						width: 297px;
+						height: 466px;
+						display: none;
+						margin-left: -16px;
+						margin-top: -1px;
+						position: absolute;
+						z-index: 3;
+						background-size: 297px 508px;
+						background-position-y: 0px;
+						&.show{
+							display: block;
+						}
 					}
 					&.phone-data{
 						background-image: url(../images/wi-on-section-03/phone-info.png);
@@ -1253,14 +1275,71 @@ section{
 						width: 297px;
 						height: 508px;
 					}
+					.overflow{
+						position: absolute;
+					    width: 792px;
+					    height: 319px;
+					    overflow: auto;
+					    top: 87px;
+					    padding-bottom: 80px;
+					    box-sizing: content-box;
+					    right: -46px;
+					    display: none;
+					    &.show{
+							display: block;
+						}
+					    &::-webkit-scrollbar-track{
+							-webkit-box-shadow: inset 0 0 9px rgba(0,0,0,0.3);
+							border-radius: 0px;
+							background-color: #253341;
+						}
+						&::-webkit-scrollbar{
+							height: 9px;
+							background-color: #253341;
+						}
+						&::-webkit-scrollbar-thumb{
+							border-radius: 0px;
+							-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+							background-color: #538D91;
+						}
+						
+					}
+					.rightB{
+						position: absolute;
+						width: 200px;
+						height: 389px;
+						right: -46px;
+    					top: 88px;
+						background-color: rgba(0,0,0,0);
+						background: linear-gradient(to right, rgba(9,22,29,0), rgba(9,22,29,1));
+						display: none;
+						&.show{
+							display: block;
+						}
+					}
+
+					.leftB{
+						position: absolute;
+						width: 200px;
+						height: 389px;
+						right: 546px;
+						top: 88px;
+						background-color: rgba(0,0,0,0);
+						background: linear-gradient(to right, rgba(9,22,29,1), rgba(9,22,29,0));
+						display: none;
+						&.show{
+							display: block;
+						}
+					}
 					.scroll-content{
 						position: absolute;
-						width: 208px;
-						height: 319px;
-						top: 87px;
-						right: 319px;
-						overflow-x: auto;
-    					overflow-y: hidden;
+					    width: 1176px;
+					    height: 319px;
+					    top: 0px;
+					    left: 0px;
+					    overflow-x: auto;
+					    overflow-y: hidden;
+					    padding: 0px 44px 0px 218px;
     					.content0101{
 							float: left;
 							
