@@ -1447,25 +1447,18 @@ section {
               position: absolute;
               top: -45px;
               left: -170px; }
-          section .likeon-section01 .right.right-wion-08 .section08-wrap .description-right, section .wion-section00 .right.right-wion-08 .section08-wrap .description-right, section .wion-section01 .right.right-wion-08 .section08-wrap .description-right, section .wion-section02 .right.right-wion-08 .section08-wrap .description-right, section .wion-section03 .right.right-wion-08 .section08-wrap .description-right, section .wion-section04 .right.right-wion-08 .section08-wrap .description-right, section .wion-section05 .right.right-wion-08 .section08-wrap .description-right, section .wion-section06 .right.right-wion-08 .section08-wrap .description-right, section .wion-section07 .right.right-wion-08 .section08-wrap .description-right, section .wion-section08 .right.right-wion-08 .section08-wrap .description-right {
+          section .likeon-section01 .right.right-wion-08 .section08-wrap .description-right-section08, section .wion-section00 .right.right-wion-08 .section08-wrap .description-right-section08, section .wion-section01 .right.right-wion-08 .section08-wrap .description-right-section08, section .wion-section02 .right.right-wion-08 .section08-wrap .description-right-section08, section .wion-section03 .right.right-wion-08 .section08-wrap .description-right-section08, section .wion-section04 .right.right-wion-08 .section08-wrap .description-right-section08, section .wion-section05 .right.right-wion-08 .section08-wrap .description-right-section08, section .wion-section06 .right.right-wion-08 .section08-wrap .description-right-section08, section .wion-section07 .right.right-wion-08 .section08-wrap .description-right-section08, section .wion-section08 .right.right-wion-08 .section08-wrap .description-right-section08 {
             width: 60%;
             display: inline-block;
             float: right;
             text-align: left;
             vertical-align: top;
             padding: 70px 15px 0 15px; }
-            section .likeon-section01 .right.right-wion-08 .section08-wrap .description-right p.text, section .wion-section00 .right.right-wion-08 .section08-wrap .description-right p.text, section .wion-section01 .right.right-wion-08 .section08-wrap .description-right p.text, section .wion-section02 .right.right-wion-08 .section08-wrap .description-right p.text, section .wion-section03 .right.right-wion-08 .section08-wrap .description-right p.text, section .wion-section04 .right.right-wion-08 .section08-wrap .description-right p.text, section .wion-section05 .right.right-wion-08 .section08-wrap .description-right p.text, section .wion-section06 .right.right-wion-08 .section08-wrap .description-right p.text, section .wion-section07 .right.right-wion-08 .section08-wrap .description-right p.text, section .wion-section08 .right.right-wion-08 .section08-wrap .description-right p.text {
+            section .likeon-section01 .right.right-wion-08 .section08-wrap .description-right-section08 p.text, section .wion-section00 .right.right-wion-08 .section08-wrap .description-right-section08 p.text, section .wion-section01 .right.right-wion-08 .section08-wrap .description-right-section08 p.text, section .wion-section02 .right.right-wion-08 .section08-wrap .description-right-section08 p.text, section .wion-section03 .right.right-wion-08 .section08-wrap .description-right-section08 p.text, section .wion-section04 .right.right-wion-08 .section08-wrap .description-right-section08 p.text, section .wion-section05 .right.right-wion-08 .section08-wrap .description-right-section08 p.text, section .wion-section06 .right.right-wion-08 .section08-wrap .description-right-section08 p.text, section .wion-section07 .right.right-wion-08 .section08-wrap .description-right-section08 p.text, section .wion-section08 .right.right-wion-08 .section08-wrap .description-right-section08 p.text {
               font-family: 'Roboto', sans-serif;
               font-size: 18px;
               color: #FFFFFF;
               line-height: 25px;
-              font-weight: 300; }
-            section .likeon-section01 .right.right-wion-08 .section08-wrap .description-right p.text-blue, section .wion-section00 .right.right-wion-08 .section08-wrap .description-right p.text-blue, section .wion-section01 .right.right-wion-08 .section08-wrap .description-right p.text-blue, section .wion-section02 .right.right-wion-08 .section08-wrap .description-right p.text-blue, section .wion-section03 .right.right-wion-08 .section08-wrap .description-right p.text-blue, section .wion-section04 .right.right-wion-08 .section08-wrap .description-right p.text-blue, section .wion-section05 .right.right-wion-08 .section08-wrap .description-right p.text-blue, section .wion-section06 .right.right-wion-08 .section08-wrap .description-right p.text-blue, section .wion-section07 .right.right-wion-08 .section08-wrap .description-right p.text-blue, section .wion-section08 .right.right-wion-08 .section08-wrap .description-right p.text-blue {
-              margin-top: 15px;
-              font-family: 'Roboto', sans-serif;
-              font-size: 13px;
-              color: #92f6fe;
-              line-height: 27px;
               font-weight: 300; }
       section .likeon-section01 .right p, section .wion-section00 .right p, section .wion-section01 .right p, section .wion-section02 .right p, section .wion-section03 .right p, section .wion-section04 .right p, section .wion-section05 .right p, section .wion-section06 .right p, section .wion-section07 .right p, section .wion-section08 .right p {
         font-family: 'Roboto', sans-serif;
@@ -1641,8 +1634,6 @@ section {
             background-size: content; }
           section .likeon-section01 .center.center-wion-body .block:hover, section .wion-section00 .center.center-wion-body .block:hover, section .wion-section01 .center.center-wion-body .block:hover, section .wion-section02 .center.center-wion-body .block:hover, section .wion-section03 .center.center-wion-body .block:hover, section .wion-section04 .center.center-wion-body .block:hover, section .wion-section05 .center.center-wion-body .block:hover, section .wion-section06 .center.center-wion-body .block:hover, section .wion-section07 .center.center-wion-body .block:hover, section .wion-section08 .center.center-wion-body .block:hover {
             border: 1px double #92f6fe; }
-        section .likeon-section01 .center.center-wion-body.withoutp, section .wion-section00 .center.center-wion-body.withoutp, section .wion-section01 .center.center-wion-body.withoutp, section .wion-section02 .center.center-wion-body.withoutp, section .wion-section03 .center.center-wion-body.withoutp, section .wion-section04 .center.center-wion-body.withoutp, section .wion-section05 .center.center-wion-body.withoutp, section .wion-section06 .center.center-wion-body.withoutp, section .wion-section07 .center.center-wion-body.withoutp, section .wion-section08 .center.center-wion-body.withoutp {
-          padding-left: 0px; }
         section .likeon-section01 .center.center-wion-body .bto, section .wion-section00 .center.center-wion-body .bto, section .wion-section01 .center.center-wion-body .bto, section .wion-section02 .center.center-wion-body .bto, section .wion-section03 .center.center-wion-body .bto, section .wion-section04 .center.center-wion-body .bto, section .wion-section05 .center.center-wion-body .bto, section .wion-section06 .center.center-wion-body .bto, section .wion-section07 .center.center-wion-body .bto, section .wion-section08 .center.center-wion-body .bto {
           background-color: #aa0039;
           width: 250px;
@@ -1653,6 +1644,35 @@ section {
           text-align: center;
           font-size: 22px;
           line-height: 50px; }
+      section .likeon-section01 .center.withoutp, section .wion-section00 .center.withoutp, section .wion-section01 .center.withoutp, section .wion-section02 .center.withoutp, section .wion-section03 .center.withoutp, section .wion-section04 .center.withoutp, section .wion-section05 .center.withoutp, section .wion-section06 .center.withoutp, section .wion-section07 .center.withoutp, section .wion-section08 .center.withoutp {
+        padding-left: 0px; }
+      section .likeon-section01 .center.logos-center, section .wion-section00 .center.logos-center, section .wion-section01 .center.logos-center, section .wion-section02 .center.logos-center, section .wion-section03 .center.logos-center, section .wion-section04 .center.logos-center, section .wion-section05 .center.logos-center, section .wion-section06 .center.logos-center, section .wion-section07 .center.logos-center, section .wion-section08 .center.logos-center {
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        padding-top: 55px; }
+        section .likeon-section01 .center.logos-center .box-logo, section .wion-section00 .center.logos-center .box-logo, section .wion-section01 .center.logos-center .box-logo, section .wion-section02 .center.logos-center .box-logo, section .wion-section03 .center.logos-center .box-logo, section .wion-section04 .center.logos-center .box-logo, section .wion-section05 .center.logos-center .box-logo, section .wion-section06 .center.logos-center .box-logo, section .wion-section07 .center.logos-center .box-logo, section .wion-section08 .center.logos-center .box-logo {
+          cursor: default;
+          margin: 0 50px;
+          float: left;
+          text-align: center;
+          width: 100px;
+          height: 155px;
+          opacity: 0.7; }
+          section .likeon-section01 .center.logos-center .box-logo img.img-logo, section .wion-section00 .center.logos-center .box-logo img.img-logo, section .wion-section01 .center.logos-center .box-logo img.img-logo, section .wion-section02 .center.logos-center .box-logo img.img-logo, section .wion-section03 .center.logos-center .box-logo img.img-logo, section .wion-section04 .center.logos-center .box-logo img.img-logo, section .wion-section05 .center.logos-center .box-logo img.img-logo, section .wion-section06 .center.logos-center .box-logo img.img-logo, section .wion-section07 .center.logos-center .box-logo img.img-logo, section .wion-section08 .center.logos-center .box-logo img.img-logo {
+            height: 50%;
+            margin: auto;
+            display: block; }
+          section .likeon-section01 .center.logos-center .box-logo .contain-text, section .wion-section00 .center.logos-center .box-logo .contain-text, section .wion-section01 .center.logos-center .box-logo .contain-text, section .wion-section02 .center.logos-center .box-logo .contain-text, section .wion-section03 .center.logos-center .box-logo .contain-text, section .wion-section04 .center.logos-center .box-logo .contain-text, section .wion-section05 .center.logos-center .box-logo .contain-text, section .wion-section06 .center.logos-center .box-logo .contain-text, section .wion-section07 .center.logos-center .box-logo .contain-text, section .wion-section08 .center.logos-center .box-logo .contain-text {
+            width: 100%;
+            height: 50%;
+            display: table; }
+            section .likeon-section01 .center.logos-center .box-logo .contain-text p.text, section .wion-section00 .center.logos-center .box-logo .contain-text p.text, section .wion-section01 .center.logos-center .box-logo .contain-text p.text, section .wion-section02 .center.logos-center .box-logo .contain-text p.text, section .wion-section03 .center.logos-center .box-logo .contain-text p.text, section .wion-section04 .center.logos-center .box-logo .contain-text p.text, section .wion-section05 .center.logos-center .box-logo .contain-text p.text, section .wion-section06 .center.logos-center .box-logo .contain-text p.text, section .wion-section07 .center.logos-center .box-logo .contain-text p.text, section .wion-section08 .center.logos-center .box-logo .contain-text p.text {
+              display: table-cell;
+              vertical-align: middle;
+              font-size: 11px;
+              font-weight: 300;
+              line-height: 15px; }
     section .likeon-section01 .blueon.legend, section .wion-section00 .blueon.legend, section .wion-section01 .blueon.legend, section .wion-section02 .blueon.legend, section .wion-section03 .blueon.legend, section .wion-section04 .blueon.legend, section .wion-section05 .blueon.legend, section .wion-section06 .blueon.legend, section .wion-section07 .blueon.legend, section .wion-section08 .blueon.legend {
       position: absolute;
       width: 100%;

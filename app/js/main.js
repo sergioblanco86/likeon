@@ -319,7 +319,51 @@ $( document ).ready(function() {
 		var scrollTop = $(this).scrollTop();
 
     if (scrollTop >= $("section#section-08.wion-section08-div").offset().top - 50 && !$("section#section-08.wion-section08-div").hasClass('hidden')){
+      //for (var i = 0; i < 10; i++) {
+      // setTimeout(function () {
+      //   var id = parseInt($("#img-content-section08").attr('class').slice(-1))
+      //   id += 1
+      //   if (id > 3)
+      //     id = 1
+      //   $("#img-content-section08").removeClass()
+      //   $("#img-content-section08").addClass('img-0'+id)
+      //   var now = Date.now();
+      // },2000)
+      //}
       
+        
+      
+      // var newWorker = function (func){
+      //   var blobURL = URL.createObjectURL(new Blob(['(',func.toString(),')()'], {type: 'application/javascript'}))
+      //   var worker = new Worker(blobURL);
+      //   return worker;
+      // }
+
+      // var task = newWorker(function(){
+      //   importScripts("http://fel.8u.cz/workerrjs/main/workerFakeDOM.js");
+      //   importScripts("http://code.jquery.com/jquery-2.1.4.min.js");
+      //   var sync = function(ms){
+      //     var now = Date.now();
+      //     while(Date.now() < (now + ms));
+      //     if($("#img-content-section08").attr('class')){
+      //       var id = parseInt($("#img-content-section08").attr('class').slice(-1))
+      //       id += 1
+      //       if (id > 3)
+      //         id = 1
+      //       $("#img-content-section08").removeClass()
+      //       $("#img-content-section08").addClass('img-0'+id)
+      //     }
+      //   }
+      //   var sw = true
+      //   var now = Date.now();
+      //   console.log('t start');
+      //   while (sw){
+      //     sync(2000);
+      //     if (Date.now() >= (now + 60000))
+      //       sw = false;
+      //   }
+      //   console.log('t finish');
+      // })
     }
 
     if (scrollTop > 300) {
