@@ -2,7 +2,6 @@ var pos = 0;
 $( document ).ready(function() {
 
     // get visible div
-    console.log("visible->>", $("section:in-viewport") );
     pos = $("section:in-viewport").data('number');
 
     $(this).scrollTop(0);
@@ -318,9 +317,6 @@ $( document ).ready(function() {
         e.preventDefault();
 		var scrollTop = $(this).scrollTop();
 
-    if (scrollTop >= $("section#section-08.wion-section08-div").offset().top - 50 && !$("section#section-08.wion-section08-div").hasClass('hidden')){
-      
-    }
 
     if (scrollTop > 300) {
 			if ($("ul.menu").hasClass('displayed')) {
@@ -452,6 +448,34 @@ $( document ).ready(function() {
             e.preventDefault();
         }
     }, false);
+
+    $("body").on("mouseover",".right-blueon.section-03 .numbers span", function(){
+      var change = $(this).data('change');
+      $(".right-blueon.section-03 .numbers span").removeClass("active");
+      $(this).addClass('active');
+      if (change == 1) {
+          $(".right-blueon.section-03 .person-text").html('El bluetooth está encendido y tiene la aplicación de la cadena de tiendas instalada en su celular.');
+        }
+      if (change == 2) {
+        $(".right-blueon.section-03 .person-text").html('Le llega una notificación al celular de promociones disponibles en la tienda que le interesa.');
+      }
+      if (change == 3) {
+        $(".right-blueon.section-03 .person-text").html('Paga, sale satisfecha, califica la experiencia que tuvo, un cuarto dispositivo la reconoce y se despide agradeciéndole por la visita.');
+      }
+
+      if (!$("div.change"+change).hasClass('visible')) {
+        $("div.change.visible").fadeOut('fast').removeClass('visible');
+        $("div.change"+change).fadeIn('fast').addClass('visible');
+      }
+
+    });
+
+    $("body").on("mouseover",".pointer.right-p-03", function(){
+      $(".right-blueon.section-03 .person-text").fadeToggle('fast');
+    });
+    $("body").on("mouseleave",".pointer.right-p-03", function(event){
+      $(".right-blueon.section-03 .person-text").fadeToggle('fast');
+    });
 });
   
 $('#contact-form').submit(function(event){
