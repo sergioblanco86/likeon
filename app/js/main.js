@@ -317,7 +317,6 @@ $( document ).ready(function() {
         e.preventDefault();
 		var scrollTop = $(this).scrollTop();
 
-
     if (scrollTop > 300) {
 			if ($("ul.menu").hasClass('displayed')) {
 				$("li.menu-el").fadeOut('fast', function(){
