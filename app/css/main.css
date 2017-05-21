@@ -62,6 +62,24 @@ div.wrapper {
   /*width: 1280px;*/
   margin: 0 auto; }
 
+a.lateral {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #BDBDBD;
+  width: 70px;
+  height: 100%; }
+  a.lateral.wion {
+    background-image: url(../images/blueon/gotoWion.png);
+    background-repeat: no-repeat;
+    background-position: center calc(100% - 50px); }
+  a.lateral.blueon {
+    background-image: url(../images/gotoBlueon.png);
+    background-repeat: no-repeat;
+    background-position: center calc(100% - 50px);
+    left: initial;
+    right: 0; }
+
 header {
   position: fixed;
   width: 100%;
@@ -230,10 +248,10 @@ section {
   padding-bottom: 100px;
   overflow: hidden;
   opacity: 1;
-  transition: all 1s ease-in; }
+  transition: padding-left 0.8s ease-in-out, opacity 2.5s ease-in-out; }
   section.hidden {
     opacity: 0;
-    padding-left: 200px; }
+    padding-left: 300px; }
   section .discover {
     position: absolute;
     bottom: 20px;
@@ -248,7 +266,7 @@ section {
     background-image: url(../images/discover.png);
     background-position: center;
     background-repeat: no-repeat;
-    transition: all 0.2s linear; }
+    transition: opacity 0.2s linear; }
     section .discover:hover {
       cursor: pointer;
       opacity: 0.7; }
@@ -265,7 +283,7 @@ section {
     margin-left: -40px; }
   section .wrapper {
     position: relative;
-    transition: all 0.2s linear;
+    transition: opacity 0.2s linear;
     display: none; }
   section .likeon-intro {
     width: 100%;
@@ -326,6 +344,8 @@ section {
             width: 40%; }
             section .likeon-section01 .left.left-wion.left-blueon.section-01.section-03 h2, section .wion-section00 .left.left-wion.left-blueon.section-01.section-03 h2, section .wion-section01 .left.left-wion.left-blueon.section-01.section-03 h2, section .wion-section02 .left.left-wion.left-blueon.section-01.section-03 h2, section .wion-section03 .left.left-wion.left-blueon.section-01.section-03 h2, section .wion-section04 .left.left-wion.left-blueon.section-01.section-03 h2, section .wion-section05 .left.left-wion.left-blueon.section-01.section-03 h2, section .wion-section06 .left.left-wion.left-blueon.section-01.section-03 h2, section .wion-section07 .left.left-wion.left-blueon.section-01.section-03 h2, section .wion-section08 .left.left-wion.left-blueon.section-01.section-03 h2 {
               line-height: 42px; }
+        section .likeon-section01 .left.left-wion.left-blueon.section05 h2, section .wion-section00 .left.left-wion.left-blueon.section05 h2, section .wion-section01 .left.left-wion.left-blueon.section05 h2, section .wion-section02 .left.left-wion.left-blueon.section05 h2, section .wion-section03 .left.left-wion.left-blueon.section05 h2, section .wion-section04 .left.left-wion.left-blueon.section05 h2, section .wion-section05 .left.left-wion.left-blueon.section05 h2, section .wion-section06 .left.left-wion.left-blueon.section05 h2, section .wion-section07 .left.left-wion.left-blueon.section05 h2, section .wion-section08 .left.left-wion.left-blueon.section05 h2 {
+          line-height: 40px; }
       section .likeon-section01 .left.left-wion-without-text, section .wion-section00 .left.left-wion-without-text, section .wion-section01 .left.left-wion-without-text, section .wion-section02 .left.left-wion-without-text, section .wion-section03 .left.left-wion-without-text, section .wion-section04 .left.left-wion-without-text, section .wion-section05 .left.left-wion-without-text, section .wion-section06 .left.left-wion-without-text, section .wion-section07 .left.left-wion-without-text, section .wion-section08 .left.left-wion-without-text {
         width: 20%;
         padding-top: 0px; }
@@ -581,7 +601,8 @@ section {
                   font-family: 'Roboto', sans-serif;
                   margin-right: 14px;
                   text-align: center;
-                  cursor: pointer; }
+                  cursor: pointer;
+                  font-weight: 300; }
                   section .likeon-section01 .right.right-wion.right-blueon.section-01.section-03 .numbers span.active, section .wion-section00 .right.right-wion.right-blueon.section-01.section-03 .numbers span.active, section .wion-section01 .right.right-wion.right-blueon.section-01.section-03 .numbers span.active, section .wion-section02 .right.right-wion.right-blueon.section-01.section-03 .numbers span.active, section .wion-section03 .right.right-wion.right-blueon.section-01.section-03 .numbers span.active, section .wion-section04 .right.right-wion.right-blueon.section-01.section-03 .numbers span.active, section .wion-section05 .right.right-wion.right-blueon.section-01.section-03 .numbers span.active, section .wion-section06 .right.right-wion.right-blueon.section-01.section-03 .numbers span.active, section .wion-section07 .right.right-wion.right-blueon.section-01.section-03 .numbers span.active, section .wion-section08 .right.right-wion.right-blueon.section-01.section-03 .numbers span.active {
                     background-color: #950095; }
           section .likeon-section01 .right.right-wion.right-blueon.blueon-section02, section .wion-section00 .right.right-wion.right-blueon.blueon-section02, section .wion-section01 .right.right-wion.right-blueon.blueon-section02, section .wion-section02 .right.right-wion.right-blueon.blueon-section02, section .wion-section03 .right.right-wion.right-blueon.blueon-section02, section .wion-section04 .right.right-wion.right-blueon.blueon-section02, section .wion-section05 .right.right-wion.right-blueon.blueon-section02, section .wion-section06 .right.right-wion.right-blueon.blueon-section02, section .wion-section07 .right.right-wion.right-blueon.blueon-section02, section .wion-section08 .right.right-wion.right-blueon.blueon-section02 {
@@ -649,6 +670,100 @@ section {
                 text-align: center;
                 padding: 24px 15px;
                 z-index: 3; }
+          section .likeon-section01 .right.right-wion.right-blueon.section05 .cellphone, section .wion-section00 .right.right-wion.right-blueon.section05 .cellphone, section .wion-section01 .right.right-wion.right-blueon.section05 .cellphone, section .wion-section02 .right.right-wion.right-blueon.section05 .cellphone, section .wion-section03 .right.right-wion.right-blueon.section05 .cellphone, section .wion-section04 .right.right-wion.right-blueon.section05 .cellphone, section .wion-section05 .right.right-wion.right-blueon.section05 .cellphone, section .wion-section06 .right.right-wion.right-blueon.section05 .cellphone, section .wion-section07 .right.right-wion.right-blueon.section05 .cellphone, section .wion-section08 .right.right-wion.right-blueon.section05 .cellphone {
+            float: left;
+            width: 267px;
+            height: 478px;
+            background-image: url(../images/blueon/phone-section5.png);
+            background-repeat: no-repeat;
+            margin-top: 75px;
+            position: relative;
+            z-index: 2; }
+            section .likeon-section01 .right.right-wion.right-blueon.section05 .cellphone .romb, section .wion-section00 .right.right-wion.right-blueon.section05 .cellphone .romb, section .wion-section01 .right.right-wion.right-blueon.section05 .cellphone .romb, section .wion-section02 .right.right-wion.right-blueon.section05 .cellphone .romb, section .wion-section03 .right.right-wion.right-blueon.section05 .cellphone .romb, section .wion-section04 .right.right-wion.right-blueon.section05 .cellphone .romb, section .wion-section05 .right.right-wion.right-blueon.section05 .cellphone .romb, section .wion-section06 .right.right-wion.right-blueon.section05 .cellphone .romb, section .wion-section07 .right.right-wion.right-blueon.section05 .cellphone .romb, section .wion-section08 .right.right-wion.right-blueon.section05 .cellphone .romb {
+              position: absolute;
+              width: 78px;
+              height: 78px;
+              border: 3px solid #555;
+              background: #428bca;
+              transform: rotate(45deg);
+              border: 1px solid rgba(143, 246, 252, 0.56);
+              box-shadow: 0px 0px 68px -20px #92f6fe;
+              background-color: #263442;
+              text-align: center;
+              opacity: 1;
+              cursor: pointer;
+              transition: opacity 0.2 linear; }
+              section .likeon-section01 .right.right-wion.right-blueon.section05 .cellphone .romb span, section .wion-section00 .right.right-wion.right-blueon.section05 .cellphone .romb span, section .wion-section01 .right.right-wion.right-blueon.section05 .cellphone .romb span, section .wion-section02 .right.right-wion.right-blueon.section05 .cellphone .romb span, section .wion-section03 .right.right-wion.right-blueon.section05 .cellphone .romb span, section .wion-section04 .right.right-wion.right-blueon.section05 .cellphone .romb span, section .wion-section05 .right.right-wion.right-blueon.section05 .cellphone .romb span, section .wion-section06 .right.right-wion.right-blueon.section05 .cellphone .romb span, section .wion-section07 .right.right-wion.right-blueon.section05 .cellphone .romb span, section .wion-section08 .right.right-wion.right-blueon.section05 .cellphone .romb span {
+                color: #8FF5FB;
+                font-size: 66px;
+                line-height: 98px;
+                transform: rotate(135deg);
+                position: absolute;
+                font-family: 'Roboto', sans-serif;
+                top: -10px;
+                left: 20px;
+                font-weight: 300; }
+              section .likeon-section01 .right.right-wion.right-blueon.section05 .cellphone .romb.r1, section .wion-section00 .right.right-wion.right-blueon.section05 .cellphone .romb.r1, section .wion-section01 .right.right-wion.right-blueon.section05 .cellphone .romb.r1, section .wion-section02 .right.right-wion.right-blueon.section05 .cellphone .romb.r1, section .wion-section03 .right.right-wion.right-blueon.section05 .cellphone .romb.r1, section .wion-section04 .right.right-wion.right-blueon.section05 .cellphone .romb.r1, section .wion-section05 .right.right-wion.right-blueon.section05 .cellphone .romb.r1, section .wion-section06 .right.right-wion.right-blueon.section05 .cellphone .romb.r1, section .wion-section07 .right.right-wion.right-blueon.section05 .cellphone .romb.r1, section .wion-section08 .right.right-wion.right-blueon.section05 .cellphone .romb.r1 {
+                margin-top: 92px;
+                margin-left: 80px; }
+              section .likeon-section01 .right.right-wion.right-blueon.section05 .cellphone .romb.r2, section .wion-section00 .right.right-wion.right-blueon.section05 .cellphone .romb.r2, section .wion-section01 .right.right-wion.right-blueon.section05 .cellphone .romb.r2, section .wion-section02 .right.right-wion.right-blueon.section05 .cellphone .romb.r2, section .wion-section03 .right.right-wion.right-blueon.section05 .cellphone .romb.r2, section .wion-section04 .right.right-wion.right-blueon.section05 .cellphone .romb.r2, section .wion-section05 .right.right-wion.right-blueon.section05 .cellphone .romb.r2, section .wion-section06 .right.right-wion.right-blueon.section05 .cellphone .romb.r2, section .wion-section07 .right.right-wion.right-blueon.section05 .cellphone .romb.r2, section .wion-section08 .right.right-wion.right-blueon.section05 .cellphone .romb.r2 {
+                margin-top: 190px;
+                margin-left: -10px; }
+              section .likeon-section01 .right.right-wion.right-blueon.section05 .cellphone .romb.r3, section .wion-section00 .right.right-wion.right-blueon.section05 .cellphone .romb.r3, section .wion-section01 .right.right-wion.right-blueon.section05 .cellphone .romb.r3, section .wion-section02 .right.right-wion.right-blueon.section05 .cellphone .romb.r3, section .wion-section03 .right.right-wion.right-blueon.section05 .cellphone .romb.r3, section .wion-section04 .right.right-wion.right-blueon.section05 .cellphone .romb.r3, section .wion-section05 .right.right-wion.right-blueon.section05 .cellphone .romb.r3, section .wion-section06 .right.right-wion.right-blueon.section05 .cellphone .romb.r3, section .wion-section07 .right.right-wion.right-blueon.section05 .cellphone .romb.r3, section .wion-section08 .right.right-wion.right-blueon.section05 .cellphone .romb.r3 {
+                margin-top: 281px;
+                margin-left: 80px; }
+              section .likeon-section01 .right.right-wion.right-blueon.section05 .cellphone .romb.r4, section .wion-section00 .right.right-wion.right-blueon.section05 .cellphone .romb.r4, section .wion-section01 .right.right-wion.right-blueon.section05 .cellphone .romb.r4, section .wion-section02 .right.right-wion.right-blueon.section05 .cellphone .romb.r4, section .wion-section03 .right.right-wion.right-blueon.section05 .cellphone .romb.r4, section .wion-section04 .right.right-wion.right-blueon.section05 .cellphone .romb.r4, section .wion-section05 .right.right-wion.right-blueon.section05 .cellphone .romb.r4, section .wion-section06 .right.right-wion.right-blueon.section05 .cellphone .romb.r4, section .wion-section07 .right.right-wion.right-blueon.section05 .cellphone .romb.r4, section .wion-section08 .right.right-wion.right-blueon.section05 .cellphone .romb.r4 {
+                margin-top: 374px;
+                margin-left: -10px; }
+            section .likeon-section01 .right.right-wion.right-blueon.section05 .cellphone .person1, section .wion-section00 .right.right-wion.right-blueon.section05 .cellphone .person1, section .wion-section01 .right.right-wion.right-blueon.section05 .cellphone .person1, section .wion-section02 .right.right-wion.right-blueon.section05 .cellphone .person1, section .wion-section03 .right.right-wion.right-blueon.section05 .cellphone .person1, section .wion-section04 .right.right-wion.right-blueon.section05 .cellphone .person1, section .wion-section05 .right.right-wion.right-blueon.section05 .cellphone .person1, section .wion-section06 .right.right-wion.right-blueon.section05 .cellphone .person1, section .wion-section07 .right.right-wion.right-blueon.section05 .cellphone .person1, section .wion-section08 .right.right-wion.right-blueon.section05 .cellphone .person1 {
+              position: absolute;
+              width: 131px;
+              height: 359px;
+              background-image: url(../images/blueon/slide5-person1.png);
+              background-repeat: no-repeat;
+              top: 32px;
+              left: 62px;
+              display: none; }
+            section .likeon-section01 .right.right-wion.right-blueon.section05 .cellphone .person2, section .wion-section00 .right.right-wion.right-blueon.section05 .cellphone .person2, section .wion-section01 .right.right-wion.right-blueon.section05 .cellphone .person2, section .wion-section02 .right.right-wion.right-blueon.section05 .cellphone .person2, section .wion-section03 .right.right-wion.right-blueon.section05 .cellphone .person2, section .wion-section04 .right.right-wion.right-blueon.section05 .cellphone .person2, section .wion-section05 .right.right-wion.right-blueon.section05 .cellphone .person2, section .wion-section06 .right.right-wion.right-blueon.section05 .cellphone .person2, section .wion-section07 .right.right-wion.right-blueon.section05 .cellphone .person2, section .wion-section08 .right.right-wion.right-blueon.section05 .cellphone .person2 {
+              position: absolute;
+              width: 203px;
+              height: 359px;
+              background-image: url(../images/blueon/slide5-person2.png);
+              background-repeat: no-repeat;
+              top: 40px;
+              left: 18px;
+              display: none; }
+            section .likeon-section01 .right.right-wion.right-blueon.section05 .cellphone .person3, section .wion-section00 .right.right-wion.right-blueon.section05 .cellphone .person3, section .wion-section01 .right.right-wion.right-blueon.section05 .cellphone .person3, section .wion-section02 .right.right-wion.right-blueon.section05 .cellphone .person3, section .wion-section03 .right.right-wion.right-blueon.section05 .cellphone .person3, section .wion-section04 .right.right-wion.right-blueon.section05 .cellphone .person3, section .wion-section05 .right.right-wion.right-blueon.section05 .cellphone .person3, section .wion-section06 .right.right-wion.right-blueon.section05 .cellphone .person3, section .wion-section07 .right.right-wion.right-blueon.section05 .cellphone .person3, section .wion-section08 .right.right-wion.right-blueon.section05 .cellphone .person3 {
+              position: absolute;
+              width: 142px;
+              height: 299px;
+              background-image: url(../images/blueon/slide5-person3.png);
+              background-repeat: no-repeat;
+              top: 92px;
+              left: 48px;
+              display: none; }
+          section .likeon-section01 .right.right-wion.right-blueon.section05 .section5-text, section .wion-section00 .right.right-wion.right-blueon.section05 .section5-text, section .wion-section01 .right.right-wion.right-blueon.section05 .section5-text, section .wion-section02 .right.right-wion.right-blueon.section05 .section5-text, section .wion-section03 .right.right-wion.right-blueon.section05 .section5-text, section .wion-section04 .right.right-wion.right-blueon.section05 .section5-text, section .wion-section05 .right.right-wion.right-blueon.section05 .section5-text, section .wion-section06 .right.right-wion.right-blueon.section05 .section5-text, section .wion-section07 .right.right-wion.right-blueon.section05 .section5-text, section .wion-section08 .right.right-wion.right-blueon.section05 .section5-text {
+            position: absolute;
+            width: 100%;
+            height: 440px;
+            margin-left: 270px;
+            top: 92px;
+            background-color: #263442;
+            border-radius: 2px;
+            border: 1px solid rgba(143, 246, 252, 0.56);
+            box-shadow: 0px 0px 68px -20px #92f6fe;
+            display: none; }
+            section .likeon-section01 .right.right-wion.right-blueon.section05 .section5-text p, section .wion-section00 .right.right-wion.right-blueon.section05 .section5-text p, section .wion-section01 .right.right-wion.right-blueon.section05 .section5-text p, section .wion-section02 .right.right-wion.right-blueon.section05 .section5-text p, section .wion-section03 .right.right-wion.right-blueon.section05 .section5-text p, section .wion-section04 .right.right-wion.right-blueon.section05 .section5-text p, section .wion-section05 .right.right-wion.right-blueon.section05 .section5-text p, section .wion-section06 .right.right-wion.right-blueon.section05 .section5-text p, section .wion-section07 .right.right-wion.right-blueon.section05 .section5-text p, section .wion-section08 .right.right-wion.right-blueon.section05 .section5-text p {
+              position: absolute;
+              left: 60px;
+              top: 130px;
+              font-family: 'Roboto', sans-serif;
+              color: #FFFFFF;
+              width: 315px;
+              height: auto;
+              font-size: 24px;
+              text-align: left;
+              line-height: 30px; }
         section .likeon-section01 .right.right-wion .map-colombia-wrap, section .wion-section00 .right.right-wion .map-colombia-wrap, section .wion-section01 .right.right-wion .map-colombia-wrap, section .wion-section02 .right.right-wion .map-colombia-wrap, section .wion-section03 .right.right-wion .map-colombia-wrap, section .wion-section04 .right.right-wion .map-colombia-wrap, section .wion-section05 .right.right-wion .map-colombia-wrap, section .wion-section06 .right.right-wion .map-colombia-wrap, section .wion-section07 .right.right-wion .map-colombia-wrap, section .wion-section08 .right.right-wion .map-colombia-wrap {
           float: left;
           width: 600px;
@@ -669,7 +784,7 @@ section {
             border-radius: 50%;
             box-shadow: 1px 1px 10px #000;
             opacity: 0.75;
-            transition: all 0.2s linear; }
+            transition: opacity 0.2s linear; }
             section .likeon-section01 .right.right-wion .map-colombia-wrap .circle:before, section .wion-section00 .right.right-wion .map-colombia-wrap .circle:before, section .wion-section01 .right.right-wion .map-colombia-wrap .circle:before, section .wion-section02 .right.right-wion .map-colombia-wrap .circle:before, section .wion-section03 .right.right-wion .map-colombia-wrap .circle:before, section .wion-section04 .right.right-wion .map-colombia-wrap .circle:before, section .wion-section05 .right.right-wion .map-colombia-wrap .circle:before, section .wion-section06 .right.right-wion .map-colombia-wrap .circle:before, section .wion-section07 .right.right-wion .map-colombia-wrap .circle:before, section .wion-section08 .right.right-wion .map-colombia-wrap .circle:before {
               content: '';
               position: absolute;
@@ -756,7 +871,7 @@ section {
             border-radius: 50%;
             box-shadow: 1px 1px 10px #000;
             opacity: 0.75;
-            transition: all 0.2s linear; }
+            transition: opacity 0.2s linear; }
             section .likeon-section01 .right.right-wion .map-wrap .circle:before, section .wion-section00 .right.right-wion .map-wrap .circle:before, section .wion-section01 .right.right-wion .map-wrap .circle:before, section .wion-section02 .right.right-wion .map-wrap .circle:before, section .wion-section03 .right.right-wion .map-wrap .circle:before, section .wion-section04 .right.right-wion .map-wrap .circle:before, section .wion-section05 .right.right-wion .map-wrap .circle:before, section .wion-section06 .right.right-wion .map-wrap .circle:before, section .wion-section07 .right.right-wion .map-wrap .circle:before, section .wion-section08 .right.right-wion .map-wrap .circle:before {
               content: '';
               position: absolute;
@@ -1101,7 +1216,7 @@ section {
           section .likeon-section01 .right.right-wion-03 #phone-section-03.changePhone, section .wion-section00 .right.right-wion-03 #phone-section-03.changePhone, section .wion-section01 .right.right-wion-03 #phone-section-03.changePhone, section .wion-section02 .right.right-wion-03 #phone-section-03.changePhone, section .wion-section03 .right.right-wion-03 #phone-section-03.changePhone, section .wion-section04 .right.right-wion-03 #phone-section-03.changePhone, section .wion-section05 .right.right-wion-03 #phone-section-03.changePhone, section .wion-section06 .right.right-wion-03 #phone-section-03.changePhone, section .wion-section07 .right.right-wion-03 #phone-section-03.changePhone, section .wion-section08 .right.right-wion-03 #phone-section-03.changePhone {
             background-image: none !important; }
           section .likeon-section01 .right.right-wion-03 #phone-section-03 .second-phone, section .wion-section00 .right.right-wion-03 #phone-section-03 .second-phone, section .wion-section01 .right.right-wion-03 #phone-section-03 .second-phone, section .wion-section02 .right.right-wion-03 #phone-section-03 .second-phone, section .wion-section03 .right.right-wion-03 #phone-section-03 .second-phone, section .wion-section04 .right.right-wion-03 #phone-section-03 .second-phone, section .wion-section05 .right.right-wion-03 #phone-section-03 .second-phone, section .wion-section06 .right.right-wion-03 #phone-section-03 .second-phone, section .wion-section07 .right.right-wion-03 #phone-section-03 .second-phone, section .wion-section08 .right.right-wion-03 #phone-section-03 .second-phone {
-            background-image: url(http://localhost:3000/css/../images/wi-on-section-03/phone-transparent.png);
+            background-image: url(../images/wi-on-section-03/phone-transparent.png);
             background-repeat: no-repeat;
             background-position: center center;
             background-size: contain;
@@ -1585,6 +1700,8 @@ section {
           margin-top: 5px; }
       section .likeon-section01 .center.center-wion-body, section .wion-section00 .center.center-wion-body, section .wion-section01 .center.center-wion-body, section .wion-section02 .center.center-wion-body, section .wion-section03 .center.center-wion-body, section .wion-section04 .center.center-wion-body, section .wion-section05 .center.center-wion-body, section .wion-section06 .center.center-wion-body, section .wion-section07 .center.center-wion-body, section .wion-section08 .center.center-wion-body {
         padding-left: 60px; }
+        section .likeon-section01 .center.center-wion-body.blue-on, section .wion-section00 .center.center-wion-body.blue-on, section .wion-section01 .center.center-wion-body.blue-on, section .wion-section02 .center.center-wion-body.blue-on, section .wion-section03 .center.center-wion-body.blue-on, section .wion-section04 .center.center-wion-body.blue-on, section .wion-section05 .center.center-wion-body.blue-on, section .wion-section06 .center.center-wion-body.blue-on, section .wion-section07 .center.center-wion-body.blue-on, section .wion-section08 .center.center-wion-body.blue-on {
+          width: 65%; }
         section .likeon-section01 .center.center-wion-body .block, section .wion-section00 .center.center-wion-body .block, section .wion-section01 .center.center-wion-body .block, section .wion-section02 .center.center-wion-body .block, section .wion-section03 .center.center-wion-body .block, section .wion-section04 .center.center-wion-body .block, section .wion-section05 .center.center-wion-body .block, section .wion-section06 .center.center-wion-body .block, section .wion-section07 .center.center-wion-body .block, section .wion-section08 .center.center-wion-body .block {
           width: 180px;
           height: 160px;
@@ -1612,7 +1729,7 @@ section {
             /* for firefox 31 */
             transform: rotateY(0deg); }
             section .likeon-section01 .center.center-wion-body .block .front p, section .wion-section00 .center.center-wion-body .block .front p, section .wion-section01 .center.center-wion-body .block .front p, section .wion-section02 .center.center-wion-body .block .front p, section .wion-section03 .center.center-wion-body .block .front p, section .wion-section04 .center.center-wion-body .block .front p, section .wion-section05 .center.center-wion-body .block .front p, section .wion-section06 .center.center-wion-body .block .front p, section .wion-section07 .center.center-wion-body .block .front p, section .wion-section08 .center.center-wion-body .block .front p {
-              font-size: 15px;
+              font-size: 14px;
               color: #92f6fe;
               text-align: center;
               vertical-align: middle;
@@ -1637,6 +1754,8 @@ section {
             background-repeat: no-repeat;
             background-position: center;
             background-size: content; }
+            section .likeon-section01 .center.center-wion-body .block span.image00.blue, section .wion-section00 .center.center-wion-body .block span.image00.blue, section .wion-section01 .center.center-wion-body .block span.image00.blue, section .wion-section02 .center.center-wion-body .block span.image00.blue, section .wion-section03 .center.center-wion-body .block span.image00.blue, section .wion-section04 .center.center-wion-body .block span.image00.blue, section .wion-section05 .center.center-wion-body .block span.image00.blue, section .wion-section06 .center.center-wion-body .block span.image00.blue, section .wion-section07 .center.center-wion-body .block span.image00.blue, section .wion-section08 .center.center-wion-body .block span.image00.blue {
+              background-image: url(../images/blueon/image00.png); }
           section .likeon-section01 .center.center-wion-body .block span.image01, section .wion-section00 .center.center-wion-body .block span.image01, section .wion-section01 .center.center-wion-body .block span.image01, section .wion-section02 .center.center-wion-body .block span.image01, section .wion-section03 .center.center-wion-body .block span.image01, section .wion-section04 .center.center-wion-body .block span.image01, section .wion-section05 .center.center-wion-body .block span.image01, section .wion-section06 .center.center-wion-body .block span.image01, section .wion-section07 .center.center-wion-body .block span.image01, section .wion-section08 .center.center-wion-body .block span.image01 {
             display: block;
             width: 180px;
@@ -1645,6 +1764,8 @@ section {
             background-repeat: no-repeat;
             background-position: center;
             background-size: content; }
+            section .likeon-section01 .center.center-wion-body .block span.image01.blue, section .wion-section00 .center.center-wion-body .block span.image01.blue, section .wion-section01 .center.center-wion-body .block span.image01.blue, section .wion-section02 .center.center-wion-body .block span.image01.blue, section .wion-section03 .center.center-wion-body .block span.image01.blue, section .wion-section04 .center.center-wion-body .block span.image01.blue, section .wion-section05 .center.center-wion-body .block span.image01.blue, section .wion-section06 .center.center-wion-body .block span.image01.blue, section .wion-section07 .center.center-wion-body .block span.image01.blue, section .wion-section08 .center.center-wion-body .block span.image01.blue {
+              background-image: url(../images/blueon/image01.png); }
           section .likeon-section01 .center.center-wion-body .block span.image02, section .wion-section00 .center.center-wion-body .block span.image02, section .wion-section01 .center.center-wion-body .block span.image02, section .wion-section02 .center.center-wion-body .block span.image02, section .wion-section03 .center.center-wion-body .block span.image02, section .wion-section04 .center.center-wion-body .block span.image02, section .wion-section05 .center.center-wion-body .block span.image02, section .wion-section06 .center.center-wion-body .block span.image02, section .wion-section07 .center.center-wion-body .block span.image02, section .wion-section08 .center.center-wion-body .block span.image02 {
             display: block;
             width: 180px;
@@ -1653,6 +1774,8 @@ section {
             background-repeat: no-repeat;
             background-position: center;
             background-size: content; }
+            section .likeon-section01 .center.center-wion-body .block span.image02.blue, section .wion-section00 .center.center-wion-body .block span.image02.blue, section .wion-section01 .center.center-wion-body .block span.image02.blue, section .wion-section02 .center.center-wion-body .block span.image02.blue, section .wion-section03 .center.center-wion-body .block span.image02.blue, section .wion-section04 .center.center-wion-body .block span.image02.blue, section .wion-section05 .center.center-wion-body .block span.image02.blue, section .wion-section06 .center.center-wion-body .block span.image02.blue, section .wion-section07 .center.center-wion-body .block span.image02.blue, section .wion-section08 .center.center-wion-body .block span.image02.blue {
+              background-image: url(../images/blueon/image02.png); }
           section .likeon-section01 .center.center-wion-body .block span.image03, section .wion-section00 .center.center-wion-body .block span.image03, section .wion-section01 .center.center-wion-body .block span.image03, section .wion-section02 .center.center-wion-body .block span.image03, section .wion-section03 .center.center-wion-body .block span.image03, section .wion-section04 .center.center-wion-body .block span.image03, section .wion-section05 .center.center-wion-body .block span.image03, section .wion-section06 .center.center-wion-body .block span.image03, section .wion-section07 .center.center-wion-body .block span.image03, section .wion-section08 .center.center-wion-body .block span.image03 {
             display: block;
             width: 180px;
@@ -1661,6 +1784,8 @@ section {
             background-repeat: no-repeat;
             background-position: center;
             background-size: content; }
+            section .likeon-section01 .center.center-wion-body .block span.image03.blue, section .wion-section00 .center.center-wion-body .block span.image03.blue, section .wion-section01 .center.center-wion-body .block span.image03.blue, section .wion-section02 .center.center-wion-body .block span.image03.blue, section .wion-section03 .center.center-wion-body .block span.image03.blue, section .wion-section04 .center.center-wion-body .block span.image03.blue, section .wion-section05 .center.center-wion-body .block span.image03.blue, section .wion-section06 .center.center-wion-body .block span.image03.blue, section .wion-section07 .center.center-wion-body .block span.image03.blue, section .wion-section08 .center.center-wion-body .block span.image03.blue {
+              background-image: url(../images/blueon/image03.png); }
           section .likeon-section01 .center.center-wion-body .block span.image04, section .wion-section00 .center.center-wion-body .block span.image04, section .wion-section01 .center.center-wion-body .block span.image04, section .wion-section02 .center.center-wion-body .block span.image04, section .wion-section03 .center.center-wion-body .block span.image04, section .wion-section04 .center.center-wion-body .block span.image04, section .wion-section05 .center.center-wion-body .block span.image04, section .wion-section06 .center.center-wion-body .block span.image04, section .wion-section07 .center.center-wion-body .block span.image04, section .wion-section08 .center.center-wion-body .block span.image04 {
             display: block;
             width: 180px;
@@ -1669,6 +1794,8 @@ section {
             background-repeat: no-repeat;
             background-position: center;
             background-size: content; }
+            section .likeon-section01 .center.center-wion-body .block span.image04.blue, section .wion-section00 .center.center-wion-body .block span.image04.blue, section .wion-section01 .center.center-wion-body .block span.image04.blue, section .wion-section02 .center.center-wion-body .block span.image04.blue, section .wion-section03 .center.center-wion-body .block span.image04.blue, section .wion-section04 .center.center-wion-body .block span.image04.blue, section .wion-section05 .center.center-wion-body .block span.image04.blue, section .wion-section06 .center.center-wion-body .block span.image04.blue, section .wion-section07 .center.center-wion-body .block span.image04.blue, section .wion-section08 .center.center-wion-body .block span.image04.blue {
+              background-image: url(../images/blueon/image04.png); }
           section .likeon-section01 .center.center-wion-body .block span.image10, section .wion-section00 .center.center-wion-body .block span.image10, section .wion-section01 .center.center-wion-body .block span.image10, section .wion-section02 .center.center-wion-body .block span.image10, section .wion-section03 .center.center-wion-body .block span.image10, section .wion-section04 .center.center-wion-body .block span.image10, section .wion-section05 .center.center-wion-body .block span.image10, section .wion-section06 .center.center-wion-body .block span.image10, section .wion-section07 .center.center-wion-body .block span.image10, section .wion-section08 .center.center-wion-body .block span.image10 {
             display: block;
             width: 180px;
@@ -1677,6 +1804,8 @@ section {
             background-repeat: no-repeat;
             background-position: center;
             background-size: content; }
+            section .likeon-section01 .center.center-wion-body .block span.image10.blue, section .wion-section00 .center.center-wion-body .block span.image10.blue, section .wion-section01 .center.center-wion-body .block span.image10.blue, section .wion-section02 .center.center-wion-body .block span.image10.blue, section .wion-section03 .center.center-wion-body .block span.image10.blue, section .wion-section04 .center.center-wion-body .block span.image10.blue, section .wion-section05 .center.center-wion-body .block span.image10.blue, section .wion-section06 .center.center-wion-body .block span.image10.blue, section .wion-section07 .center.center-wion-body .block span.image10.blue, section .wion-section08 .center.center-wion-body .block span.image10.blue {
+              background-image: url(../images/blueon/image11.png); }
           section .likeon-section01 .center.center-wion-body .block span.image11, section .wion-section00 .center.center-wion-body .block span.image11, section .wion-section01 .center.center-wion-body .block span.image11, section .wion-section02 .center.center-wion-body .block span.image11, section .wion-section03 .center.center-wion-body .block span.image11, section .wion-section04 .center.center-wion-body .block span.image11, section .wion-section05 .center.center-wion-body .block span.image11, section .wion-section06 .center.center-wion-body .block span.image11, section .wion-section07 .center.center-wion-body .block span.image11, section .wion-section08 .center.center-wion-body .block span.image11 {
             display: block;
             width: 180px;
@@ -1685,6 +1814,8 @@ section {
             background-repeat: no-repeat;
             background-position: center;
             background-size: content; }
+            section .likeon-section01 .center.center-wion-body .block span.image11.blue, section .wion-section00 .center.center-wion-body .block span.image11.blue, section .wion-section01 .center.center-wion-body .block span.image11.blue, section .wion-section02 .center.center-wion-body .block span.image11.blue, section .wion-section03 .center.center-wion-body .block span.image11.blue, section .wion-section04 .center.center-wion-body .block span.image11.blue, section .wion-section05 .center.center-wion-body .block span.image11.blue, section .wion-section06 .center.center-wion-body .block span.image11.blue, section .wion-section07 .center.center-wion-body .block span.image11.blue, section .wion-section08 .center.center-wion-body .block span.image11.blue {
+              background-image: url(../images/blueon/image12.png); }
           section .likeon-section01 .center.center-wion-body .block span.image12, section .wion-section00 .center.center-wion-body .block span.image12, section .wion-section01 .center.center-wion-body .block span.image12, section .wion-section02 .center.center-wion-body .block span.image12, section .wion-section03 .center.center-wion-body .block span.image12, section .wion-section04 .center.center-wion-body .block span.image12, section .wion-section05 .center.center-wion-body .block span.image12, section .wion-section06 .center.center-wion-body .block span.image12, section .wion-section07 .center.center-wion-body .block span.image12, section .wion-section08 .center.center-wion-body .block span.image12 {
             display: block;
             width: 180px;
@@ -1693,6 +1824,8 @@ section {
             background-repeat: no-repeat;
             background-position: center;
             background-size: content; }
+            section .likeon-section01 .center.center-wion-body .block span.image12.blue, section .wion-section00 .center.center-wion-body .block span.image12.blue, section .wion-section01 .center.center-wion-body .block span.image12.blue, section .wion-section02 .center.center-wion-body .block span.image12.blue, section .wion-section03 .center.center-wion-body .block span.image12.blue, section .wion-section04 .center.center-wion-body .block span.image12.blue, section .wion-section05 .center.center-wion-body .block span.image12.blue, section .wion-section06 .center.center-wion-body .block span.image12.blue, section .wion-section07 .center.center-wion-body .block span.image12.blue, section .wion-section08 .center.center-wion-body .block span.image12.blue {
+              background-image: url(../images/blueon/image13.png); }
           section .likeon-section01 .center.center-wion-body .block span.image13, section .wion-section00 .center.center-wion-body .block span.image13, section .wion-section01 .center.center-wion-body .block span.image13, section .wion-section02 .center.center-wion-body .block span.image13, section .wion-section03 .center.center-wion-body .block span.image13, section .wion-section04 .center.center-wion-body .block span.image13, section .wion-section05 .center.center-wion-body .block span.image13, section .wion-section06 .center.center-wion-body .block span.image13, section .wion-section07 .center.center-wion-body .block span.image13, section .wion-section08 .center.center-wion-body .block span.image13 {
             display: block;
             width: 180px;
@@ -2180,7 +2313,7 @@ section {
         border: 1px solid #92f6fe;
         color: #92f6fe;
         box-shadow: 0px 0px 20px -4px #92f6fe;
-        transition: all 0.2s linear; }
+        transition: background-color 0.2s linear, color 0.2s linear; }
         section .likeon-section05 .content a.bto:hover {
           background-color: #92f6fe;
           color: #0A161D; }

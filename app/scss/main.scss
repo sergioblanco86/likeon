@@ -79,6 +79,27 @@ div.wrapper{
 	}
 }
 
+a.lateral{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #BDBDBD;
+	width: 70px;
+	height: 100%;
+	&.wion{
+		background-image: url(../images/blueon/gotoWion.png);
+		background-repeat: no-repeat;
+		background-position: center calc(100% - 50px);
+	}
+	&.blueon{
+		background-image: url(../images/gotoBlueon.png);
+		background-repeat: no-repeat;
+		background-position: center calc(100% - 50px);
+		left: initial;
+		right: 0;
+	}
+}
+
 header{
 	position: fixed;
 	width: 100%;
@@ -293,10 +314,10 @@ section{
 	padding-bottom: 100px;
 	overflow: hidden;
 	opacity: 1;
-	transition: all 1s ease-in;
+	transition: padding-left 0.8s ease-in-out, opacity 2.5s ease-in-out;
 	&.hidden{
 		opacity: 0;
-		padding-left: 200px;
+		padding-left: 300px;
 	}
 	.discover{
 		position: absolute;
@@ -312,7 +333,7 @@ section{
 		background-image: url(../images/discover.png);
 		background-position: center;
 		background-repeat: no-repeat;
-		transition: all 0.2s linear;
+		transition: opacity 0.2s linear;
 		&:hover{
 			cursor: pointer;
 			opacity: 0.7;
@@ -332,7 +353,7 @@ section{
 	}
 	.wrapper{
 		position: relative;
-		transition: all 0.2s linear;
+		transition: opacity 0.2s linear;
 		display: none;
 	}
 	.likeon-intro{
@@ -409,6 +430,11 @@ section{
 							h2{
 								line-height: 42px;
 							}
+						}
+					}
+					&.section05{
+						h2{
+							line-height: 40px;
 						}
 					}
 				}
@@ -714,6 +740,7 @@ section{
 									margin-right: 14px; 
 									text-align: center;
 									cursor: pointer;
+									font-weight: 300;
 									&.active{
 										background-color: #950095;
 									}
@@ -804,6 +831,115 @@ section{
 						}
 						
 					}
+					&.section05{
+						.cellphone{
+							float: left;
+							width: 267px;
+							height: 478px;
+							background-image: url(../images/blueon/phone-section5.png);
+							background-repeat: no-repeat;
+							margin-top: 75px;
+							position: relative;
+							z-index: 2;
+							.romb{
+								position: absolute;
+								width: 78px; 
+								height: 78px; 
+								border: 3px solid #555; 
+								background: #428bca;
+								transform: rotate(45deg);
+								border: 1px solid $primary-color-rgba;
+								box-shadow: 0px 0px 68px -20px $primary-color;
+								background-color: #263442;
+								text-align: center;
+								opacity: 1;
+								cursor: pointer;
+								transition: opacity 0.2 linear;
+								span{
+									color: #8FF5FB;
+									font-size: 66px;
+									line-height: 98px;	
+									transform: rotate(135deg);
+									position: absolute;
+									font-family: 'Roboto', sans-serif;
+									top: -10px;
+    								left: 20px;
+    								font-weight: 300;
+								}
+								&.r1{
+									margin-top: 92px;
+									margin-left: 80px;
+								}
+								&.r2{
+									margin-top: 190px;
+									margin-left: -10px;
+								}
+								&.r3{
+									margin-top: 281px;
+									margin-left: 80px;
+								}
+								&.r4{
+									margin-top: 374px;
+									margin-left: -10px;
+								}
+
+							}
+							.person1{
+								position: absolute;
+								width: 131px;
+								height: 359px;
+								background-image: url(../images/blueon/slide5-person1.png);
+								background-repeat: no-repeat;
+								top: 32px;
+    							left: 62px;
+    							display: none;
+							}
+							.person2{
+								position: absolute;
+								width: 203px;
+								height: 359px;
+								background-image: url(../images/blueon/slide5-person2.png);
+								background-repeat: no-repeat;
+								top: 40px;
+    							left: 18px;
+    							display: none;
+							}
+							.person3{
+								position: absolute;
+								width: 142px;
+								height: 299px;
+								background-image: url(../images/blueon/slide5-person3.png);
+								background-repeat: no-repeat;
+								top: 92px;
+    							left: 48px;
+    							display: none;
+							}
+						}
+						.section5-text{
+							position: absolute;
+						    width: 100%;
+						    height: 440px;
+						    margin-left: 270px;
+						    top: 92px;
+							background-color: #263442;
+							border-radius: 2px;
+							border: 1px solid $primary-color-rgba;
+							box-shadow: 0px 0px 68px -20px $primary-color;
+							display: none;
+							p{
+								position: absolute;
+								left: 60px;
+								top: 130px;
+								font-family: 'Roboto', sans-serif;
+								color: #FFFFFF;
+								width: 315px;
+								height: auto;
+								font-size: 24px;
+								text-align: left;
+								line-height: 30px;
+							}
+						}
+					}
 				}
 				.map-colombia-wrap{
 					float: left;
@@ -826,7 +962,7 @@ section{
 						border-radius:50%;
 						box-shadow:1px 1px 10px #000;
 						opacity: 0.75;
-						transition: all 0.2s linear;
+						transition: opacity 0.2s linear;
 						&:before{
 							  content: '';
 							  position: absolute;
@@ -925,7 +1061,7 @@ section{
 						border-radius:50%;
 						box-shadow:1px 1px 10px #000;
 						opacity: 0.75;
-						transition: all 0.2s linear;
+						transition: opacity 0.2s linear;
 						&:before{
 							  content: '';
 							  position: absolute;
@@ -1347,7 +1483,7 @@ section{
 						background-image: none !important;
 					}
 					.second-phone{
-						background-image: url(http://localhost:3000/css/../images/wi-on-section-03/phone-transparent.png);
+						background-image: url(../images/wi-on-section-03/phone-transparent.png);
 						background-repeat: no-repeat;
 						background-position: center center;
 						background-size: contain;
@@ -1932,6 +2068,9 @@ section{
 			}
 			&.center-wion-body{
 				padding-left: 60px;
+				&.blue-on{
+					width: 65%;
+				}
 				.block{
 					width: 180px;
 					height: 160px;
@@ -1961,7 +2100,7 @@ section{
 						display: table;
 						padding: 0 10px;
 						p{
-							font-size: 15px;
+							font-size: 14px;
 							color: $primary-color;
 							text-align: center;
 							vertical-align: middle;
@@ -1994,6 +2133,9 @@ section{
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: content;
+						&.blue{
+							background-image: url(../images/blueon/image00.png);
+						}
 					}
 					span.image01{
 						display: block;
@@ -2003,6 +2145,9 @@ section{
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: content;
+						&.blue{
+							background-image: url(../images/blueon/image01.png);
+						}
 					}
 					span.image02{
 						display: block;
@@ -2012,6 +2157,9 @@ section{
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: content;
+						&.blue{
+							background-image: url(../images/blueon/image02.png);
+						}
 					}
 					span.image03{
 						display: block;
@@ -2021,6 +2169,9 @@ section{
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: content;
+						&.blue{
+							background-image: url(../images/blueon/image03.png);
+						}
 					}
 					span.image04{
 						display: block;
@@ -2030,6 +2181,9 @@ section{
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: content;
+						&.blue{
+							background-image: url(../images/blueon/image04.png);
+						}
 					}
 					span.image10{
 						display: block;
@@ -2039,6 +2193,9 @@ section{
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: content;
+						&.blue{
+							background-image: url(../images/blueon/image11.png);
+						}
 					}
 					span.image11{
 						display: block;
@@ -2048,6 +2205,9 @@ section{
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: content;
+						&.blue{
+							background-image: url(../images/blueon/image12.png);
+						}
 					}
 					span.image12{
 						display: block;
@@ -2057,6 +2217,9 @@ section{
 						background-repeat: no-repeat;
 						background-position: center;
 						background-size: content;
+						&.blue{
+							background-image: url(../images/blueon/image13.png);
+						}
 					}
 					span.image13{
 						display: block;
@@ -2683,7 +2846,7 @@ section{
 				border: 1px solid $primary-color;
 				color: $primary-color;
 				box-shadow: 0px 0px 20px -4px $primary-color;
-				transition: all 0.2s linear;
+				transition: background-color 0.2s linear, color 0.2s linear;
 				&:hover{
 					background-color: $primary-color;
 					color: $second-color;
