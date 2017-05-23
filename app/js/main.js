@@ -271,21 +271,7 @@ $( document ).ready(function() {
         e.preventDefault();
       }
     });
-    document.body.onkeydown = function(e){
-      if(e.keyCode == 32){
-        var scrollTop = $(this).scrollTop();
-        if ($("section.wion-section-03").length > 0 && scrollTop >= $("section.wion-section-03").offset().top - 50 ) {
-          if ($("#section-03").find(".wion-section03").length > 0){
-              if ( !$("#phone-section-03").hasClass("phone-data") ) {
-                  $("#phone-section-03").removeClass("phone-wifi")
-                  $("#phone-section-03").addClass("phone-data")
-                  $(".info-slide-a").addClass('hide')
-                  $("div[class^=info-slide-b-]").removeClass('hide')
-              }
-          }
-        }
-      }
-    }
+
 
     $("div[id^=box-content-section06-]").on("mouseover",function (e) {
       $("#img-content-section06").removeClass();
@@ -482,7 +468,7 @@ $( document ).ready(function() {
 
     window.addEventListener("keydown", function(e) {
         // space and arrow keys
-        if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+        if([38, 40].indexOf(e.keyCode) > -1) {
             
             e.preventDefault();
 
@@ -605,6 +591,91 @@ $( document ).ready(function() {
 
             }
         }
+
+        if(e.keyCode == 32){
+
+           e.preventDefault();
+          var scrollTop = $(this).scrollTop();
+          if ($("section.wion-section-03").length > 0 && scrollTop >= $("section.wion-section-03").offset().top - 50 ) {
+            if ($("#section-03").find(".wion-section03").length > 0){
+                if ( !$("#phone-section-03").hasClass("phone-data") ) {
+                    $("#phone-section-03").removeClass("phone-wifi")
+                    $("#phone-section-03").addClass("phone-data")
+                    $(".info-slide-a").addClass('hide')
+                    $("div[class^=info-slide-b-]").removeClass('hide')
+                }
+            }
+          }
+        }
+
+        
+        if(e.keyCode == 39){
+          console.log("right");
+          var scrollTop = $(this).scrollTop();
+          if ($("section.blueon-section03").length > 0 && scrollTop >= $("section.blueon-section03").offset().top - 50 ) {
+            var data = $(".numbers span.active").data("change");
+            if (data == 3) {
+              data = 1;
+            }else{
+              data ++;
+            }
+
+
+            $(".right-blueon.section-03 .numbers span").removeClass("active");
+            $(".numbers span[data-change='"+data+"']").addClass('active');
+            if (data == 1) {
+                $(".right-blueon.section-03 .person-text").html('El bluetooth está encendido y tiene la aplicación de la cadena de tiendas instalada en su celular.');
+              }
+            if (data == 2) {
+              $(".right-blueon.section-03 .person-text").html('Le llega una notificación al celular de promociones disponibles en la tienda que le interesa.');
+            }
+            if (data == 3) {
+              $(".right-blueon.section-03 .person-text").html('Paga, sale satisfecha, califica la experiencia que tuvo, un cuarto dispositivo la reconoce y se despide agradeciéndole por la visita.');
+            }
+
+            if (!$("div.change"+data).hasClass('visible')) {
+              $("div.change.visible").fadeOut('fast').removeClass('visible');
+              $("div.change"+data).fadeIn('fast').addClass('visible');
+            }
+
+          }
+
+          
+        }
+
+        if(e.keyCode == 37){
+          var scrollTop = $(this).scrollTop();
+          if ($("section.blueon-section03").length > 0 && scrollTop >= $("section.blueon-section03").offset().top - 50 ) {
+            var data = $(".numbers span.active").data("change");
+            if (data == 1) {
+              data = 3;
+            }else{
+              data --;
+            }
+
+
+            $(".right-blueon.section-03 .numbers span").removeClass("active");
+            $(".numbers span[data-change='"+data+"']").addClass('active');
+            if (data == 1) {
+                $(".right-blueon.section-03 .person-text").html('El bluetooth está encendido y tiene la aplicación de la cadena de tiendas instalada en su celular.');
+              }
+            if (data == 2) {
+              $(".right-blueon.section-03 .person-text").html('Le llega una notificación al celular de promociones disponibles en la tienda que le interesa.');
+            }
+            if (data == 3) {
+              $(".right-blueon.section-03 .person-text").html('Paga, sale satisfecha, califica la experiencia que tuvo, un cuarto dispositivo la reconoce y se despide agradeciéndole por la visita.');
+            }
+
+            if (!$("div.change"+data).hasClass('visible')) {
+              $("div.change.visible").fadeOut('fast').removeClass('visible');
+              $("div.change"+data).fadeIn('fast').addClass('visible');
+            }
+
+          }
+
+
+        }
+      
     }, false);
 
     $("body").on("mouseover",".right-blueon.section-03 .numbers span", function(){

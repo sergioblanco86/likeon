@@ -412,13 +412,13 @@ section {
               font-family: 'Roboto', sans-serif;
               font-weight: 100;
               top: 45px;
-              left: 86px;
+              left: -242px;
               display: none; }
               section .likeon-section01 .right.right-wion.right-blueon .person .bubble:after, section .wion-section00 .right.right-wion.right-blueon .person .bubble:after, section .wion-section01 .right.right-wion.right-blueon .person .bubble:after, section .wion-section02 .right.right-wion.right-blueon .person .bubble:after, section .wion-section03 .right.right-wion.right-blueon .person .bubble:after, section .wion-section04 .right.right-wion.right-blueon .person .bubble:after, section .wion-section05 .right.right-wion.right-blueon .person .bubble:after, section .wion-section06 .right.right-wion.right-blueon .person .bubble:after, section .wion-section07 .right.right-wion.right-blueon .person .bubble:after, section .wion-section08 .right.right-wion.right-blueon .person .bubble:after {
                 content: '';
                 position: absolute;
-                bottom: -50px;
-                left: 32px;
+                bottom: -30px;
+                right: 7px;
                 width: 0;
                 height: 0;
                 border-style: solid;

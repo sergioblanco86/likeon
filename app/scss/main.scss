@@ -517,13 +517,13 @@ section{
 					    font-family: 'Roboto', sans-serif;
 					    font-weight: 100;
 					    top: 45px;
-    					left: 86px;
+    					left: -242px;
     					display: none;
 							&:after{
 								content: '';
 								position: absolute;
-								bottom: -50px;
-						    left: 32px;
+								bottom: -30px;
+						    right: 7px;
 						    width: 0;
 						    height: 0;
 						    border-style: solid;
