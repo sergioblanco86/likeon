@@ -313,18 +313,19 @@ $( document ).ready(function() {
     $("body").on("click",".indicator div.step, .next-fold, .products-fold", function(){
     	var section = $(this).data('section');
     	var number = $(this).data('number');
-        pos = number;
+      pos = number;
     	var a = $("#"+section).offset().top;
       console.log("he offset", a);
-      if (number == 5) {
+      if (number == 5 && $("#"+section).hasClass('allscreen')) {
           a = $(document).height();
       }
     	$("body, html").animate({ scrollTop: a+"px" },{
           duration: 'slow',
           easing: 'swing'
       });
+
       $("section").addClass('hidden');
-        $("#section-0"+number).removeClass('hidden');
+      $("#section-0"+number).removeClass('hidden');
     })
 
     $("body").on("click click touchstart",".discover", function(){
@@ -640,7 +641,7 @@ $( document ).ready(function() {
 
           }
 
-          
+
         }
 
         if(e.keyCode == 37){
