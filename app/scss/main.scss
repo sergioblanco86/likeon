@@ -955,6 +955,7 @@ section{
 						position: absolute;
 					}
 					.circle{
+						display: inline-block;
 						position: absolute;
 						width:30px;
 						height: 30px;
@@ -985,7 +986,7 @@ section{
 							  left:10px;
 						}
 						&:hover{
-							cursor: pointer;
+							//cursor: pointer;
 							opacity: .9;
 						}
 					}
@@ -993,6 +994,42 @@ section{
 						position: relative;
 						top: 288px;
 						left: 232px;
+						
+					}
+					.ibague{
+						position: relative;
+						top: 332px;
+						left: 180px;
+						
+					}
+					.neiva{
+						position: relative;
+						top: 251px;
+						left: 180px;
+						
+					}
+					.manizales{
+						position: relative;
+						top: 295px;
+						left: 90px;
+						
+					}
+					.pereira{
+						position: relative;
+						top: 255px;
+						left: 78px;
+						
+					}
+					.cucuta{
+						position: relative;
+						top: 197px;
+						left: 137px;
+						
+					}
+					.valledupar{
+						position: relative;
+						top: 145px;
+						left: 79px;
 						
 					}
 					.box{

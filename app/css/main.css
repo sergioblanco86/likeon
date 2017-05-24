@@ -777,6 +777,7 @@ section {
             background-position: center center;
             position: absolute; }
           section .likeon-section01 .right.right-wion .map-colombia-wrap .circle, section .wion-section00 .right.right-wion .map-colombia-wrap .circle, section .wion-section01 .right.right-wion .map-colombia-wrap .circle, section .wion-section02 .right.right-wion .map-colombia-wrap .circle, section .wion-section03 .right.right-wion .map-colombia-wrap .circle, section .wion-section04 .right.right-wion .map-colombia-wrap .circle, section .wion-section05 .right.right-wion .map-colombia-wrap .circle, section .wion-section06 .right.right-wion .map-colombia-wrap .circle, section .wion-section07 .right.right-wion .map-colombia-wrap .circle, section .wion-section08 .right.right-wion .map-colombia-wrap .circle {
+            display: inline-block;
             position: absolute;
             width: 30px;
             height: 30px;
@@ -805,12 +806,35 @@ section {
               top: 11px;
               left: 10px; }
             section .likeon-section01 .right.right-wion .map-colombia-wrap .circle:hover, section .wion-section00 .right.right-wion .map-colombia-wrap .circle:hover, section .wion-section01 .right.right-wion .map-colombia-wrap .circle:hover, section .wion-section02 .right.right-wion .map-colombia-wrap .circle:hover, section .wion-section03 .right.right-wion .map-colombia-wrap .circle:hover, section .wion-section04 .right.right-wion .map-colombia-wrap .circle:hover, section .wion-section05 .right.right-wion .map-colombia-wrap .circle:hover, section .wion-section06 .right.right-wion .map-colombia-wrap .circle:hover, section .wion-section07 .right.right-wion .map-colombia-wrap .circle:hover, section .wion-section08 .right.right-wion .map-colombia-wrap .circle:hover {
-              cursor: pointer;
               opacity: .9; }
           section .likeon-section01 .right.right-wion .map-colombia-wrap .bogota, section .wion-section00 .right.right-wion .map-colombia-wrap .bogota, section .wion-section01 .right.right-wion .map-colombia-wrap .bogota, section .wion-section02 .right.right-wion .map-colombia-wrap .bogota, section .wion-section03 .right.right-wion .map-colombia-wrap .bogota, section .wion-section04 .right.right-wion .map-colombia-wrap .bogota, section .wion-section05 .right.right-wion .map-colombia-wrap .bogota, section .wion-section06 .right.right-wion .map-colombia-wrap .bogota, section .wion-section07 .right.right-wion .map-colombia-wrap .bogota, section .wion-section08 .right.right-wion .map-colombia-wrap .bogota {
             position: relative;
             top: 288px;
             left: 232px; }
+          section .likeon-section01 .right.right-wion .map-colombia-wrap .ibague, section .wion-section00 .right.right-wion .map-colombia-wrap .ibague, section .wion-section01 .right.right-wion .map-colombia-wrap .ibague, section .wion-section02 .right.right-wion .map-colombia-wrap .ibague, section .wion-section03 .right.right-wion .map-colombia-wrap .ibague, section .wion-section04 .right.right-wion .map-colombia-wrap .ibague, section .wion-section05 .right.right-wion .map-colombia-wrap .ibague, section .wion-section06 .right.right-wion .map-colombia-wrap .ibague, section .wion-section07 .right.right-wion .map-colombia-wrap .ibague, section .wion-section08 .right.right-wion .map-colombia-wrap .ibague {
+            position: relative;
+            top: 332px;
+            left: 180px; }
+          section .likeon-section01 .right.right-wion .map-colombia-wrap .neiva, section .wion-section00 .right.right-wion .map-colombia-wrap .neiva, section .wion-section01 .right.right-wion .map-colombia-wrap .neiva, section .wion-section02 .right.right-wion .map-colombia-wrap .neiva, section .wion-section03 .right.right-wion .map-colombia-wrap .neiva, section .wion-section04 .right.right-wion .map-colombia-wrap .neiva, section .wion-section05 .right.right-wion .map-colombia-wrap .neiva, section .wion-section06 .right.right-wion .map-colombia-wrap .neiva, section .wion-section07 .right.right-wion .map-colombia-wrap .neiva, section .wion-section08 .right.right-wion .map-colombia-wrap .neiva {
+            position: relative;
+            top: 251px;
+            left: 180px; }
+          section .likeon-section01 .right.right-wion .map-colombia-wrap .manizales, section .wion-section00 .right.right-wion .map-colombia-wrap .manizales, section .wion-section01 .right.right-wion .map-colombia-wrap .manizales, section .wion-section02 .right.right-wion .map-colombia-wrap .manizales, section .wion-section03 .right.right-wion .map-colombia-wrap .manizales, section .wion-section04 .right.right-wion .map-colombia-wrap .manizales, section .wion-section05 .right.right-wion .map-colombia-wrap .manizales, section .wion-section06 .right.right-wion .map-colombia-wrap .manizales, section .wion-section07 .right.right-wion .map-colombia-wrap .manizales, section .wion-section08 .right.right-wion .map-colombia-wrap .manizales {
+            position: relative;
+            top: 295px;
+            left: 90px; }
+          section .likeon-section01 .right.right-wion .map-colombia-wrap .pereira, section .wion-section00 .right.right-wion .map-colombia-wrap .pereira, section .wion-section01 .right.right-wion .map-colombia-wrap .pereira, section .wion-section02 .right.right-wion .map-colombia-wrap .pereira, section .wion-section03 .right.right-wion .map-colombia-wrap .pereira, section .wion-section04 .right.right-wion .map-colombia-wrap .pereira, section .wion-section05 .right.right-wion .map-colombia-wrap .pereira, section .wion-section06 .right.right-wion .map-colombia-wrap .pereira, section .wion-section07 .right.right-wion .map-colombia-wrap .pereira, section .wion-section08 .right.right-wion .map-colombia-wrap .pereira {
+            position: relative;
+            top: 255px;
+            left: 78px; }
+          section .likeon-section01 .right.right-wion .map-colombia-wrap .cucuta, section .wion-section00 .right.right-wion .map-colombia-wrap .cucuta, section .wion-section01 .right.right-wion .map-colombia-wrap .cucuta, section .wion-section02 .right.right-wion .map-colombia-wrap .cucuta, section .wion-section03 .right.right-wion .map-colombia-wrap .cucuta, section .wion-section04 .right.right-wion .map-colombia-wrap .cucuta, section .wion-section05 .right.right-wion .map-colombia-wrap .cucuta, section .wion-section06 .right.right-wion .map-colombia-wrap .cucuta, section .wion-section07 .right.right-wion .map-colombia-wrap .cucuta, section .wion-section08 .right.right-wion .map-colombia-wrap .cucuta {
+            position: relative;
+            top: 197px;
+            left: 137px; }
+          section .likeon-section01 .right.right-wion .map-colombia-wrap .valledupar, section .wion-section00 .right.right-wion .map-colombia-wrap .valledupar, section .wion-section01 .right.right-wion .map-colombia-wrap .valledupar, section .wion-section02 .right.right-wion .map-colombia-wrap .valledupar, section .wion-section03 .right.right-wion .map-colombia-wrap .valledupar, section .wion-section04 .right.right-wion .map-colombia-wrap .valledupar, section .wion-section05 .right.right-wion .map-colombia-wrap .valledupar, section .wion-section06 .right.right-wion .map-colombia-wrap .valledupar, section .wion-section07 .right.right-wion .map-colombia-wrap .valledupar, section .wion-section08 .right.right-wion .map-colombia-wrap .valledupar {
+            position: relative;
+            top: 145px;
+            left: 79px; }
           section .likeon-section01 .right.right-wion .map-colombia-wrap .box, section .wion-section00 .right.right-wion .map-colombia-wrap .box, section .wion-section01 .right.right-wion .map-colombia-wrap .box, section .wion-section02 .right.right-wion .map-colombia-wrap .box, section .wion-section03 .right.right-wion .map-colombia-wrap .box, section .wion-section04 .right.right-wion .map-colombia-wrap .box, section .wion-section05 .right.right-wion .map-colombia-wrap .box, section .wion-section06 .right.right-wion .map-colombia-wrap .box, section .wion-section07 .right.right-wion .map-colombia-wrap .box, section .wion-section08 .right.right-wion .map-colombia-wrap .box {
             position: relative;
             background-color: #263442;
