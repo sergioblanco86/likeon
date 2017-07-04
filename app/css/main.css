@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box; }
 
@@ -895,7 +896,7 @@ section {
             border-radius: 50%;
             box-shadow: 1px 1px 10px #000;
             opacity: 0.75;
-            transition: opacity 0.2s linear; }
+            animation: blinker 1.5s linear infinite; }
             section .likeon-section01 .right.right-wion .map-wrap .circle:before, section .wion-section00 .right.right-wion .map-wrap .circle:before, section .wion-section01 .right.right-wion .map-wrap .circle:before, section .wion-section02 .right.right-wion .map-wrap .circle:before, section .wion-section03 .right.right-wion .map-wrap .circle:before, section .wion-section04 .right.right-wion .map-wrap .circle:before, section .wion-section05 .right.right-wion .map-wrap .circle:before, section .wion-section06 .right.right-wion .map-wrap .circle:before, section .wion-section07 .right.right-wion .map-wrap .circle:before, section .wion-section08 .right.right-wion .map-wrap .circle:before {
               content: '';
               position: absolute;
@@ -917,23 +918,64 @@ section {
               left: 10px; }
             section .likeon-section01 .right.right-wion .map-wrap .circle:hover, section .wion-section00 .right.right-wion .map-wrap .circle:hover, section .wion-section01 .right.right-wion .map-wrap .circle:hover, section .wion-section02 .right.right-wion .map-wrap .circle:hover, section .wion-section03 .right.right-wion .map-wrap .circle:hover, section .wion-section04 .right.right-wion .map-wrap .circle:hover, section .wion-section05 .right.right-wion .map-wrap .circle:hover, section .wion-section06 .right.right-wion .map-wrap .circle:hover, section .wion-section07 .right.right-wion .map-wrap .circle:hover, section .wion-section08 .right.right-wion .map-wrap .circle:hover {
               cursor: pointer;
-              opacity: .9; }
+              opacity: .9;
+              animation: none; }
           section .likeon-section01 .right.right-wion .map-wrap .mexico, section .wion-section00 .right.right-wion .map-wrap .mexico, section .wion-section01 .right.right-wion .map-wrap .mexico, section .wion-section02 .right.right-wion .map-wrap .mexico, section .wion-section03 .right.right-wion .map-wrap .mexico, section .wion-section04 .right.right-wion .map-wrap .mexico, section .wion-section05 .right.right-wion .map-wrap .mexico, section .wion-section06 .right.right-wion .map-wrap .mexico, section .wion-section07 .right.right-wion .map-wrap .mexico, section .wion-section08 .right.right-wion .map-wrap .mexico {
-            position: relative;
             top: 165px;
             left: 200px; }
+            section .likeon-section01 .right.right-wion .map-wrap .mexico:hover, section .wion-section00 .right.right-wion .map-wrap .mexico:hover, section .wion-section01 .right.right-wion .map-wrap .mexico:hover, section .wion-section02 .right.right-wion .map-wrap .mexico:hover, section .wion-section03 .right.right-wion .map-wrap .mexico:hover, section .wion-section04 .right.right-wion .map-wrap .mexico:hover, section .wion-section05 .right.right-wion .map-wrap .mexico:hover, section .wion-section06 .right.right-wion .map-wrap .mexico:hover, section .wion-section07 .right.right-wion .map-wrap .mexico:hover, section .wion-section08 .right.right-wion .map-wrap .mexico:hover {
+              top: 163px;
+              left: 198px;
+              width: 34px;
+              height: 34px; }
+              section .likeon-section01 .right.right-wion .map-wrap .mexico:hover:before, section .wion-section00 .right.right-wion .map-wrap .mexico:hover:before, section .wion-section01 .right.right-wion .map-wrap .mexico:hover:before, section .wion-section02 .right.right-wion .map-wrap .mexico:hover:before, section .wion-section03 .right.right-wion .map-wrap .mexico:hover:before, section .wion-section04 .right.right-wion .map-wrap .mexico:hover:before, section .wion-section05 .right.right-wion .map-wrap .mexico:hover:before, section .wion-section06 .right.right-wion .map-wrap .mexico:hover:before, section .wion-section07 .right.right-wion .map-wrap .mexico:hover:before, section .wion-section08 .right.right-wion .map-wrap .mexico:hover:before {
+                top: 8px;
+                left: 7px; }
+              section .likeon-section01 .right.right-wion .map-wrap .mexico:hover:after, section .wion-section00 .right.right-wion .map-wrap .mexico:hover:after, section .wion-section01 .right.right-wion .map-wrap .mexico:hover:after, section .wion-section02 .right.right-wion .map-wrap .mexico:hover:after, section .wion-section03 .right.right-wion .map-wrap .mexico:hover:after, section .wion-section04 .right.right-wion .map-wrap .mexico:hover:after, section .wion-section05 .right.right-wion .map-wrap .mexico:hover:after, section .wion-section06 .right.right-wion .map-wrap .mexico:hover:after, section .wion-section07 .right.right-wion .map-wrap .mexico:hover:after, section .wion-section08 .right.right-wion .map-wrap .mexico:hover:after {
+                top: 13px;
+                left: 12px; }
           section .likeon-section01 .right.right-wion .map-wrap .colombia, section .wion-section00 .right.right-wion .map-wrap .colombia, section .wion-section01 .right.right-wion .map-wrap .colombia, section .wion-section02 .right.right-wion .map-wrap .colombia, section .wion-section03 .right.right-wion .map-wrap .colombia, section .wion-section04 .right.right-wion .map-wrap .colombia, section .wion-section05 .right.right-wion .map-wrap .colombia, section .wion-section06 .right.right-wion .map-wrap .colombia, section .wion-section07 .right.right-wion .map-wrap .colombia, section .wion-section08 .right.right-wion .map-wrap .colombia {
-            position: relative;
-            top: 170px;
+            top: 200px;
             left: 260px; }
+            section .likeon-section01 .right.right-wion .map-wrap .colombia:hover, section .wion-section00 .right.right-wion .map-wrap .colombia:hover, section .wion-section01 .right.right-wion .map-wrap .colombia:hover, section .wion-section02 .right.right-wion .map-wrap .colombia:hover, section .wion-section03 .right.right-wion .map-wrap .colombia:hover, section .wion-section04 .right.right-wion .map-wrap .colombia:hover, section .wion-section05 .right.right-wion .map-wrap .colombia:hover, section .wion-section06 .right.right-wion .map-wrap .colombia:hover, section .wion-section07 .right.right-wion .map-wrap .colombia:hover, section .wion-section08 .right.right-wion .map-wrap .colombia:hover {
+              top: 198px;
+              left: 258px;
+              width: 34px;
+              height: 34px; }
+              section .likeon-section01 .right.right-wion .map-wrap .colombia:hover:before, section .wion-section00 .right.right-wion .map-wrap .colombia:hover:before, section .wion-section01 .right.right-wion .map-wrap .colombia:hover:before, section .wion-section02 .right.right-wion .map-wrap .colombia:hover:before, section .wion-section03 .right.right-wion .map-wrap .colombia:hover:before, section .wion-section04 .right.right-wion .map-wrap .colombia:hover:before, section .wion-section05 .right.right-wion .map-wrap .colombia:hover:before, section .wion-section06 .right.right-wion .map-wrap .colombia:hover:before, section .wion-section07 .right.right-wion .map-wrap .colombia:hover:before, section .wion-section08 .right.right-wion .map-wrap .colombia:hover:before {
+                top: 8px;
+                left: 7px; }
+              section .likeon-section01 .right.right-wion .map-wrap .colombia:hover:after, section .wion-section00 .right.right-wion .map-wrap .colombia:hover:after, section .wion-section01 .right.right-wion .map-wrap .colombia:hover:after, section .wion-section02 .right.right-wion .map-wrap .colombia:hover:after, section .wion-section03 .right.right-wion .map-wrap .colombia:hover:after, section .wion-section04 .right.right-wion .map-wrap .colombia:hover:after, section .wion-section05 .right.right-wion .map-wrap .colombia:hover:after, section .wion-section06 .right.right-wion .map-wrap .colombia:hover:after, section .wion-section07 .right.right-wion .map-wrap .colombia:hover:after, section .wion-section08 .right.right-wion .map-wrap .colombia:hover:after {
+                top: 13px;
+                left: 12px; }
           section .likeon-section01 .right.right-wion .map-wrap .ecuador, section .wion-section00 .right.right-wion .map-wrap .ecuador, section .wion-section01 .right.right-wion .map-wrap .ecuador, section .wion-section02 .right.right-wion .map-wrap .ecuador, section .wion-section03 .right.right-wion .map-wrap .ecuador, section .wion-section04 .right.right-wion .map-wrap .ecuador, section .wion-section05 .right.right-wion .map-wrap .ecuador, section .wion-section06 .right.right-wion .map-wrap .ecuador, section .wion-section07 .right.right-wion .map-wrap .ecuador, section .wion-section08 .right.right-wion .map-wrap .ecuador {
-            position: relative;
-            top: 170px;
+            top: 233px;
             left: 250px; }
+            section .likeon-section01 .right.right-wion .map-wrap .ecuador:hover, section .wion-section00 .right.right-wion .map-wrap .ecuador:hover, section .wion-section01 .right.right-wion .map-wrap .ecuador:hover, section .wion-section02 .right.right-wion .map-wrap .ecuador:hover, section .wion-section03 .right.right-wion .map-wrap .ecuador:hover, section .wion-section04 .right.right-wion .map-wrap .ecuador:hover, section .wion-section05 .right.right-wion .map-wrap .ecuador:hover, section .wion-section06 .right.right-wion .map-wrap .ecuador:hover, section .wion-section07 .right.right-wion .map-wrap .ecuador:hover, section .wion-section08 .right.right-wion .map-wrap .ecuador:hover {
+              top: 231px;
+              left: 248px;
+              width: 34px;
+              height: 34px; }
+              section .likeon-section01 .right.right-wion .map-wrap .ecuador:hover:before, section .wion-section00 .right.right-wion .map-wrap .ecuador:hover:before, section .wion-section01 .right.right-wion .map-wrap .ecuador:hover:before, section .wion-section02 .right.right-wion .map-wrap .ecuador:hover:before, section .wion-section03 .right.right-wion .map-wrap .ecuador:hover:before, section .wion-section04 .right.right-wion .map-wrap .ecuador:hover:before, section .wion-section05 .right.right-wion .map-wrap .ecuador:hover:before, section .wion-section06 .right.right-wion .map-wrap .ecuador:hover:before, section .wion-section07 .right.right-wion .map-wrap .ecuador:hover:before, section .wion-section08 .right.right-wion .map-wrap .ecuador:hover:before {
+                top: 8px;
+                left: 7px; }
+              section .likeon-section01 .right.right-wion .map-wrap .ecuador:hover:after, section .wion-section00 .right.right-wion .map-wrap .ecuador:hover:after, section .wion-section01 .right.right-wion .map-wrap .ecuador:hover:after, section .wion-section02 .right.right-wion .map-wrap .ecuador:hover:after, section .wion-section03 .right.right-wion .map-wrap .ecuador:hover:after, section .wion-section04 .right.right-wion .map-wrap .ecuador:hover:after, section .wion-section05 .right.right-wion .map-wrap .ecuador:hover:after, section .wion-section06 .right.right-wion .map-wrap .ecuador:hover:after, section .wion-section07 .right.right-wion .map-wrap .ecuador:hover:after, section .wion-section08 .right.right-wion .map-wrap .ecuador:hover:after {
+                top: 13px;
+                left: 12px; }
           section .likeon-section01 .right.right-wion .map-wrap .argentina, section .wion-section00 .right.right-wion .map-wrap .argentina, section .wion-section01 .right.right-wion .map-wrap .argentina, section .wion-section02 .right.right-wion .map-wrap .argentina, section .wion-section03 .right.right-wion .map-wrap .argentina, section .wion-section04 .right.right-wion .map-wrap .argentina, section .wion-section05 .right.right-wion .map-wrap .argentina, section .wion-section06 .right.right-wion .map-wrap .argentina, section .wion-section07 .right.right-wion .map-wrap .argentina, section .wion-section08 .right.right-wion .map-wrap .argentina {
-            position: relative;
-            top: 220px;
+            top: 310px;
             left: 280px; }
+            section .likeon-section01 .right.right-wion .map-wrap .argentina:hover, section .wion-section00 .right.right-wion .map-wrap .argentina:hover, section .wion-section01 .right.right-wion .map-wrap .argentina:hover, section .wion-section02 .right.right-wion .map-wrap .argentina:hover, section .wion-section03 .right.right-wion .map-wrap .argentina:hover, section .wion-section04 .right.right-wion .map-wrap .argentina:hover, section .wion-section05 .right.right-wion .map-wrap .argentina:hover, section .wion-section06 .right.right-wion .map-wrap .argentina:hover, section .wion-section07 .right.right-wion .map-wrap .argentina:hover, section .wion-section08 .right.right-wion .map-wrap .argentina:hover {
+              top: 308px;
+              left: 278px;
+              width: 34px;
+              height: 34px; }
+              section .likeon-section01 .right.right-wion .map-wrap .argentina:hover:before, section .wion-section00 .right.right-wion .map-wrap .argentina:hover:before, section .wion-section01 .right.right-wion .map-wrap .argentina:hover:before, section .wion-section02 .right.right-wion .map-wrap .argentina:hover:before, section .wion-section03 .right.right-wion .map-wrap .argentina:hover:before, section .wion-section04 .right.right-wion .map-wrap .argentina:hover:before, section .wion-section05 .right.right-wion .map-wrap .argentina:hover:before, section .wion-section06 .right.right-wion .map-wrap .argentina:hover:before, section .wion-section07 .right.right-wion .map-wrap .argentina:hover:before, section .wion-section08 .right.right-wion .map-wrap .argentina:hover:before {
+                top: 8px;
+                left: 7px; }
+              section .likeon-section01 .right.right-wion .map-wrap .argentina:hover:after, section .wion-section00 .right.right-wion .map-wrap .argentina:hover:after, section .wion-section01 .right.right-wion .map-wrap .argentina:hover:after, section .wion-section02 .right.right-wion .map-wrap .argentina:hover:after, section .wion-section03 .right.right-wion .map-wrap .argentina:hover:after, section .wion-section04 .right.right-wion .map-wrap .argentina:hover:after, section .wion-section05 .right.right-wion .map-wrap .argentina:hover:after, section .wion-section06 .right.right-wion .map-wrap .argentina:hover:after, section .wion-section07 .right.right-wion .map-wrap .argentina:hover:after, section .wion-section08 .right.right-wion .map-wrap .argentina:hover:after {
+                top: 13px;
+                left: 12px; }
           section .likeon-section01 .right.right-wion .map-wrap .fact, section .wion-section00 .right.right-wion .map-wrap .fact, section .wion-section01 .right.right-wion .map-wrap .fact, section .wion-section02 .right.right-wion .map-wrap .fact, section .wion-section03 .right.right-wion .map-wrap .fact, section .wion-section04 .right.right-wion .map-wrap .fact, section .wion-section05 .right.right-wion .map-wrap .fact, section .wion-section06 .right.right-wion .map-wrap .fact, section .wion-section07 .right.right-wion .map-wrap .fact, section .wion-section08 .right.right-wion .map-wrap .fact {
             position: absolute;
             bottom: 35px;
@@ -993,16 +1035,6 @@ section {
               height: 300px;
               width: 123px;
               display: inline-block; }
-              section .likeon-section01 .right.right-wion .section01-wrap .images_people .rectangle-people:after, section .wion-section00 .right.right-wion .section01-wrap .images_people .rectangle-people:after, section .wion-section01 .right.right-wion .section01-wrap .images_people .rectangle-people:after, section .wion-section02 .right.right-wion .section01-wrap .images_people .rectangle-people:after, section .wion-section03 .right.right-wion .section01-wrap .images_people .rectangle-people:after, section .wion-section04 .right.right-wion .section01-wrap .images_people .rectangle-people:after, section .wion-section05 .right.right-wion .section01-wrap .images_people .rectangle-people:after, section .wion-section06 .right.right-wion .section01-wrap .images_people .rectangle-people:after, section .wion-section07 .right.right-wion .section01-wrap .images_people .rectangle-people:after, section .wion-section08 .right.right-wion .section01-wrap .images_people .rectangle-people:after {
-                content: '';
-                position: absolute;
-                display: block;
-                width: 120px;
-                height: 13px;
-                bottom: 10px;
-                background-image: url(../images/cruz_under_p.png);
-                background-repeat: no-repeat;
-                background-position: center center; }
             section .likeon-section01 .right.right-wion .section01-wrap .images_people .wifi-small:before, section .wion-section00 .right.right-wion .section01-wrap .images_people .wifi-small:before, section .wion-section01 .right.right-wion .section01-wrap .images_people .wifi-small:before, section .wion-section02 .right.right-wion .section01-wrap .images_people .wifi-small:before, section .wion-section03 .right.right-wion .section01-wrap .images_people .wifi-small:before, section .wion-section04 .right.right-wion .section01-wrap .images_people .wifi-small:before, section .wion-section05 .right.right-wion .section01-wrap .images_people .wifi-small:before, section .wion-section06 .right.right-wion .section01-wrap .images_people .wifi-small:before, section .wion-section07 .right.right-wion .section01-wrap .images_people .wifi-small:before, section .wion-section08 .right.right-wion .section01-wrap .images_people .wifi-small:before {
               content: '';
               position: absolute;
@@ -1013,6 +1045,30 @@ section {
               background-image: url(../images/wifi-small.png);
               background-repeat: no-repeat;
               background-position: center center; }
+            section .likeon-section01 .right.right-wion .section01-wrap .images_people .romb, section .wion-section00 .right.right-wion .section01-wrap .images_people .romb, section .wion-section01 .right.right-wion .section01-wrap .images_people .romb, section .wion-section02 .right.right-wion .section01-wrap .images_people .romb, section .wion-section03 .right.right-wion .section01-wrap .images_people .romb, section .wion-section04 .right.right-wion .section01-wrap .images_people .romb, section .wion-section05 .right.right-wion .section01-wrap .images_people .romb, section .wion-section06 .right.right-wion .section01-wrap .images_people .romb, section .wion-section07 .right.right-wion .section01-wrap .images_people .romb, section .wion-section08 .right.right-wion .section01-wrap .images_people .romb {
+              position: absolute;
+              width: 40px;
+              height: 40px;
+              border: 3px solid #555;
+              background: #428bca;
+              transform: rotate(45deg);
+              border: 1px solid rgba(143, 246, 252, 0.56);
+              box-shadow: 0px 0px 68px -20px #92f6fe;
+              background-color: #263442;
+              text-align: center;
+              opacity: 1;
+              cursor: pointer;
+              transition: opacity 0.2 linear; }
+              section .likeon-section01 .right.right-wion .section01-wrap .images_people .romb span, section .wion-section00 .right.right-wion .section01-wrap .images_people .romb span, section .wion-section01 .right.right-wion .section01-wrap .images_people .romb span, section .wion-section02 .right.right-wion .section01-wrap .images_people .romb span, section .wion-section03 .right.right-wion .section01-wrap .images_people .romb span, section .wion-section04 .right.right-wion .section01-wrap .images_people .romb span, section .wion-section05 .right.right-wion .section01-wrap .images_people .romb span, section .wion-section06 .right.right-wion .section01-wrap .images_people .romb span, section .wion-section07 .right.right-wion .section01-wrap .images_people .romb span, section .wion-section08 .right.right-wion .section01-wrap .images_people .romb span {
+                color: #8FF5FB;
+                font-size: 46px;
+                line-height: 98px;
+                transform: rotate(135deg);
+                position: absolute;
+                font-family: 'Roboto', sans-serif;
+                top: -29px;
+                left: 6px;
+                font-weight: 300; }
             section .likeon-section01 .right.right-wion .section01-wrap .images_people #people01.on, section .wion-section00 .right.right-wion .section01-wrap .images_people #people01.on, section .wion-section01 .right.right-wion .section01-wrap .images_people #people01.on, section .wion-section02 .right.right-wion .section01-wrap .images_people #people01.on, section .wion-section03 .right.right-wion .section01-wrap .images_people #people01.on, section .wion-section04 .right.right-wion .section01-wrap .images_people #people01.on, section .wion-section05 .right.right-wion .section01-wrap .images_people #people01.on, section .wion-section06 .right.right-wion .section01-wrap .images_people #people01.on, section .wion-section07 .right.right-wion .section01-wrap .images_people #people01.on, section .wion-section08 .right.right-wion .section01-wrap .images_people #people01.on {
               background-image: url(../images/p-01-on.png);
               background-repeat: no-repeat;
@@ -1021,6 +1077,9 @@ section {
               background-image: url(../images/p-01-off.png);
               background-repeat: no-repeat;
               background-position: center center; }
+            section .likeon-section01 .right.right-wion .section01-wrap .images_people #people01 .romb, section .wion-section00 .right.right-wion .section01-wrap .images_people #people01 .romb, section .wion-section01 .right.right-wion .section01-wrap .images_people #people01 .romb, section .wion-section02 .right.right-wion .section01-wrap .images_people #people01 .romb, section .wion-section03 .right.right-wion .section01-wrap .images_people #people01 .romb, section .wion-section04 .right.right-wion .section01-wrap .images_people #people01 .romb, section .wion-section05 .right.right-wion .section01-wrap .images_people #people01 .romb, section .wion-section06 .right.right-wion .section01-wrap .images_people #people01 .romb, section .wion-section07 .right.right-wion .section01-wrap .images_people #people01 .romb, section .wion-section08 .right.right-wion .section01-wrap .images_people #people01 .romb {
+              top: 140px;
+              left: 0px; }
             section .likeon-section01 .right.right-wion .section01-wrap .images_people #people02.on, section .wion-section00 .right.right-wion .section01-wrap .images_people #people02.on, section .wion-section01 .right.right-wion .section01-wrap .images_people #people02.on, section .wion-section02 .right.right-wion .section01-wrap .images_people #people02.on, section .wion-section03 .right.right-wion .section01-wrap .images_people #people02.on, section .wion-section04 .right.right-wion .section01-wrap .images_people #people02.on, section .wion-section05 .right.right-wion .section01-wrap .images_people #people02.on, section .wion-section06 .right.right-wion .section01-wrap .images_people #people02.on, section .wion-section07 .right.right-wion .section01-wrap .images_people #people02.on, section .wion-section08 .right.right-wion .section01-wrap .images_people #people02.on {
               background-image: url(../images/p-02-on.png);
               background-repeat: no-repeat;
@@ -1029,6 +1088,9 @@ section {
               background-image: url(../images/p-02-off.png);
               background-repeat: no-repeat;
               background-position: center center; }
+            section .likeon-section01 .right.right-wion .section01-wrap .images_people #people02 .romb, section .wion-section00 .right.right-wion .section01-wrap .images_people #people02 .romb, section .wion-section01 .right.right-wion .section01-wrap .images_people #people02 .romb, section .wion-section02 .right.right-wion .section01-wrap .images_people #people02 .romb, section .wion-section03 .right.right-wion .section01-wrap .images_people #people02 .romb, section .wion-section04 .right.right-wion .section01-wrap .images_people #people02 .romb, section .wion-section05 .right.right-wion .section01-wrap .images_people #people02 .romb, section .wion-section06 .right.right-wion .section01-wrap .images_people #people02 .romb, section .wion-section07 .right.right-wion .section01-wrap .images_people #people02 .romb, section .wion-section08 .right.right-wion .section01-wrap .images_people #people02 .romb {
+              top: 66px;
+              left: 170px; }
             section .likeon-section01 .right.right-wion .section01-wrap .images_people #people03.on, section .wion-section00 .right.right-wion .section01-wrap .images_people #people03.on, section .wion-section01 .right.right-wion .section01-wrap .images_people #people03.on, section .wion-section02 .right.right-wion .section01-wrap .images_people #people03.on, section .wion-section03 .right.right-wion .section01-wrap .images_people #people03.on, section .wion-section04 .right.right-wion .section01-wrap .images_people #people03.on, section .wion-section05 .right.right-wion .section01-wrap .images_people #people03.on, section .wion-section06 .right.right-wion .section01-wrap .images_people #people03.on, section .wion-section07 .right.right-wion .section01-wrap .images_people #people03.on, section .wion-section08 .right.right-wion .section01-wrap .images_people #people03.on {
               background-image: url(../images/p-03-on.png);
               background-repeat: no-repeat;
@@ -1037,6 +1099,9 @@ section {
               background-image: url(../images/p-03-off.png);
               background-repeat: no-repeat;
               background-position: center center; }
+            section .likeon-section01 .right.right-wion .section01-wrap .images_people #people03 .romb, section .wion-section00 .right.right-wion .section01-wrap .images_people #people03 .romb, section .wion-section01 .right.right-wion .section01-wrap .images_people #people03 .romb, section .wion-section02 .right.right-wion .section01-wrap .images_people #people03 .romb, section .wion-section03 .right.right-wion .section01-wrap .images_people #people03 .romb, section .wion-section04 .right.right-wion .section01-wrap .images_people #people03 .romb, section .wion-section05 .right.right-wion .section01-wrap .images_people #people03 .romb, section .wion-section06 .right.right-wion .section01-wrap .images_people #people03 .romb, section .wion-section07 .right.right-wion .section01-wrap .images_people #people03 .romb, section .wion-section08 .right.right-wion .section01-wrap .images_people #people03 .romb {
+              left: 306px;
+              top: 169px; }
           section .likeon-section01 .right.right-wion .section01-wrap .info, section .wion-section00 .right.right-wion .section01-wrap .info, section .wion-section01 .right.right-wion .section01-wrap .info, section .wion-section02 .right.right-wion .section01-wrap .info, section .wion-section03 .right.right-wion .section01-wrap .info, section .wion-section04 .right.right-wion .section01-wrap .info, section .wion-section05 .right.right-wion .section01-wrap .info, section .wion-section06 .right.right-wion .section01-wrap .info, section .wion-section07 .right.right-wion .section01-wrap .info, section .wion-section08 .right.right-wion .section01-wrap .info {
             position: absolute;
             bottom: 20px;
@@ -1227,13 +1292,30 @@ section {
       section .likeon-section01 .right.right-wion-03, section .wion-section00 .right.right-wion-03, section .wion-section01 .right.right-wion-03, section .wion-section02 .right.right-wion-03, section .wion-section03 .right.right-wion-03, section .wion-section04 .right.right-wion-03, section .wion-section05 .right.right-wion-03, section .wion-section06 .right.right-wion-03, section .wion-section07 .right.right-wion-03, section .wion-section08 .right.right-wion-03 {
         width: 60%;
         padding-left: 200px; }
+        section .likeon-section01 .right.right-wion-03 .back-info-slide-b-top, section .wion-section00 .right.right-wion-03 .back-info-slide-b-top, section .wion-section01 .right.right-wion-03 .back-info-slide-b-top, section .wion-section02 .right.right-wion-03 .back-info-slide-b-top, section .wion-section03 .right.right-wion-03 .back-info-slide-b-top, section .wion-section04 .right.right-wion-03 .back-info-slide-b-top, section .wion-section05 .right.right-wion-03 .back-info-slide-b-top, section .wion-section06 .right.right-wion-03 .back-info-slide-b-top, section .wion-section07 .right.right-wion-03 .back-info-slide-b-top, section .wion-section08 .right.right-wion-03 .back-info-slide-b-top {
+          padding-right: 40px;
+          height: 28px;
+          background-image: url(../images/wi-on-section-03/cerrar.png);
+          background-repeat: no-repeat;
+          background-position: right center;
+          font-size: 20px;
+          position: absolute;
+          color: #fefeff;
+          line-height: 28px;
+          top: 20px;
+          margin-left: 266px;
+          cursor: pointer;
+          opacity: 1;
+          transition: all 0.2s linear; }
+          section .likeon-section01 .right.right-wion-03 .back-info-slide-b-top:hover, section .wion-section00 .right.right-wion-03 .back-info-slide-b-top:hover, section .wion-section01 .right.right-wion-03 .back-info-slide-b-top:hover, section .wion-section02 .right.right-wion-03 .back-info-slide-b-top:hover, section .wion-section03 .right.right-wion-03 .back-info-slide-b-top:hover, section .wion-section04 .right.right-wion-03 .back-info-slide-b-top:hover, section .wion-section05 .right.right-wion-03 .back-info-slide-b-top:hover, section .wion-section06 .right.right-wion-03 .back-info-slide-b-top:hover, section .wion-section07 .right.right-wion-03 .back-info-slide-b-top:hover, section .wion-section08 .right.right-wion-03 .back-info-slide-b-top:hover {
+            opacity: 0.6; }
         section .likeon-section01 .right.right-wion-03 #phone-section-03, section .wion-section00 .right.right-wion-03 #phone-section-03, section .wion-section01 .right.right-wion-03 #phone-section-03, section .wion-section02 .right.right-wion-03 #phone-section-03, section .wion-section03 .right.right-wion-03 #phone-section-03, section .wion-section04 .right.right-wion-03 #phone-section-03, section .wion-section05 .right.right-wion-03 #phone-section-03, section .wion-section06 .right.right-wion-03 #phone-section-03, section .wion-section07 .right.right-wion-03 #phone-section-03, section .wion-section08 .right.right-wion-03 #phone-section-03 {
           padding-left: 15px;
           z-index: -2; }
           section .likeon-section01 .right.right-wion-03 #phone-section-03.phone-wifi, section .wion-section00 .right.right-wion-03 #phone-section-03.phone-wifi, section .wion-section01 .right.right-wion-03 #phone-section-03.phone-wifi, section .wion-section02 .right.right-wion-03 #phone-section-03.phone-wifi, section .wion-section03 .right.right-wion-03 #phone-section-03.phone-wifi, section .wion-section04 .right.right-wion-03 #phone-section-03.phone-wifi, section .wion-section05 .right.right-wion-03 #phone-section-03.phone-wifi, section .wion-section06 .right.right-wion-03 #phone-section-03.phone-wifi, section .wion-section07 .right.right-wion-03 #phone-section-03.phone-wifi, section .wion-section08 .right.right-wion-03 #phone-section-03.phone-wifi {
             background-image: url(../images/wi-on-section-03/phone-wifi.png);
             background-repeat: no-repeat;
-            background-position: center center;
+            background-position: center 54px;
             background-size: contain;
             width: 297px;
             height: 508px; }
@@ -1258,33 +1340,51 @@ section {
           section .likeon-section01 .right.right-wion-03 #phone-section-03.phone-data, section .wion-section00 .right.right-wion-03 #phone-section-03.phone-data, section .wion-section01 .right.right-wion-03 #phone-section-03.phone-data, section .wion-section02 .right.right-wion-03 #phone-section-03.phone-data, section .wion-section03 .right.right-wion-03 #phone-section-03.phone-data, section .wion-section04 .right.right-wion-03 #phone-section-03.phone-data, section .wion-section05 .right.right-wion-03 #phone-section-03.phone-data, section .wion-section06 .right.right-wion-03 #phone-section-03.phone-data, section .wion-section07 .right.right-wion-03 #phone-section-03.phone-data, section .wion-section08 .right.right-wion-03 #phone-section-03.phone-data {
             background-image: url(../images/wi-on-section-03/phone-info.png);
             background-repeat: no-repeat;
-            background-position: center center;
+            background-position: center 54px;
             background-size: contain;
             width: 297px;
-            height: 508px; }
+            height: 508px;
+            padding-top: 54px; }
+          section .likeon-section01 .right.right-wion-03 #phone-section-03 .navigation, section .wion-section00 .right.right-wion-03 #phone-section-03 .navigation, section .wion-section01 .right.right-wion-03 #phone-section-03 .navigation, section .wion-section02 .right.right-wion-03 #phone-section-03 .navigation, section .wion-section03 .right.right-wion-03 #phone-section-03 .navigation, section .wion-section04 .right.right-wion-03 #phone-section-03 .navigation, section .wion-section05 .right.right-wion-03 #phone-section-03 .navigation, section .wion-section06 .right.right-wion-03 #phone-section-03 .navigation, section .wion-section07 .right.right-wion-03 #phone-section-03 .navigation, section .wion-section08 .right.right-wion-03 #phone-section-03 .navigation {
+            position: absolute;
+            top: 264px;
+            margin-left: -66px;
+            height: 52px;
+            width: 380px;
+            z-index: 5; }
+            section .likeon-section01 .right.right-wion-03 #phone-section-03 .navigation span, section .wion-section00 .right.right-wion-03 #phone-section-03 .navigation span, section .wion-section01 .right.right-wion-03 #phone-section-03 .navigation span, section .wion-section02 .right.right-wion-03 #phone-section-03 .navigation span, section .wion-section03 .right.right-wion-03 #phone-section-03 .navigation span, section .wion-section04 .right.right-wion-03 #phone-section-03 .navigation span, section .wion-section05 .right.right-wion-03 #phone-section-03 .navigation span, section .wion-section06 .right.right-wion-03 #phone-section-03 .navigation span, section .wion-section07 .right.right-wion-03 #phone-section-03 .navigation span, section .wion-section08 .right.right-wion-03 #phone-section-03 .navigation span {
+              width: 52px;
+              height: 52px;
+              padding: 0;
+              opacity: 0.8;
+              transition: all 0.2s linear;
+              cursor: pointer; }
+              section .likeon-section01 .right.right-wion-03 #phone-section-03 .navigation span.left, section .wion-section00 .right.right-wion-03 #phone-section-03 .navigation span.left, section .wion-section01 .right.right-wion-03 #phone-section-03 .navigation span.left, section .wion-section02 .right.right-wion-03 #phone-section-03 .navigation span.left, section .wion-section03 .right.right-wion-03 #phone-section-03 .navigation span.left, section .wion-section04 .right.right-wion-03 #phone-section-03 .navigation span.left, section .wion-section05 .right.right-wion-03 #phone-section-03 .navigation span.left, section .wion-section06 .right.right-wion-03 #phone-section-03 .navigation span.left, section .wion-section07 .right.right-wion-03 #phone-section-03 .navigation span.left, section .wion-section08 .right.right-wion-03 #phone-section-03 .navigation span.left {
+                float: left;
+                background-image: url(../images/wi-on-section-03/arrowL.png);
+                margin-left: 5px; }
+                section .likeon-section01 .right.right-wion-03 #phone-section-03 .navigation span.left:hover, section .wion-section00 .right.right-wion-03 #phone-section-03 .navigation span.left:hover, section .wion-section01 .right.right-wion-03 #phone-section-03 .navigation span.left:hover, section .wion-section02 .right.right-wion-03 #phone-section-03 .navigation span.left:hover, section .wion-section03 .right.right-wion-03 #phone-section-03 .navigation span.left:hover, section .wion-section04 .right.right-wion-03 #phone-section-03 .navigation span.left:hover, section .wion-section05 .right.right-wion-03 #phone-section-03 .navigation span.left:hover, section .wion-section06 .right.right-wion-03 #phone-section-03 .navigation span.left:hover, section .wion-section07 .right.right-wion-03 #phone-section-03 .navigation span.left:hover, section .wion-section08 .right.right-wion-03 #phone-section-03 .navigation span.left:hover {
+                  opacity: 1;
+                  margin-left: 0; }
+              section .likeon-section01 .right.right-wion-03 #phone-section-03 .navigation span.right, section .wion-section00 .right.right-wion-03 #phone-section-03 .navigation span.right, section .wion-section01 .right.right-wion-03 #phone-section-03 .navigation span.right, section .wion-section02 .right.right-wion-03 #phone-section-03 .navigation span.right, section .wion-section03 .right.right-wion-03 #phone-section-03 .navigation span.right, section .wion-section04 .right.right-wion-03 #phone-section-03 .navigation span.right, section .wion-section05 .right.right-wion-03 #phone-section-03 .navigation span.right, section .wion-section06 .right.right-wion-03 #phone-section-03 .navigation span.right, section .wion-section07 .right.right-wion-03 #phone-section-03 .navigation span.right, section .wion-section08 .right.right-wion-03 #phone-section-03 .navigation span.right {
+                float: right;
+                background-image: url(../images/wi-on-section-03/arrowR.png);
+                margin-right: 5px; }
+                section .likeon-section01 .right.right-wion-03 #phone-section-03 .navigation span.right:hover, section .wion-section00 .right.right-wion-03 #phone-section-03 .navigation span.right:hover, section .wion-section01 .right.right-wion-03 #phone-section-03 .navigation span.right:hover, section .wion-section02 .right.right-wion-03 #phone-section-03 .navigation span.right:hover, section .wion-section03 .right.right-wion-03 #phone-section-03 .navigation span.right:hover, section .wion-section04 .right.right-wion-03 #phone-section-03 .navigation span.right:hover, section .wion-section05 .right.right-wion-03 #phone-section-03 .navigation span.right:hover, section .wion-section06 .right.right-wion-03 #phone-section-03 .navigation span.right:hover, section .wion-section07 .right.right-wion-03 #phone-section-03 .navigation span.right:hover, section .wion-section08 .right.right-wion-03 #phone-section-03 .navigation span.right:hover {
+                  opacity: 1;
+                  margin-right: 0; }
           section .likeon-section01 .right.right-wion-03 #phone-section-03 .overflow, section .wion-section00 .right.right-wion-03 #phone-section-03 .overflow, section .wion-section01 .right.right-wion-03 #phone-section-03 .overflow, section .wion-section02 .right.right-wion-03 #phone-section-03 .overflow, section .wion-section03 .right.right-wion-03 #phone-section-03 .overflow, section .wion-section04 .right.right-wion-03 #phone-section-03 .overflow, section .wion-section05 .right.right-wion-03 #phone-section-03 .overflow, section .wion-section06 .right.right-wion-03 #phone-section-03 .overflow, section .wion-section07 .right.right-wion-03 #phone-section-03 .overflow, section .wion-section08 .right.right-wion-03 #phone-section-03 .overflow {
             position: absolute;
             width: 792px;
             height: 319px;
-            overflow: auto;
-            top: 87px;
+            overflow: hidden;
+            top: 141px;
             padding-bottom: 80px;
             box-sizing: content-box;
             right: -46px;
             display: none; }
             section .likeon-section01 .right.right-wion-03 #phone-section-03 .overflow.show, section .wion-section00 .right.right-wion-03 #phone-section-03 .overflow.show, section .wion-section01 .right.right-wion-03 #phone-section-03 .overflow.show, section .wion-section02 .right.right-wion-03 #phone-section-03 .overflow.show, section .wion-section03 .right.right-wion-03 #phone-section-03 .overflow.show, section .wion-section04 .right.right-wion-03 #phone-section-03 .overflow.show, section .wion-section05 .right.right-wion-03 #phone-section-03 .overflow.show, section .wion-section06 .right.right-wion-03 #phone-section-03 .overflow.show, section .wion-section07 .right.right-wion-03 #phone-section-03 .overflow.show, section .wion-section08 .right.right-wion-03 #phone-section-03 .overflow.show {
               display: block; }
-            section .likeon-section01 .right.right-wion-03 #phone-section-03 .overflow::-webkit-scrollbar-track, section .wion-section00 .right.right-wion-03 #phone-section-03 .overflow::-webkit-scrollbar-track, section .wion-section01 .right.right-wion-03 #phone-section-03 .overflow::-webkit-scrollbar-track, section .wion-section02 .right.right-wion-03 #phone-section-03 .overflow::-webkit-scrollbar-track, section .wion-section03 .right.right-wion-03 #phone-section-03 .overflow::-webkit-scrollbar-track, section .wion-section04 .right.right-wion-03 #phone-section-03 .overflow::-webkit-scrollbar-track, section .wion-section05 .right.right-wion-03 #phone-section-03 .overflow::-webkit-scrollbar-track, section .wion-section06 .right.right-wion-03 #phone-section-03 .overflow::-webkit-scrollbar-track, section .wion-section07 .right.right-wion-03 #phone-section-03 .overflow::-webkit-scrollbar-track, section .wion-section08 .right.right-wion-03 #phone-section-03 .overflow::-webkit-scrollbar-track {
-              -webkit-box-shadow: inset 0 0 9px rgba(0, 0, 0, 0.3);
-              border-radius: 0px;
-              background-color: #253341; }
-            section .likeon-section01 .right.right-wion-03 #phone-section-03 .overflow::-webkit-scrollbar, section .wion-section00 .right.right-wion-03 #phone-section-03 .overflow::-webkit-scrollbar, section .wion-section01 .right.right-wion-03 #phone-section-03 .overflow::-webkit-scrollbar, section .wion-section02 .right.right-wion-03 #phone-section-03 .overflow::-webkit-scrollbar, section .wion-section03 .right.right-wion-03 #phone-section-03 .overflow::-webkit-scrollbar, section .wion-section04 .right.right-wion-03 #phone-section-03 .overflow::-webkit-scrollbar, section .wion-section05 .right.right-wion-03 #phone-section-03 .overflow::-webkit-scrollbar, section .wion-section06 .right.right-wion-03 #phone-section-03 .overflow::-webkit-scrollbar, section .wion-section07 .right.right-wion-03 #phone-section-03 .overflow::-webkit-scrollbar, section .wion-section08 .right.right-wion-03 #phone-section-03 .overflow::-webkit-scrollbar {
-              height: 9px;
-              background-color: #253341; }
-            section .likeon-section01 .right.right-wion-03 #phone-section-03 .overflow::-webkit-scrollbar-thumb, section .wion-section00 .right.right-wion-03 #phone-section-03 .overflow::-webkit-scrollbar-thumb, section .wion-section01 .right.right-wion-03 #phone-section-03 .overflow::-webkit-scrollbar-thumb, section .wion-section02 .right.right-wion-03 #phone-section-03 .overflow::-webkit-scrollbar-thumb, section .wion-section03 .right.right-wion-03 #phone-section-03 .overflow::-webkit-scrollbar-thumb, section .wion-section04 .right.right-wion-03 #phone-section-03 .overflow::-webkit-scrollbar-thumb, section .wion-section05 .right.right-wion-03 #phone-section-03 .overflow::-webkit-scrollbar-thumb, section .wion-section06 .right.right-wion-03 #phone-section-03 .overflow::-webkit-scrollbar-thumb, section .wion-section07 .right.right-wion-03 #phone-section-03 .overflow::-webkit-scrollbar-thumb, section .wion-section08 .right.right-wion-03 #phone-section-03 .overflow::-webkit-scrollbar-thumb {
-              border-radius: 0px;
-              -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-              background-color: #538D91; }
           section .likeon-section01 .right.right-wion-03 #phone-section-03 .rightB, section .wion-section00 .right.right-wion-03 #phone-section-03 .rightB, section .wion-section01 .right.right-wion-03 #phone-section-03 .rightB, section .wion-section02 .right.right-wion-03 #phone-section-03 .rightB, section .wion-section03 .right.right-wion-03 #phone-section-03 .rightB, section .wion-section04 .right.right-wion-03 #phone-section-03 .rightB, section .wion-section05 .right.right-wion-03 #phone-section-03 .rightB, section .wion-section06 .right.right-wion-03 #phone-section-03 .rightB, section .wion-section07 .right.right-wion-03 #phone-section-03 .rightB, section .wion-section08 .right.right-wion-03 #phone-section-03 .rightB {
             position: absolute;
             width: 200px;
@@ -1402,17 +1502,20 @@ section {
             background-size: contain;
             width: 266px;
             height: 266px;
-            position: relative;
-            top: -341px;
-            left: 290px; }
+            position: absolute;
+            top: 144px;
+            margin-left: -150px; }
             section .likeon-section01 .right.right-wion-03 #phone-section-03 .info-slide-b-02:before, section .wion-section00 .right.right-wion-03 #phone-section-03 .info-slide-b-02:before, section .wion-section01 .right.right-wion-03 #phone-section-03 .info-slide-b-02:before, section .wion-section02 .right.right-wion-03 #phone-section-03 .info-slide-b-02:before, section .wion-section03 .right.right-wion-03 #phone-section-03 .info-slide-b-02:before, section .wion-section04 .right.right-wion-03 #phone-section-03 .info-slide-b-02:before, section .wion-section05 .right.right-wion-03 #phone-section-03 .info-slide-b-02:before, section .wion-section06 .right.right-wion-03 #phone-section-03 .info-slide-b-02:before, section .wion-section07 .right.right-wion-03 #phone-section-03 .info-slide-b-02:before, section .wion-section08 .right.right-wion-03 #phone-section-03 .info-slide-b-02:before {
-              content: '';
+              content: 'Ver más';
+              color: #92f6fe;
               position: absolute;
               display: block;
-              width: 86px;
+              width: 89px;
               height: 13px;
-              bottom: 70px;
-              background-image: url(../images/cruz_under_p.png);
+              bottom: 76px;
+              font-size: 18px;
+              text-align: center;
+              /*background-image: url(../images/cruz_under_p.png);*/
               background-repeat: no-repeat;
               background-position: center center; }
           section .likeon-section01 .right.right-wion-03 #phone-section-03 .info-slide-b-03, section .wion-section00 .right.right-wion-03 #phone-section-03 .info-slide-b-03, section .wion-section01 .right.right-wion-03 #phone-section-03 .info-slide-b-03, section .wion-section02 .right.right-wion-03 #phone-section-03 .info-slide-b-03, section .wion-section03 .right.right-wion-03 #phone-section-03 .info-slide-b-03, section .wion-section04 .right.right-wion-03 #phone-section-03 .info-slide-b-03, section .wion-section05 .right.right-wion-03 #phone-section-03 .info-slide-b-03, section .wion-section06 .right.right-wion-03 #phone-section-03 .info-slide-b-03, section .wion-section07 .right.right-wion-03 #phone-section-03 .info-slide-b-03, section .wion-section08 .right.right-wion-03 #phone-section-03 .info-slide-b-03 {
@@ -1423,17 +1526,20 @@ section {
             background-size: contain;
             width: 266px;
             height: 266px;
-            position: relative;
-            bottom: 400px;
-            left: 288px; }
+            position: absolute;
+            top: 194px;
+            margin-left: 174px; }
             section .likeon-section01 .right.right-wion-03 #phone-section-03 .info-slide-b-03:before, section .wion-section00 .right.right-wion-03 #phone-section-03 .info-slide-b-03:before, section .wion-section01 .right.right-wion-03 #phone-section-03 .info-slide-b-03:before, section .wion-section02 .right.right-wion-03 #phone-section-03 .info-slide-b-03:before, section .wion-section03 .right.right-wion-03 #phone-section-03 .info-slide-b-03:before, section .wion-section04 .right.right-wion-03 #phone-section-03 .info-slide-b-03:before, section .wion-section05 .right.right-wion-03 #phone-section-03 .info-slide-b-03:before, section .wion-section06 .right.right-wion-03 #phone-section-03 .info-slide-b-03:before, section .wion-section07 .right.right-wion-03 #phone-section-03 .info-slide-b-03:before, section .wion-section08 .right.right-wion-03 #phone-section-03 .info-slide-b-03:before {
-              content: '';
+              content: 'Ver más';
+              color: #92f6fe;
               position: absolute;
               display: block;
-              width: 86px;
+              width: 89px;
               height: 13px;
-              bottom: 70px;
-              background-image: url(../images/cruz_under_p.png);
+              bottom: 76px;
+              font-size: 18px;
+              text-align: center;
+              /*background-image: url(../images/cruz_under_p.png);*/
               background-repeat: no-repeat;
               background-position: center center; }
       section .likeon-section01 .right.right-wion-05, section .wion-section00 .right.right-wion-05, section .wion-section01 .right.right-wion-05, section .wion-section02 .right.right-wion-05, section .wion-section03 .right.right-wion-05, section .wion-section04 .right.right-wion-05, section .wion-section05 .right.right-wion-05, section .wion-section06 .right.right-wion-05, section .wion-section07 .right.right-wion-05, section .wion-section08 .right.right-wion-05 {

@@ -212,7 +212,9 @@ $( document ).ready(function() {
     $(".info-slide-b-02").on("click",function () {
       $("div[class^=info-slide-b-]").addClass("hide")
       $(".scroll-content").removeClass("hide")
+      $(".navigation").removeClass("hide")
       $(".back-info-slide-b").removeClass("hide")
+      $(".back-info-slide-b-top").removeClass("hide")
       $("#content01-section03").removeClass("hide")
       $("#home-section03").addClass("hide")
       $("#slide-phone-01").addClass("content0101")
@@ -227,7 +229,9 @@ $( document ).ready(function() {
     $(".info-slide-b-03").on("click",function () {
       $("div[class^=info-slide-b-]").addClass("hide")
       $(".scroll-content").removeClass("hide")
+      $(".navigation").removeClass("hide")
       $(".back-info-slide-b").removeClass("hide")
+      $(".back-info-slide-b-top").removeClass("hide")
       $("#content02-section03").removeClass("hide")
       $("#home-section03").addClass("hide")
       $("#slide-phone-01").addClass("content0201")
@@ -240,14 +244,16 @@ $( document ).ready(function() {
       $(".leftB").addClass("show");
       $(".rightB").addClass("show");
     })
-    $(".back-info-slide-b").on("click",function () {
+    $(".back-info-slide-b, .back-info-slide-b-top").on("click",function () {
       $("div[class^=slide-phone-]").removeClass()
       $("#content01-section03").removeClass()
       $("#content02-section03").removeClass()
 
       $(".scroll-content").addClass("hide")
+      $(".navigation").addClass("hide")
       $("#home-section03").removeClass("hide")
       $(".back-info-slide-b").addClass("hide")
+      $(".back-info-slide-b-top").addClass("hide")
       $("div[class^=info-slide-b-]").removeClass("hide")
       $("#content01-section03").addClass("hide")
       $("#content02-section03").addClass("hide")
@@ -747,6 +753,30 @@ $( document ).ready(function() {
       $(".section05 .romb").css({'opacity':1});
       var data_secslide = $(this).data('secslide');
       $(".section05 .section5"+data_secslide).fadeOut('fast');
+    });
+
+    var overflowscrollLeft = 0;
+    $("body").on("click",".navigation span", function(){
+
+      var _this = $(this);
+      var _overflowblock =  $("#phone-section-03 .overflow");
+      if (_this.hasClass("left")) {
+        if (overflowscrollLeft == 0) { return;}
+        overflowscrollLeft-=194;
+        console.log("scrolling left");
+        $(_overflowblock).animate({
+        scrollLeft: overflowscrollLeft},
+        'slow');
+      }
+      if (_this.hasClass("right")) {
+        if (overflowscrollLeft == 388 ) { return;}
+        overflowscrollLeft+=194;
+        console.log("scrolling right");
+        $(_overflowblock).animate({
+        scrollLeft: overflowscrollLeft },
+        'slow');
+      }
+      console.log("max scroll", overflowscrollLeft);
     })
 
 });
